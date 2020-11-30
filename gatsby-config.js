@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-RMM4MSRDQM", // Google Analytics / GA
+          "G-RMM4MSRDQM"
         ],
       },
     },
@@ -56,6 +56,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
+        crossOrigin: `use-credentials`,
       },
     },
     `gatsby-plugin-offline`,
