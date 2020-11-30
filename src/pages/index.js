@@ -16,8 +16,8 @@ import GoogleChromeIcon from "../images/assets/googlechrome.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="w-full h-full flex-grow flex-1 flex flex-wrap">
-      <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-100 dark:bg-gray-800">
+    <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
+      <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="p-10 flex flex-row-reverse ">
           <div className="container p-10">
             <WebingestIcon alt="Logo" width="120" height="120" />
@@ -73,7 +73,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 p-5 flex flex-col items-center justify-center shadow-2xl">
+      <div className="w-full md:w-1/2 p-5 flex flex-col items-center justify-center">
         <LinkGrid />
         <div>
           {" "}

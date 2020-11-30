@@ -30,7 +30,7 @@ const ShufflePage = () => (
               You will be redirected soon...
             </p>
             <div className="my-6">
-              <div className="inline-flex rounded-md shadow">
+              <div className="inline-flex rounded-md shadow-lg">
                 <a
                   href="shuffle"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
