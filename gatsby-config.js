@@ -14,11 +14,12 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "GA-TRACKING_ID", // Google Analytics / GA
+          "G-RMM4MSRDQM", // Google Analytics / GA
         ],
       },
     },
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

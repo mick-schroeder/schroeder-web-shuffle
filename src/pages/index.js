@@ -25,7 +25,7 @@ const IndexPage = () => (
               Web Ingest
             </h1>
             <h2 className="text-lg tracking-tight text-gray-700 dark:text-blue-300 sm:text-lg md:text-xl">
-              by <a href="http://mickschroeder.com">Mick Schroeder</a>
+              by <a href="https://mickschroeder.com" rel="external">Mick Schroeder</a>
             </h2>
             <p className="text-gray-800 dark:text-gray-200 py-6">
               Click below to be redirected to a selection of curated websites.
