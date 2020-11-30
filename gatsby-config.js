@@ -2,13 +2,22 @@ module.exports = {
   siteMetadata: {
     title: `Web Ingest`,
     description: `Description.`,
-    titleTemplate: ``,
+    titleTemplate: `%s | Web Ingest`,
     author: `@mick_schroeder`,
     url: `https://webingest.com`,
     image: `icon-webingest.png`,
     twitterUsername: `@mick_schroeder`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "GA-TRACKING_ID", // Google Analytics / GA
+        ],
+      },
+    },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
