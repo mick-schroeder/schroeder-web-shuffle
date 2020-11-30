@@ -51,7 +51,7 @@ const IndexPage = () => (
                 <div className="inline-flex rounded-md shadow">
                   <a
                     href="shuffle"
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-indigo-300"
+                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
                   >
                     <GoogleChromeIcon
                       alt="Random"
@@ -59,10 +59,10 @@ const IndexPage = () => (
                       width="32"
                       height="32"
                     />
-                    Add to Google Chrome
+                    (Coming Soon)
                   </a>
                 </div>
-              </div>
+              </div> 
               <div>
                 <p className="text-gray-800 dark:text-gray-200">
                   Bookmark: <a href="https://webingest.com/shuffle">🔀</a> (Drag

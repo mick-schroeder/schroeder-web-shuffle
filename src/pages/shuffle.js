@@ -3,15 +3,11 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LinkGrid from "../components/linkGrid"
+import Redirect from "../components/redirect"
 
-// left
+// icons
 import WebingestIcon from "../images/assets/icon-web-ingest.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
-//import SafariIcon from "../images/assets/safari.svg"
-//import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
-import GoogleChromeIcon from "../images/assets/googlechrome.svg"
-//import FirefoxBrowserIcon from "../images/assets/firefoxbrowser.svg"
 
 const ShufflePage = () => (
   <Layout>
@@ -29,16 +25,7 @@ const ShufflePage = () => (
             <p className="text-gray-800 dark:text-gray-200 pb-6 pt-12">
               You will be redirected soon...
             </p>
-            <div className="my-6">
-              <div className="inline-flex rounded-md shadow-lg">
-                <a
-                  href="shuffle"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Redirect Now
-                </a>
-              </div>
-            </div>
+            <Redirect/>
         </div>
       </div>
     </div>

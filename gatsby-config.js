@@ -19,7 +19,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt',
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://webingest.com",
+        sitemap: "https://webingest.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -51,8 +66,8 @@ module.exports = {
       options: {
         name: `Web Ingest`,
         short_name: `WebIngest`,
-        icon: `src/images/icon-webingest.png`,
-        start_url: `/`,
+        icon: `src/images/assets/icon-webingest.svg`,
+        start_url: `.`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
