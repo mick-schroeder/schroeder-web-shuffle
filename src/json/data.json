@@ -1,0 +1,511 @@
+{
+  "weblinks": [
+    {
+      "title": "Amazon",
+      "url": "https://amazon.com",
+      "channel": "Deals",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "amazon.svg"
+    },
+    {
+      "title": "Aljazeera",
+      "url": "https://www.aljazeera.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Alltop",
+      "url": "https://alltop.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Anandtech",
+      "url": "https://www.anandtech.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Ars Technica",
+      "url": "https://arstechnica.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Bbc",
+      "url": "https://www.bbc.com/news",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Bit-Tech",
+      "url": "https://www.bit-tech.net/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Bloomberg",
+      "url": "https://www.bloomberg.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Boston Globe",
+      "url": "https://www.bostonglobe.com/news/bigpicture",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Cnn",
+      "url": "https://www.cnn.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "cnn.svg"
+    },
+    {
+      "title": "Digitaltrends",
+      "url": "https://www.digitaltrends.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Drudge Report",
+      "url": "https://www.drudgereport.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Etsy",
+      "url": "https://etsy.com",
+      "channel": "Deals",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "etsy.svg"
+    },
+    {
+      "title": "Ebay",
+      "url": "https://www.ebay.com/",
+      "channel": "Deals",
+      "duration": "300",
+      "fav": "TRUE",
+      "icon": "ebay.svg"
+    },
+    {
+      "title": "Engadget",
+      "url": "https://www.engadget.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Esciencenews",
+      "url": "http://esciencenews.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Espn",
+      "url": "https://www.espn.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "channel": "Social",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "facebook.svg"
+    },
+    {
+      "title": "Fastcompany",
+      "url": "https://www.fastcompany.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Forekast",
+      "url": "https://forekast.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Foxnews",
+      "url": "https://www.foxnews.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Frontpagelive",
+      "url": "https://www.frontpagelive.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Gizmodo",
+      "url": "https://gizmodo.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Google",
+      "url": "https://news.google.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "google.svg"
+    },
+    {
+      "title": "Huffpost",
+      "url": "https://www.huffpost.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Rotton Tomatoes",
+      "url": "https://www.rottentomatoes.com/",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "channel": "Social",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "LA Times",
+      "url": "https://www.latimes.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Metacritic",
+      "url": "https://www.ebay.com/deals/",
+      "channel": "Deals",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "MSN",
+      "url": "https://www.msn.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "New Yyorker",
+      "url": "https://www.newyorker.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Npr",
+      "url": "https://www.npr.org/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Nydailynews",
+      "url": "https://www.nydailynews.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Nytimes",
+      "url": "https://www.nytimes.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Pocket",
+      "url": "https://getpocket.com/explore",
+      "channel": "News",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "pocket.svg"
+    },
+    {
+      "title": "Politico",
+      "url": "https://www.politico.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Polygon",
+      "url": "https://www.polygon.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Propublica",
+      "url": "https://www.propublica.org/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Realclearpolitics",
+      "url": "https://www.realclearpolitics.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/",
+      "channel": "Social",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "reddit.svg"
+    },
+    {
+      "title": "Imgur",
+      "url": "https://imgur.com/",
+      "channel": "Meme",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "imgur.svg"
+    },
+    {
+      "title": "Metacritic",
+      "url": "https://www.metacritic.com/",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Salon",
+      "url": "https://www.salon.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Skimfeed",
+      "url": "https://skimfeed.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Slate",
+      "url": "https://slate.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Techcrunch",
+      "url": "https://techcrunch.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Techmeme",
+      "url": "https://www.techmeme.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Techradar",
+      "url": "https://www.techradar.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "The Atlantic",
+      "url": "https://www.theatlantic.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "The Guardian",
+      "url": "https://www.theguardian.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Theatlantic",
+      "url": "https://www.theatlantic.com/photo/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Themorningnews",
+      "url": "https://themorningnews.org/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Thenextweb",
+      "url": "https://thenextweb.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Theverge",
+      "url": "https://www.theverge.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Tomshardware",
+      "url": "https://www.tomshardware.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "TV Guide",
+      "url": "https://nocable.org/tv-guide",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/",
+      "channel": "Social",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "twitter.svg"
+    },
+    {
+      "title": "USA Today",
+      "url": "https://www.usatoday.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Vox",
+      "url": "https://www.vox.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Re-code",
+      "url": "https://www.vox.com/recode",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Wall Street Journal",
+      "url": "https://www.wsj.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Washington Post",
+      "url": "https://www.washingtonpost.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "channel": "News",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "wikipedia.svg"
+    },
+    {
+      "title": "Wired",
+      "url": "https://www.wired.com/",
+      "channel": "Tech",
+      "duration": "15",
+      "fav": "FALSE"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://news.yahoo.com/",
+      "channel": "News",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "yahoo.svg"
+    },
+    {
+      "title": "Youtube",
+      "url": "https://www.youtube.com/",
+      "channel": "Video",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "youtube.svg"
+    },
+    {
+      "title": "IMDB",
+      "url": "https://www.imdb.com/chart/moviemeter",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "imdb.svg"
+    },
+    {
+      "title": "Steam",
+      "url": "https://store.steampowered.com/",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "steam.svg"
+    },
+    {
+      "title": "Trakt - Movies",
+      "url": "https://trakt.tv/movies/trending",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "TRUE",
+      "icon": "trakt.svg"
+    },
+    {
+      "title": "Trakt - Television",
+      "url": "https://trakt.tv/shows/trending",
+      "channel": "Entertainment",
+      "duration": "15",
+      "fav": "FALSE",
+      "icon": "trakt.svg"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.webingest {
+    max-width: 768px;
+}
+
+.navigation {
+    @apply px-6 shadow-xl;
+    max-width: 768px;
+}
+
+.weblinkicon {
+    @apply p-6 transition duration-500 ease-in-out rounded shadow-xl transform hover:-translate-y-1 hover:scale-110;
+
+}
+
+.weblinkicon div  {
+    @apply text-center m-auto w-16 h-16;
+}
+
+
+.weblinkicon img {
+    @apply fill-current object-center m-auto;
+}
+
+.weblinkicon svg {
+    @apply fill-current object-center m-auto;
+}
+
+.square {
+@apply object-center flex items-center justify-center;
+
+}
+
+
+.weblinkicon p  {
+    @apply text-center w-full h-full;
+    
+}
