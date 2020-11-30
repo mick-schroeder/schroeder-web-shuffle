@@ -50,7 +50,7 @@ module.exports = {
         name: `Web Ingest`,
         short_name: `WebIngest`,
         icon: `src/images/icon-webingest.png`,
-        start_url: `/`,
+        start_url: `https://webingest.com`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
