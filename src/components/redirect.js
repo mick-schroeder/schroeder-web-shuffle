@@ -5,14 +5,15 @@ import React from "react"
 import JSONData from "../json/data.json"
 
 class Redirect extends React.Component {
-    componentDidMount () {
-        var rand = JSONData.weblinks[~~(Math.random() * JSONData.weblinks.length)];
+  componentDidMount() {
+    var rand = JSONData.weblinks[~~(Math.random() * JSONData.weblinks.length)]
 
-          window.location.href = rand.url;
-    }
-    render () {
-      return (
-        <div className="my-6">
+    window.location.href = rand.url
+  }
+
+  render() {
+    return (
+      <div className="my-6">
         <div className="inline-flex rounded-md shadow-lg">
           <a
             href="shuffle"
@@ -22,8 +23,8 @@ class Redirect extends React.Component {
           </a>
         </div>
       </div>
-      )
-    }
+    )
   }
+}
 
 export default Redirect

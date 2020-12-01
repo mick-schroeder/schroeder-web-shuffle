@@ -13,9 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "G-RMM4MSRDQM"
-        ],
+        trackingIds: ["G-RMM4MSRDQM"],
       },
     },
     `gatsby-plugin-sitemap`,

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,17 +18,20 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
-        <div className="p-10 flex flex-row-reverse ">
+        <div className="md:p-10 flex flex-row-reverse ">
           <div className="container p-10">
             <WebingestIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Ingest
             </h1>
             <h2 className="text-lg tracking-tight text-gray-700 dark:text-blue-300 sm:text-lg md:text-xl">
-              by <a href="https://mickschroeder.com" rel="external">Mick Schroeder</a>
+              by{" "}
+              <a href="https://mickschroeder.com" rel="external">
+                Mick Schroeder
+              </a>
             </h2>
             <p className="text-gray-800 dark:text-gray-200 py-6">
-              Click below to be redirected to a selection of curated websites.
+            Channel surf the web. 🔀 Shuffle to a random 🔗 link from curated selection of the best sites on the 🌐 Internet.
             </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
@@ -62,7 +65,7 @@ const IndexPage = () => (
                     (Coming Soon)
                   </a>
                 </div>
-              </div> 
+              </div>
               <div>
                 <p className="text-gray-800 dark:text-gray-200">
                   Bookmark: <a href="https://webingest.com/shuffle">🔀</a> (Drag
