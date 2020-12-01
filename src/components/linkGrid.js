@@ -3,7 +3,7 @@
 import React from "react"
 
 const LinkGrid = ({}) => (
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-10 text-gray-800 dark:text-gray-200 ">
+  <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 text-gray-800 dark:text-gray-200 ">
     <a href="https://www.nytimes.com/">
       {" "}
       <div className="weblinkicon bg-gray-50">

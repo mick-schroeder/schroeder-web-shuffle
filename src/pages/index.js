@@ -19,7 +19,7 @@ const IndexPage = () => (
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
-          <div className="container p-10">
+          <div className="container md:max-w-sm p-10">
             <WebingestIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Ingest
@@ -30,8 +30,9 @@ const IndexPage = () => (
                 Mick Schroeder
               </a>
             </h2>
-            <p className="text-gray-800 dark:text-gray-200 py-6">
-            Channel surf the web. 🔀 Shuffle to a random 🔗 link from curated selection of the best sites on the 🌐 Internet.
+
+            <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
+              Channel surf the web. <span role="img" aria-label="shuffle emoji">🔀</span> Shuffle a random <span role="img" aria-label="link emoji">🔗</span> link from curated selection of the best sites on the <span role="img" aria-label="internet emoji">🌐</span> Internet.
             </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
@@ -80,8 +81,8 @@ const IndexPage = () => (
         <LinkGrid />
         <div>
           {" "}
-          <p className="p-6 text-gray-light">
-            <a href="/shuffle">Shuffle</a> these and more...
+          <p className="text-sm	p-6 text-gray-light">
+            <a href="/shuffle" className="text-indigo-500 font-bold">Shuffle</a> these sites and more...
           </p>
         </div>
       </div>
