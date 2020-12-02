@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <div id="wrapper" className="min-h-screen w-full h-full flex flex-col">
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
         {children}
-        <footer className="bg-gray-800 dark:bg-gray-900 flex-none w-full text-xs text-center light text-gray-200	p-6">
+        <footer className="bg-black flex-none w-full text-xs text-center light text-gray-200	p-6">
           © {new Date().getFullYear()} Mick Schroeder, LLC.
         </footer>
       </div>
