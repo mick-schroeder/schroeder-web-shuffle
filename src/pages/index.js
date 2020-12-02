@@ -19,7 +19,7 @@ const IndexPage = () => (
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
-          <div className="container md:max-w-sm p-10">
+          <div className="container md:max-w-md p-10">
             <WebingestIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Ingest
@@ -32,19 +32,34 @@ const IndexPage = () => (
             </h2>
 
             <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
-              Channel surf the web. <span role="img" aria-label="shuffle emoji">🔀</span> Shuffle a random <span role="img" aria-label="link emoji">🔗</span> link from curated selection of the best sites on the <span role="img" aria-label="internet emoji">🌐</span> Internet.
+              Channel surf the web.{" "}
+              <span role="img" aria-label="shuffle emoji">
+                🔀
+              </span>{" "}
+              Shuffle a random{" "}
+              <span role="img" aria-label="link emoji">
+                🔗
+              </span>{" "}
+              link from curated selection of the best sites on the{" "}
+              <span role="img" aria-label="internet emoji">
+                🌐
+              </span>{" "}
+              Internet.
             </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
-                <Link to="/shuffle"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                >Shuffle
+                <Link
+                  to="/shuffle"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                >
+                  Shuffle
                   <RandomIcon
                     alt="Random"
                     className="fill-current ml-3"
                     width="32"
                     height="32"
-                  /></Link>
+                  />
+                </Link>
               </div>
             </div>
             <div>
@@ -79,7 +94,10 @@ const IndexPage = () => (
         <div>
           {" "}
           <p className="text-sm	p-6 text-gray-light">
-            <Link to="/shuffle" className="text-indigo-500 font-bold">Shuffle</Link> these sites and more...
+            <Link to="/shuffle" className="text-indigo-500 font-bold">
+              Shuffle
+            </Link>{" "}
+            these sites and more...
           </p>
         </div>
       </div>

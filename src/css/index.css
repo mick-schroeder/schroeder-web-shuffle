@@ -7,9 +7,6 @@
 body {
     @apply h-screen leading-normal text-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased;
 }
-.webingest {
-    max-width: 768px;
-}
 
 .weblinkicon {
     @apply p-6 transition duration-500 ease-in-out rounded shadow-xl transform hover:-translate-y-1 hover:scale-110;
@@ -22,6 +19,6 @@ body {
 
 
 .square {
-@apply object-center flex items-center justify-center;
+    @apply object-center flex items-center justify-center;
 
 }
