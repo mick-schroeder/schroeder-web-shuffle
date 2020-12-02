@@ -5,8 +5,8 @@ import React from "react"
 import MickSchroederIcon from "../images/assets/mickschroeder.svg"
 
 const Header = ({ siteTitle }) => (
-  <header className="flex-none bg-black p-6 text-center py-6">
-    <div className="navigation mx-auto">
+  <header className="flex-none bg-black p-6">
+    <div className="navigation flex justify-center">
       <a
         href="https://mickschroeder.com"
         rel="external"

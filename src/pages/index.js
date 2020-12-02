@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -36,18 +36,15 @@ const IndexPage = () => (
             </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
-                <a
-                  href="shuffle"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Shuffle
+                <Link to="/shuffle"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                >Shuffle
                   <RandomIcon
                     alt="Random"
                     className="fill-current ml-3"
                     width="32"
                     height="32"
-                  />
-                </a>
+                  /></Link>
               </div>
             </div>
             <div>
@@ -82,7 +79,7 @@ const IndexPage = () => (
         <div>
           {" "}
           <p className="text-sm	p-6 text-gray-light">
-            <a href="/shuffle" className="text-indigo-500 font-bold">Shuffle</a> these sites and more...
+            <Link to="/shuffle" className="text-indigo-500 font-bold">Shuffle</Link> these sites and more...
           </p>
         </div>
       </div>
