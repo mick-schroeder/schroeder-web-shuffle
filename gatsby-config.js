@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Web Ingest`,
-    description: `Description.`,
+    description: `A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.`,
     titleTemplate: `%s | Web Ingest`,
     author: `@mick_schroeder`,
     siteUrl: `https://webingest.com`,

@@ -8,7 +8,13 @@ const LinkGrid = ({}) => (
       {" "}
       <div className="weblinkicon bg-gray-50">
         <div className="square">
-          <img src="./newyorktimes.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./newyorktimes.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -16,7 +22,13 @@ const LinkGrid = ({}) => (
       {" "}
       <div className="weblinkicon bg-red-500">
         <div className="square">
-          <img src="./reddit.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./reddit.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -28,6 +40,8 @@ const LinkGrid = ({}) => (
             src="./hacker-news-brands.svg"
             alt="Logo"
             className="fill-current"
+            width="64"
+            height="64"
           />
         </div>
       </div>
@@ -36,7 +50,13 @@ const LinkGrid = ({}) => (
       {" "}
       <div className="weblinkicon bg-blue-400">
         <div className="square">
-          <img src="./facebook.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./facebook.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -48,6 +68,8 @@ const LinkGrid = ({}) => (
             src="./instagram-brands.svg"
             alt="Logo"
             className="fill-current"
+            width="64"
+            height="64"
           />
         </div>
       </div>
@@ -55,14 +77,26 @@ const LinkGrid = ({}) => (
     <a href="https://www.drudgereport.com/" target="_blank" rel="noopener">
       <div className="weblinkicon bg-gray-50">
         <div className="square">
-          <img src="./drudgereport.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./drudgereport.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
     <a href="https://imgur.com/">
       <div className="weblinkicon bg-green-400">
         <div className="square">
-          <img src="./imgur.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./imgur.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -70,7 +104,13 @@ const LinkGrid = ({}) => (
       {" "}
       <div className="weblinkicon bg-red-500">
         <div className="square">
-          <img src="./youtube.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./youtube.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -79,7 +119,13 @@ const LinkGrid = ({}) => (
       <div className="weblinkicon bg-pink-400">
         <div className="square">
           {" "}
-          <img src="./trakt.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./trakt.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
@@ -91,6 +137,8 @@ const LinkGrid = ({}) => (
             src="./thewashingtonpost.svg"
             alt="Logo"
             className="fill-current"
+            width="64"
+            height="64"
           />
         </div>
       </div>
@@ -98,14 +146,26 @@ const LinkGrid = ({}) => (
     <a href="https://www.imdb.com/chart/moviemeter/">
       <div className="weblinkicon bg-yellow-300">
         <div className="square">
-          <img src="./imdb.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./imdb.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>
     <a href="https://store.steampowered.com/">
       <div className="weblinkicon bg-blue-900">
         <div className="square">
-          <img src="./steam.svg" alt="Logo" className="fill-current" />
+          <img
+            src="./steam.svg"
+            alt="Logo"
+            className="fill-current"
+            width="64"
+            height="64"
+          />
         </div>
       </div>
     </a>

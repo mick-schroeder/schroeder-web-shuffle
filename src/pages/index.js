@@ -30,17 +30,18 @@ const IndexPage = () => (
                 Mick Schroeder
               </a>
             </h2>
-
             <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
-              Channel surf the web.{" "}
+              A passive web browsing experience. Channel surf the web.{" "}
+            </p>
+            <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
               <span role="img" aria-label="shuffle emoji">
                 🔀
               </span>{" "}
-              Shuffle a random{" "}
+              Shuffle and be sent to a random{" "}
               <span role="img" aria-label="link emoji">
                 🔗
               </span>{" "}
-              link from curated selection of the best sites on the{" "}
+              link from a curated selection of the best sites on the{" "}
               <span role="img" aria-label="internet emoji">
                 🌐
               </span>{" "}
@@ -94,7 +95,10 @@ const IndexPage = () => (
         <div>
           {" "}
           <p className="text-sm	p-6 text-gray-light">
-            <Link to="/shuffle" className="text-indigo-600 dark:text-indigo-400 font-bold">
+            <Link
+              to="/shuffle"
+              className="text-indigo-600 dark:text-indigo-400 font-bold"
+            >
               Shuffle
             </Link>{" "}
             these sites and more...
