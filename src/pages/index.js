@@ -94,7 +94,7 @@ const IndexPage = () => (
         <div>
           {" "}
           <p className="text-sm	p-6 text-gray-light">
-            <Link to="/shuffle" className="text-indigo-500 font-bold">
+            <Link to="/shuffle" className="text-indigo-600 dark:text-indigo-400 font-bold">
               Shuffle
             </Link>{" "}
             these sites and more...
