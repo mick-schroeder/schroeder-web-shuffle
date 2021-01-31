@@ -17,11 +17,13 @@ import GoogleChromeIcon from "../images/assets/googlechrome.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div class="text-center">
     <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
+    </div>
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
-          <div className="container md:max-w-md p-10">
+          <div className="container md:max-w-md p-5">
             <WebShuffleIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Shuffle
