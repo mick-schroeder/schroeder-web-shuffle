@@ -29,9 +29,15 @@ const Layout = ({ children }) => {
         {children}
         <footer className="bg-black flex-none w-full text-xs text-center light text-gray-200	p-6">
           © {new Date().getFullYear()} Mick Schroeder, LLC. -
-          <a rel="external" className="text-indigo-600 dark:text-indigo-400 font-semibold"
-          aria-label="Mick Schroeder Logo"
-          href="https://forms.gle/NUfsWq98uTopmm2S9"> Request new site</a>
+          <a
+            rel="external"
+            className="text-indigo-600 dark:text-indigo-400 font-semibold"
+            aria-label="Mick Schroeder Logo"
+            href="https://forms.gle/NUfsWq98uTopmm2S9"
+          >
+            {" "}
+            Request new site
+          </a>
         </footer>
       </div>
     </>

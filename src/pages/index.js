@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import AdSense from 'react-adsense';
+import AdSense from "react-adsense"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LinkGrid from "../components/linkGrid"
 
 // left
-import webshuffleIcon from "../images/assets/icon-web-shuffle.svg"
+import WebShuffleIcon from "../images/assets/icon-web-shuffle.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -17,15 +17,12 @@ import GoogleChromeIcon from "../images/assets/googlechrome.svg"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
-    <AdSense.Google
-          client='ca-pub-6344797609391119'
-          slot='1966196909'
-        />
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
           <div className="container md:max-w-md p-10">
-            <webshuffleIcon alt="Logo" width="120" height="120" />
+            <WebShuffleIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Shuffle
             </h1>
@@ -36,13 +33,13 @@ const IndexPage = () => (
               </a>
             </h2>
             <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
-            <span role="img" aria-label="shuffle emoji">
+              <span role="img" aria-label="shuffle emoji">
                 🔀
               </span>{" "}
               Shuffle the web.{" "}
             </p>
             <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
-            Random curated{" "}
+              Random curated{" "}
               <span role="img" aria-label="link emoji">
                 🔗
               </span>{" "}
@@ -87,8 +84,9 @@ const IndexPage = () => (
               </div>
               <div>
                 <p className="text-gray-800 dark:text-gray-200">
-                  Bookmark: <a href="https://webshuffle.mickschroeder.com/shuffle">🔀</a> (Drag
-                  to your toolbar)
+                  Bookmark:{" "}
+                  <a href="https://webshuffle.mickschroeder.com/shuffle">🔀</a>{" "}
+                  (Drag to your toolbar)
                 </p>
               </div>
             </div>
