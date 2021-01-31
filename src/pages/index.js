@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AdSense from 'react-adsense';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,6 +18,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
+    <AdSense.Google
+          client='ca-pub-6344797609391119'
+          slot='1966196909'
+        />
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
           <div className="container md:max-w-md p-10">

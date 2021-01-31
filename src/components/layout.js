@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import AdSense from 'react-adsense';
 
 import Header from "./header"
 
@@ -26,10 +25,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <div id="wrapper" className="min-h-screen w-full h-full flex flex-col">
-        <AdSense.Google
-          client='ca-pub-6344797609391119'
-          slot='1966196909'
-        />
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
         {children}
         <footer className="bg-black flex-none w-full text-xs text-center light text-gray-200	p-6">
