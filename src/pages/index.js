@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import LinkGrid from "../components/linkGrid"
 
 // left
-import WebingestIcon from "../images/assets/icon-web-ingest.svg"
+import WebingestIcon from "../images/assets/icon-web-shuffle.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -22,7 +22,7 @@ const IndexPage = () => (
           <div className="container md:max-w-md p-10">
             <WebingestIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
-              Web Ingest
+              Web Shuffle
             </h1>
             <h2 className="text-lg tracking-tight text-gray-700 dark:text-blue-300 sm:text-lg md:text-xl">
               by{" "}
@@ -31,17 +31,17 @@ const IndexPage = () => (
               </a>
             </h2>
             <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
-              A passive web browsing experience. Channel surf the web.{" "}
-            </p>
-            <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
-              <span role="img" aria-label="shuffle emoji">
+            <span role="img" aria-label="shuffle emoji">
                 🔀
               </span>{" "}
-              Shuffle and be sent to a random{" "}
+              Shuffle the web.{" "}
+            </p>
+            <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
+            Random curated{" "}
               <span role="img" aria-label="link emoji">
                 🔗
               </span>{" "}
-              link from a curated selection of the best sites on the{" "}
+              selection from the most important sites on the{" "}
               <span role="img" aria-label="internet emoji">
                 🌐
               </span>{" "}
@@ -82,7 +82,7 @@ const IndexPage = () => (
               </div>
               <div>
                 <p className="text-gray-800 dark:text-gray-200">
-                  Bookmark: <a href="https://webingest.com/shuffle">🔀</a> (Drag
+                  Bookmark: <a href="https://webshuffle.mickschroeder.com/shuffle">🔀</a> (Drag
                   to your toolbar)
                 </p>
               </div>

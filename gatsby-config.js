@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Ingest`,
+    title: `Web Shuffle`,
     description: `A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.`,
-    titleTemplate: `%s | Web Ingest`,
+    titleTemplate: `%s | Web Shuffle`,
     author: `@mick_schroeder`,
-    siteUrl: `https://webingest.com`,
-    url: `https://webingest.com`,
+    siteUrl: `https://webshuffle.mickschroeder.com`,
+    url: `https://webshuffle.mickschroeder.com`,
     image: `icon-webingest.png`,
     twitterUsername: `@mick_schroeder`,
   },
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://webingest.com",
-        sitemap: "https://webingest.com/sitemap.xml",
+        host: "https://webshuffle.mickschroeder.com",
+        sitemap: "https://webshuffle.mickschroeder.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
         env: {
           development: {
@@ -62,7 +62,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Web Ingest`,
+        name: `Web Shuffle`,
         short_name: `WebIngest`,
         icon: `src/images/assets/icon-webingest.svg`,
         start_url: `.`,

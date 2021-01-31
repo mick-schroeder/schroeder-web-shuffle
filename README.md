@@ -1,4 +1,4 @@
-# Web Ingest
+# Web Shuffle
 
 A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.
 
@@ -13,10 +13,10 @@ A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sen
 ### Development
 
     ```shell
-    git clone https://github.com/mick-schroeder/gatsby-web-ingest.git
-    cd gatsby-web-ingest
+    git clone https://github.com/mick-schroeder/gatsby-web-shuffle.git
+    cd gatsby-web-shuffle
     npm install
-    gatsby develop
+    npm run develop
     ```
 
 ### Production

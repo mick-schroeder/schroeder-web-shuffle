@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-web-ingest",
+  "name": "gatsby-web-shuffle",
   "private": true,
   "description": "A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.",
   "version": "1.0.0",
@@ -49,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mick-schroeder/gatsby-web-ingest"
+    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle"
   },
   "bugs": {
-    "url": "https://github.com/mick-schroeder/gatsby-web-ingest/issues"
+    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle/issues"
   }
 }
