@@ -6,7 +6,7 @@ module.exports = {
     author: `@mick_schroeder`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
     url: `https://webshuffle.mickschroeder.com`,
-    image: `icon-webingest.png`,
+    image: `icon-webshuffle.png`,
     twitterUsername: `@mick_schroeder`,
   },
   plugins: [
@@ -63,8 +63,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Web Shuffle`,
-        short_name: `WebIngest`,
-        icon: `src/images/assets/icon-webingest.svg`,
+        short_name: `webshuffle`,
+        icon: `src/images/assets/icon-webshuffle.svg`,
         start_url: `.`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,

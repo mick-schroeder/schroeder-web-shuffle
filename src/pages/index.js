@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import LinkGrid from "../components/linkGrid"
 
 // left
-import WebingestIcon from "../images/assets/icon-web-shuffle.svg"
+import webshuffleIcon from "../images/assets/icon-web-shuffle.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
         <div className="md:p-10 flex flex-row-reverse ">
           <div className="container md:max-w-md p-10">
-            <WebingestIcon alt="Logo" width="120" height="120" />
+            <webshuffleIcon alt="Logo" width="120" height="120" />
             <h1 className="py-6 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
               Web Shuffle
             </h1>

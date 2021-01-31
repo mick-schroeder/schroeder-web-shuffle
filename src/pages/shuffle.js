@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Redirect from "../components/redirect"
 
 // icons
-import WebingestIcon from "../images/assets/icon-web-shuffle.svg"
+import webshuffleIcon from "../images/assets/icon-web-shuffle.svg"
 
 const ShufflePage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const ShufflePage = () => (
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap">
       <div className="w-full flex items-stretch justify-center bg-gray-100 dark:bg-gray-800">
         <div className="container p-10 text-center mt-10">
-          <WebingestIcon
+          <webshuffleIcon
             className=" mx-auto"
             alt="Logo"
             width="120"
