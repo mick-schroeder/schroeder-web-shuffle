@@ -18,7 +18,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div class="text-center">
-    <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
+      <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap  shadow-2xl">
       <div className="w-full md:w-1/2 flex items-stretch justify-end bg-gray-200 dark:bg-gray-800">
@@ -54,7 +54,7 @@ const IndexPage = () => (
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
                 <Link
-                  to="/shuffle"
+                  to="/redirect"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Shuffle
@@ -101,7 +101,7 @@ const IndexPage = () => (
           {" "}
           <p className="text-sm	p-6 text-gray-light">
             <Link
-              to="/shuffle"
+              to="/redirect"
               className="text-indigo-600 dark:text-indigo-400 font-bold"
             >
               Shuffle
