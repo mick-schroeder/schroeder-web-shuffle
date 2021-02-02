@@ -16,12 +16,6 @@ module.exports = {
         trackingIds: ["G-RMM4MSRDQM"],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-6344797609391119`,
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",
