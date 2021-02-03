@@ -23,7 +23,6 @@ export default function HTML(props) {
         {props.postBodyComponents}
       </body>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <script dangerouslySetInnerHTML={{__html: '(window.adsbygoogle = window.adsbygoogle || []).push({});'}}></script>
     </html>
   )
 }
