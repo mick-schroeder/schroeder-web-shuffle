@@ -87,7 +87,7 @@ const IndexPage = () => (
               <div>
                 <p className="text-gray-800 dark:text-gray-200">
                   Bookmark:{" "}
-                  <a href="https://webshuffle.mickschroeder.com/shuffle">🔀</a>{" "}
+                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
                   (Drag to your toolbar)
                 </p>
               </div>
