@@ -45,7 +45,7 @@ const IndexPage = () => (
               <span role="img" aria-label="link emoji">
                 🔗
               </span>{" "}
-              link from the most important sites on the{" "}
+              link from the best sites on the{" "}
               <span role="img" aria-label="internet emoji">
                 🌐
               </span>{" "}
