@@ -41,11 +41,11 @@ const IndexPage = () => (
               Shuffle the web.{" "}
             </p>
             <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
-              Random curated{" "}
+              Shuffle a random curated{" "}
               <span role="img" aria-label="link emoji">
                 🔗
               </span>{" "}
-              selection from the most important sites on the{" "}
+              link from the most important sites on the{" "}
               <span role="img" aria-label="internet emoji">
                 🌐
               </span>{" "}
