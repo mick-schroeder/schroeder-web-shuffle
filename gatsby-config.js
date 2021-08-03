@@ -63,8 +63,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Web Shuffle`,
-        short_name: `webshuffle`,
-        icon: `src/images/assets/icon-webshuffle.svg`,
+        short_name: `WebShuffle`,
+        icon: `src/images/assets/icon-web-shuffle-square.svg`,
         start_url: `.`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
