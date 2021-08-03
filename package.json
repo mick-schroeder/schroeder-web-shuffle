@@ -1,8 +1,8 @@
 {
   "name": "gatsby-web-shuffle",
   "private": true,
-  "description": "A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.",
-  "version": "1.0.0",
+  "description": "Shuffle to the best sites across the web.",
+  "version": "1.0.1",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.2.4",

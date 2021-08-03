@@ -1,6 +1,8 @@
-# Web Shuffle
+# 🔀 Web Shuffle
 
-A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.
+A passive web browsing experience. Channel surf the web. 
+ 
+Shuffle to the best sites across the web
 
 ## Tech Stack
 

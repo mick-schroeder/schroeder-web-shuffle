@@ -41,15 +41,7 @@ const IndexPage = () => (
               Shuffle the web.{" "}
             </p>
             <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
-              Shuffle a random curated{" "}
-              <span role="img" aria-label="link emoji">
-                🔗
-              </span>{" "}
-              link from the best sites on the{" "}
-              <span role="img" aria-label="internet emoji">
-                🌐
-              </span>{" "}
-              Internet.
+              Shuffle a random link from the best sites across the web.
             </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
@@ -88,7 +80,7 @@ const IndexPage = () => (
                 <p className="text-gray-800 dark:text-gray-200">
                   Bookmark:{" "}
                   <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
-                  (Drag to your toolbar)
+                  (Drag to your Favorites Bar)
                 </p>
               </div>
             </div>
