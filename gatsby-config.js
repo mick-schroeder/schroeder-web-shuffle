@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Web Shuffle`,
-    description: `A passive web browsing experience. Channel surf the web. 🔀 Shuffle and be sent to a random 🔗 link from a curated selection of the best sites on the 🌐 Internet.`,
+    description: `Shuffle to the best sites across the web.`,
     titleTemplate: `%s | Web Shuffle`,
     author: `@mick_schroeder`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
@@ -66,8 +66,8 @@ module.exports = {
         short_name: `WebShuffle`,
         icon: `src/images/assets/icon-web-shuffle-square.svg`,
         start_url: `.`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#000`,
+        theme_color: `#1F2838`,
         display: `standalone`,
         crossOrigin: `use-credentials`,
       },
