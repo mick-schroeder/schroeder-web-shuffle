@@ -37,7 +37,19 @@ const Layout = ({ children }) => {
           >
             {" "}
             Request new site
-          </a>
+          </a> -
+          <a
+            rel="external"
+            className="text-indigo-600 dark:text-indigo-400 font-semibold"
+            aria-label="Mick Schroeder Contact"
+            href="mailto:contact@mickschroeder.com"
+          >
+            {" "}
+            Contact
+          </a><br/>
+          This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br/>
+      These links are being provided as a convenience and for informational purposes only; they do not constitute an endorsement or an approval or opinions of that organization or individual. <br/>
+      No responsibility for the accuracy, legality or content of the external site or for that of subsequent links. Contact the external site for answers to questions regarding its content.
         </footer>
       </div>
     </>
