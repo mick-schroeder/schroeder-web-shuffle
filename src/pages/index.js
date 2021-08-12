@@ -66,7 +66,7 @@ const IndexPage = () => (
               <div className="my-12">
                 <div className="inline-flex rounded-md shadow">
                   <a
-                    href="shuffle"
+                    href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
                     className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
                   >
                     <GoogleChromeIcon
@@ -75,7 +75,7 @@ const IndexPage = () => (
                       width="32"
                       height="32"
                     />
-                    (Coming Soon)
+                    Chrome Extension
                   </a>
                 </div>
               </div>
