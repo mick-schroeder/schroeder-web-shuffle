@@ -1,332 +1,292 @@
 {
-    "weblinks": [
-        {
-          "Aljazeera": "Amazon",
-          "https://www.aljazeera.com/": "https://amazon.com"
-        },
-        {
-          "Aljazeera": "Anandtech",
-          "https://www.aljazeera.com/": "https://www.anandtech.com/"
-        },
-        {
-          "Aljazeera": "Apple",
-          "https://www.aljazeera.com/": "https://apple.com"
-        },
-        {
-          "Aljazeera": "Ars Technica",
-          "https://www.aljazeera.com/": "https://arstechnica.com/"
-        },
-        {
-          "Aljazeera": "Associated Press News",
-          "https://www.aljazeera.com/": "https://apnews.com/"
-        },
-        {
-          "Aljazeera": "Axios",
-          "https://www.aljazeera.com/": "https://www.axios.com/"
-        },
-        {
-          "Aljazeera": "BBC",
-          "https://www.aljazeera.com/": "https://www.bbc.com/news"
-        },
-        {
-          "Aljazeera": "Bloomberg",
-          "https://www.aljazeera.com/": "https://www.bloomberg.com/"
-        },
-        {
-          "Aljazeera": "Boing Boing",
-          "https://www.aljazeera.com/": "https://boingboing.net/"
-        },
-        {
-          "Aljazeera": "BuzzFeed",
-          "https://www.aljazeera.com/": "https://www.buzzfeed.com/"
-        },
-        {
-          "Aljazeera": "Citation Generator",
-          "https://www.aljazeera.com/": "https://cite.mickschroeder.com"
-        },
-        {
-          "Aljazeera": "CNN",
-          "https://www.aljazeera.com/": "https://www.cnn.com/"
-        },
-        {
-          "Aljazeera": "Digitaltrends",
-          "https://www.aljazeera.com/": "https://www.digitaltrends.com/"
-        },
-        {
-          "Aljazeera": "Drudge Report",
-          "https://www.aljazeera.com/": "https://www.drudgereport.com/"
-        },
-        {
-          "Aljazeera": "eBay",
-          "https://www.aljazeera.com/": "https://www.ebay.com/"
-        },
-        {
-          "Aljazeera": "Engadget",
-          "https://www.aljazeera.com/": "https://www.engadget.com/"
-        },
-        {
-          "Aljazeera": "ESPN",
-          "https://www.aljazeera.com/": "https://www.espn.com/"
-        },
-        {
-          "Aljazeera": "Etsy",
-          "https://www.aljazeera.com/": "https://etsy.com"
-        },
-        {
-          "Aljazeera": "Facebook",
-          "https://www.aljazeera.com/": "https://www.facebook.com/"
-        },
-        {
-          "Aljazeera": "Fastcompany",
-          "https://www.aljazeera.com/": "https://www.fastcompany.com/"
-        },
-        {
-          "Aljazeera": "Forekast",
-          "https://www.aljazeera.com/": "https://forekast.com/"
-        },
-        {
-          "Aljazeera": "Fox News",
-          "https://www.aljazeera.com/": "https://www.foxnews.com/"
-        },
-        {
-          "Aljazeera": "Gizmodo",
-          "https://www.aljazeera.com/": "https://gizmodo.com/"
-        },
-        {
-          "Aljazeera": "Google",
-          "https://www.aljazeera.com/": "https://news.google.com/"
-        },
-        {
-          "Aljazeera": "Harvard Business Review",
-          "https://www.aljazeera.com/": "https://hbr.org/"
-        },
-        {
-          "Aljazeera": "Huffpost",
-          "https://www.aljazeera.com/": "https://www.huffpost.com/"
-        },
-        {
-          "Aljazeera": "IMDB",
-          "https://www.aljazeera.com/": "https://www.imdb.com/chart/moviemeter"
-        },
-        {
-          "Aljazeera": "Imgur",
-          "https://www.aljazeera.com/": "https://imgur.com/"
-        },
-        {
-          "Aljazeera": "Instagram",
-          "https://www.aljazeera.com/": "https://www.instagram.com/"
-        },
-        {
-          "Aljazeera": "LA Times",
-          "https://www.aljazeera.com/": "https://www.latimes.com/"
-        },
-        {
-          "Aljazeera": "Mashable",
-          "https://www.aljazeera.com/": "https://mashable.com/"
-        },
-        {
-          "Aljazeera": "Metacritic",
-          "https://www.aljazeera.com/": "https://www.metacritic.com/"
-        },
-        {
-          "Aljazeera": "Mick Schroeder",
-          "https://www.aljazeera.com/": "https://mickschroeder.com"
-        },
-        {
-          "Aljazeera": "Nasa",
-          "https://www.aljazeera.com/": "https://www.nasa.gov/"
-        },
-        {
-          "Aljazeera": "National Review",
-          "https://www.aljazeera.com/": "https://www.nationalreview.com/"
-        },
-        {
-          "Aljazeera": "Nature",
-          "https://www.aljazeera.com/": "https://www.nature.com/"
-        },
-        {
-          "Aljazeera": "New Yorker",
-          "https://www.aljazeera.com/": "https://www.newyorker.com/"
-        },
-        {
-          "Aljazeera": "NPR",
-          "https://www.aljazeera.com/": "https://www.npr.org/"
-        },
-        {
-          "Aljazeera": "Nytimes",
-          "https://www.aljazeera.com/": "https://www.nytimes.com/"
-        },
-        {
-          "Aljazeera": "PBS",
-          "https://www.aljazeera.com/": "https://www.pbs.org/"
-        },
-        {
-          "Aljazeera": "Pocket",
-          "https://www.aljazeera.com/": "https://getpocket.com/explore"
-        },
-        {
-          "Aljazeera": "Politico",
-          "https://www.aljazeera.com/": "https://www.politico.com/"
-        },
-        {
-          "Aljazeera": "Polygon",
-          "https://www.aljazeera.com/": "https://www.polygon.com/"
-        },
-        {
-          "Aljazeera": "Propublica",
-          "https://www.aljazeera.com/": "https://www.propublica.org/"
-        },
-        {
-          "Aljazeera": "Re-code",
-          "https://www.aljazeera.com/": "https://www.vox.com/recode"
-        },
-        {
-          "Aljazeera": "Realclearpolitics",
-          "https://www.aljazeera.com/": "https://www.realclearpolitics.com/"
-        },
-        {
-          "Aljazeera": "Reddit",
-          "https://www.aljazeera.com/": "https://www.reddit.com/"
-        },
-        {
-          "Aljazeera": "Reuters",
-          "https://www.aljazeera.com/": "https://www.reuters.com/"
-        },
-        {
-          "Aljazeera": "Rotton Tomatoes",
-          "https://www.aljazeera.com/": "https://www.rottentomatoes.com/"
-        },
-        {
-          "Aljazeera": "Salon",
-          "https://www.aljazeera.com/": "https://www.salon.com/"
-        },
-        {
-          "Aljazeera": "Sci News",
-          "https://www.aljazeera.com/": "http://www.sci-news.com/"
-        },
-        {
-          "Aljazeera": "Science",
-          "https://www.aljazeera.com/": "https://www.science.org/"
-        },
-        {
-          "Aljazeera": "ScienceDaily",
-          "https://www.aljazeera.com/": "https://www.sciencedaily.com/"
-        },
-        {
-          "Aljazeera": "Scientific American",
-          "https://www.aljazeera.com/": "https://www.scientificamerican.com/"
-        },
-        {
-          "Aljazeera": "Skimfeed",
-          "https://www.aljazeera.com/": "https://skimfeed.com/"
-        },
-        {
-          "Aljazeera": "Slashdot",
-          "https://www.aljazeera.com/": "https://slashdot.org/"
-        },
-        {
-          "Aljazeera": "Slate",
-          "https://www.aljazeera.com/": "https://slate.com/"
-        },
-        {
-          "Aljazeera": "Steam",
-          "https://www.aljazeera.com/": "https://store.steampowered.com/"
-        },
-        {
-          "Aljazeera": "Techcrunch",
-          "https://www.aljazeera.com/": "https://techcrunch.com/"
-        },
-        {
-          "Aljazeera": "Techmeme",
-          "https://www.aljazeera.com/": "https://www.techmeme.com/"
-        },
-        {
-          "Aljazeera": "Techradar",
-          "https://www.aljazeera.com/": "https://www.techradar.com/"
-        },
-        {
-          "Aljazeera": "The Atlantic",
-          "https://www.aljazeera.com/": "https://www.theatlantic.com/"
-        },
-        {
-          "Aljazeera": "The Atlantic Photo",
-          "https://www.aljazeera.com/": "https://www.theatlantic.com/photo/"
-        },
-        {
-          "Aljazeera": "The Guardian",
-          "https://www.aljazeera.com/": "https://www.theguardian.com/"
-        },
-        {
-          "Aljazeera": "The Times",
-          "https://www.aljazeera.com/": "https://www.thetimes.co.uk/"
-        },
-        {
-          "Aljazeera": "Theverge",
-          "https://www.aljazeera.com/": "https://www.theverge.com/"
-        },
-        {
-          "Aljazeera": "Tiktok",
-          "https://www.aljazeera.com/": "https://www.tiktok.com/"
-        },
-        {
-          "Aljazeera": "Tomshardware",
-          "https://www.aljazeera.com/": "https://www.tomshardware.com/"
-        },
-        {
-          "Aljazeera": "Trakt - Movies",
-          "https://www.aljazeera.com/": "https://trakt.tv/movies/trending"
-        },
-        {
-          "Aljazeera": "Trakt - Television",
-          "https://www.aljazeera.com/": "https://trakt.tv/shows/trending"
-        },
-        {
-          "Aljazeera": "Twitter",
-          "https://www.aljazeera.com/": "https://twitter.com/"
-        },
-        {
-          "Aljazeera": "Urban Dictionary",
-          "https://www.aljazeera.com/": "https://www.urbandictionary.com/"
-        },
-        {
-          "Aljazeera": "USA Today",
-          "https://www.aljazeera.com/": "https://www.usatoday.com/"
-        },
-        {
-          "Aljazeera": "Variety",
-          "https://www.aljazeera.com/": "https://variety.com"
-        },
-        {
-          "Aljazeera": "Vox",
-          "https://www.aljazeera.com/": "https://www.vox.com/"
-        },
-        {
-          "Aljazeera": "Wall Street Journal",
-          "https://www.aljazeera.com/": "https://www.wsj.com/"
-        },
-        {
-          "Aljazeera": "Washington Post",
-          "https://www.aljazeera.com/": "https://www.washingtonpost.com/"
-        },
-        {
-          "Aljazeera": "Web Shuffle",
-          "https://www.aljazeera.com/": "https://webshuffle.mickschroeder.com"
-        },
-        {
-          "Aljazeera": "Wikipedia",
-          "https://www.aljazeera.com/": "https://en.wikipedia.org/wiki/Main_Page"
-        },
-        {
-          "Aljazeera": "Wired",
-          "https://www.aljazeera.com/": "https://www.wired.com/"
-        },
-        {
-          "Aljazeera": "Yahoo",
-          "https://www.aljazeera.com/": "https://news.yahoo.com/"
-        },
-        {
-          "Aljazeera": "Youtube",
-          "https://www.aljazeera.com/": "https://www.youtube.com/"
-        }
-      ]
-    }
+  "weblinks": [
+  {
+    "title": "Aljazeera",
+    "url": "https://www.aljazeera.com/"
+  },
+  {
+    "title": "Amazon",
+    "url": "https://amazon.com"
+  },
+  {
+    "title": "Anandtech",
+    "url": "https://www.anandtech.com/"
+  },
+  {
+    "title": "Ars Technica",
+    "url": "https://arstechnica.com/"
+  },
+  {
+    "title": "Associated Press News",
+    "url": "https://apnews.com/"
+  },
+  {
+    "title": "Axios",
+    "url": "https://www.axios.com/"
+  },
+  {
+    "title": "BBC",
+    "url": "https://www.bbc.com/news"
+  },
+  {
+    "title": "Bloomberg",
+    "url": "https://www.bloomberg.com/"
+  },
+  {
+    "title": "Boing Boing",
+    "url": "https://boingboing.net/"
+  },
+  {
+    "title": "Citation Generator",
+    "url": "https://cite.mickschroeder.com"
+  },
+  {
+    "title": "CNN",
+    "url": "https://www.cnn.com/"
+  },
+  {
+    "title": "Digitaltrends",
+    "url": "https://www.digitaltrends.com/"
+  },
+  {
+    "title": "Drudge Report",
+    "url": "https://www.drudgereport.com/"
+  },
+  {
+    "title": "eBay",
+    "url": "https://www.ebay.com/"
+  },
+  {
+    "title": "Engadget",
+    "url": "https://www.engadget.com/"
+  },
+  {
+    "title": "Esciencenews",
+    "url": "http://esciencenews.com/"
+  },
+  {
+    "title": "ESPN",
+    "url": "https://www.espn.com/"
+  },
+  {
+    "title": "Etsy",
+    "url": "https://etsy.com"
+  },
+  {
+    "title": "Facebook",
+    "url": "https://www.facebook.com/"
+  },
+  {
+    "title": "Fastcompany",
+    "url": "https://www.fastcompany.com/"
+  },
+  {
+    "title": "Forekast",
+    "url": "https://forekast.com/"
+  },
+  {
+    "title": "Gizmodo",
+    "url": "https://gizmodo.com/"
+  },
+  {
+    "title": "Google",
+    "url": "https://news.google.com/"
+  },
+  {
+    "title": "Huffpost",
+    "url": "https://www.huffpost.com/"
+  },
+  {
+    "title": "IMDB",
+    "url": "https://www.imdb.com/chart/moviemeter"
+  },
+  {
+    "title": "Imgur",
+    "url": "https://imgur.com/"
+  },
+  {
+    "title": "Instagram",
+    "url": "https://www.instagram.com/"
+  },
+  {
+    "title": "LA Times",
+    "url": "https://www.latimes.com/"
+  },
+  {
+    "title": "Metacritic",
+    "url": "https://www.metacritic.com/"
+  },
+  {
+    "title": "Mick Schroeder",
+    "url": "https://mickschroeder.com"
+  },
+  {
+    "title": "National Review",
+    "url": "https://www.nationalreview.com/"
+  },
+  {
+    "title": "New Yorker",
+    "url": "https://www.newyorker.com/"
+  },
+  {
+    "title": "NPR",
+    "url": "https://www.npr.org/"
+  },
+  {
+    "title": "Nytimes",
+    "url": "https://www.nytimes.com/"
+  },
+  {
+    "title": "Pocket",
+    "url": "https://getpocket.com/explore"
+  },
+  {
+    "title": "Politico",
+    "url": "https://www.politico.com/"
+  },
+  {
+    "title": "Polygon",
+    "url": "https://www.polygon.com/"
+  },
+  {
+    "title": "Propublica",
+    "url": "https://www.propublica.org/"
+  },
+  {
+    "title": "Re-code",
+    "url": "https://www.vox.com/recode"
+  },
+  {
+    "title": "Realclearpolitics",
+    "url": "https://www.realclearpolitics.com/"
+  },
+  {
+    "title": "Reddit",
+    "url": "https://www.reddit.com/"
+  },
+  {
+    "title": "Reuters",
+    "url": "https://www.reuters.com/"
+  },
+  {
+    "title": "Rotton Tomatoes",
+    "url": "https://www.rottentomatoes.com/"
+  },
+  {
+    "title": "Salon",
+    "url": "https://www.salon.com/"
+  },
+  {
+    "title": "Sci News",
+    "url": "http://www.sci-news.com/"
+  },
+  {
+    "title": "Skimfeed",
+    "url": "https://skimfeed.com/"
+  },
+  {
+    "title": "Slashdot",
+    "url": "https://slashdot.org/"
+  },
+  {
+    "title": "Slate",
+    "url": "https://slate.com/"
+  },
+  {
+    "title": "Steam",
+    "url": "https://store.steampowered.com/"
+  },
+  {
+    "title": "Techcrunch",
+    "url": "https://techcrunch.com/"
+  },
+  {
+    "title": "Techmeme",
+    "url": "https://www.techmeme.com/"
+  },
+  {
+    "title": "Techradar",
+    "url": "https://www.techradar.com/"
+  },
+  {
+    "title": "The Atlantic",
+    "url": "https://www.theatlantic.com/"
+  },
+  {
+    "title": "The Atlantic Photo",
+    "url": "https://www.theatlantic.com/photo/"
+  },
+  {
+    "title": "The Guardian",
+    "url": "https://www.theguardian.com/"
+  },
+  {
+    "title": "The Times",
+    "url": "https://www.thetimes.co.uk/"
+  },
+  {
+    "title": "Theverge",
+    "url": "https://www.theverge.com/"
+  },
+  {
+    "title": "Tomshardware",
+    "url": "https://www.tomshardware.com/"
+  },
+  {
+    "title": "Trakt - Movies",
+    "url": "https://trakt.tv/movies/trending"
+  },
+  {
+    "title": "Trakt - Television",
+    "url": "https://trakt.tv/shows/trending"
+  },
+  {
+    "title": "Twitter",
+    "url": "https://twitter.com/"
+  },
+  {
+    "title": "USA Today",
+    "url": "https://www.usatoday.com/"
+  },
+  {
+    "title": "Variety",
+    "url": "https://variety.com"
+  },
+  {
+    "title": "Vox",
+    "url": "https://www.vox.com/"
+  },
+  {
+    "title": "Wall Street Journal",
+    "url": "https://www.wsj.com/"
+  },
+  {
+    "title": "Washington Post",
+    "url": "https://www.washingtonpost.com/"
+  },
+  {
+    "title": "Web Shuffle",
+    "url": "https://webshuffle.mickschroeder.com"
+  },
+  {
+    "title": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Main_Page"
+  },
+  {
+    "title": "Wired",
+    "url": "https://www.wired.com/"
+  },
+  {
+    "title": "Yahoo",
+    "url": "https://news.yahoo.com/"
+  },
+  {
+    "title": "Youtube",
+    "url": "https://www.youtube.com/"
+  },
+  {
+    "title": "Tiktok",
+    "url": "https://www.tiktok.com/"
+  }
+]
+}
