@@ -2,7 +2,7 @@
 
 A passive web browsing experience. Channel surf the web. 
  
-Shuffle to the best sites across the web.
+Shuffle to the most influential sites across the web.
 
 ## Tech Stack
 

@@ -17,7 +17,7 @@ class Redirect extends React.Component {
         <div className="inline-flex rounded-md shadow-lg">
           <a
             href="redirect"
-            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
           >
             Redirect Now
           </a>

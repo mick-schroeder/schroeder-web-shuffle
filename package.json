@@ -1,7 +1,7 @@
 {
   "name": "gatsby-web-shuffle",
   "private": true,
-  "description": "Shuffle to the best sites across the web.",
+  "description": "Shuffle to the most influential sites across the web.",
   "version": "1.0.1",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
@@ -12,6 +12,7 @@
     "gatsby-plugin-google-gtag": "^3.14.0",
     "gatsby-plugin-layout": "^2.14.0",
     "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-next-seo": "^1.8.0",
     "gatsby-plugin-offline": "^4.14.0",
     "gatsby-plugin-postcss": "^4.14.0",
     "gatsby-plugin-purgecss": "^6.0.2",
@@ -30,6 +31,7 @@
     "react-adsense": "^0.1.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.1.2",
     "react-icons": "^4.2.0",
     "tailwindcss": "^2.2.16"
   },

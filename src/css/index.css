@@ -19,6 +19,6 @@ body {
 
 
 .square {
-    @apply object-center flex items-center justify-center;
+    @apply object-center flex items-center justify-center max-w-xs;
 
 }

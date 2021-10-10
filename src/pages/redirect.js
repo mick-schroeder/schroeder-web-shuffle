@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import Redirect from "../components/redirect"
 
 // icons
@@ -9,7 +9,7 @@ import WebShuffleIcon from "../images/assets/icon-web-shuffle.svg"
 
 const ShufflePage = () => (
   <Layout>
-    <SEO title="Home" />
+    <GatsbySeo noindex={true} />
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap">
       <div className="w-full flex items-stretch justify-center bg-gray-100 dark:bg-gray-800">
         <div className="container p-10 text-center mt-10">

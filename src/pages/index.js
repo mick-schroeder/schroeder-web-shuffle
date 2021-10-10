@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import AdSense from "react-adsense"
-
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import LinkGrid from "../components/linkGrid"
 
 // left
@@ -16,8 +15,8 @@ import GoogleChromeIcon from "../images/assets/googlechrome.svg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <div class="text-center">
+  <GatsbySeo/>
+    <div className="text-center">
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap shadow-2xl">
@@ -38,19 +37,66 @@ const IndexPage = () => (
               </a>
             </h2>
             <p className="text-gray-800 dark:text-gray-200 pt-6 pb-3">
-              <span role="img" aria-label="shuffle emoji">
-                🔀
-              </span>{" "}
-              Shuffle the web.{" "}
+              Shuffle a random link from the most influential sites across the web.
             </p>
-            <p className="text-gray-800 dark:text-gray-200 pt-0 pb-3">
-              Shuffle a random link from the best sites across the web.
-            </p>
+            <div className="my-3">
+              <div className="inline-flex rounded-md shadow">
+                <Link
+                  to="/redirect"
+                  className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-sm tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
+                >
+                  Shuffle
+                  <RandomIcon
+                    alt="Random"
+                    className="fill-current ml-3"
+                    width="16"
+                    height="16"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="my-3">
+              <h3 className="text-gray-800 font-bold dark:text-gray-400 pt-6 pb-6">
+              Add to your browser:
+            </h3>
+                <div className="inline-flex rounded-md shadow ml-6">
+                  <a
+                    href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
+                    className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
+                  >
+                    <GoogleChromeIcon
+                      alt="Random"
+                      className="fill-current mr-3"
+                      width="24"
+                      height="24"
+                    />
+                    Chrome Extension
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p className="ml-6 text-sm text-gray-800 dark:text-gray-200">
+                  Bookmark:{" "}
+                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
+                  (Drag to your Favorites Bar)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-200 dark:bg-gray-800 w-full md:w-1/2 p-5 flex flex-col items-center justify-center">
+          <p className="text-6xl font-black text-gray-800 dark:text-gray-200 p-12">
+            <Link to="/redirect">
+              Shuffle the web.
+            </Link>
+          </p>
             <div className="my-6">
               <div className="inline-flex rounded-md shadow">
                 <Link
                   to="/redirect"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
                 >
                   Shuffle
                   <RandomIcon
@@ -62,39 +108,12 @@ const IndexPage = () => (
                 </Link>
               </div>
             </div>
-            <div>
-              <div className="my-12">
-                <div className="inline-flex rounded-md shadow">
-                  <a
-                    href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
-                    className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
-                  >
-                    <GoogleChromeIcon
-                      alt="Random"
-                      className="fill-current mr-3"
-                      width="32"
-                      height="32"
-                    />
-                    Chrome Extension
-                  </a>
-                </div>
-              </div>
-              <div>
-                <p className="text-gray-800 dark:text-gray-200">
-                  Bookmark:{" "}
-                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
-                  (Drag to your Favorites Bar)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div className="w-full md:w-1/2 p-5 flex flex-col items-center justify-center">
-        <LinkGrid />
+      <div className="w-full p-12">
+      <LinkGrid />
         <div>
           {" "}
-          <p className="text-sm	p-6 text-gray-light">
+          <p className="text-sm text-center	p-6 pt-12 text-gray-light">
             <Link
               to="/redirect"
               className="text-indigo-600 dark:text-indigo-400 font-bold"
@@ -104,7 +123,7 @@ const IndexPage = () => (
             these sites and more...
           </p>
         </div>
-      </div>
+    </div>
     </div>
   </Layout>
 )

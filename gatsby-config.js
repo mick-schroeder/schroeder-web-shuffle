@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Web Shuffle`,
-    description: `Shuffle to the best sites across the web.`,
-    titleTemplate: `%s | Web Shuffle`,
+    description: `Shuffle to the most influential sites across the web.`,
+    titleTemplate: `Web Shuffle`,
     author: `@mick_schroeder`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
     url: `https://webshuffle.mickschroeder.com`,
@@ -73,6 +73,39 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options: {
+        title: 'Web Shuffle',
+        language: 'en',
+        description: 'Shuffle a random link from the most influential sites across the web.',
+        twitter: {
+          cardType: 'website',
+          site: '@mickschroeder',
+          url: 'https://webshuffle.mickschroeder.com',
+          site_name: 'Web Shuffle',
+        },        openGraph: {
+          type: 'website',
+          locale: 'en',
+          url: 'https://webshuffle.mickschroeder.com',
+          site_name: 'Web Shuffle',
+          images: [
+            {
+              url: 'https://webshuffle.mickschroeder.com/images/webshuffle-large-promo.png',
+              width: 920,
+              height: 680,
+              alt: 'Shuffle the Web',
+            },
+            {
+              url: 'https://webshuffle.mickschroeder.com/images/webshuffle-small-promo.png',
+              width: 440,
+              height: 280,
+              alt: 'Shuffle the Web',
+            },
+          ],
+        },
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -81,5 +114,6 @@ module.exports = {
         purgeOnly: [`src/css/index.css`],
       },
     },
+    
   ],
 }
