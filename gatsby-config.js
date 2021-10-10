@@ -70,6 +70,9 @@ module.exports = {
         theme_color: `#1F2838`,
         display: `standalone`,
         crossOrigin: `use-credentials`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-offline`,
