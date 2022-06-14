@@ -110,6 +110,8 @@ const IndexPage = () => (
             </div>
       </div>
       <div className="w-full p-12">
+      </div>
+      <div className="w-full p-12">
       <LinkGrid />
         <div>
           {" "}
