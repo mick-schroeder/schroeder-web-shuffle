@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [
+  content: [
     "./gatsby-ssr.js",
     "./src/**/*.js",
     "./src/**/*.css",
