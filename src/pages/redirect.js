@@ -14,7 +14,7 @@ const ShufflePage = () => (
       <div className="w-full flex items-stretch justify-center bg-gray-100 dark:bg-gray-800">
         <div className="container p-10 text-center mt-10">
           <WebShuffleIcon
-            className=" mx-auto"
+            className="mx-auto"
             alt="Logo"
             width="120"
             height="120"
