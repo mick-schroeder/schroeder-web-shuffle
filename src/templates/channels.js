@@ -1,13 +1,11 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
 import RandomWebsiteMachine from "../components/randomWebsiteMachine"
-
 // icons
 import WebShuffleIcon from "../images/assets/icon-web-shuffle.svg"
 
-const ShufflePage = () => (
+const PageTemplate = ({ pageContext }) => (
   <Layout>
     <GatsbySeo noindex={true} />
     <div className="w-full h-full flex-grow flex-1 flex flex-wrap">
@@ -28,11 +26,10 @@ const ShufflePage = () => (
           <p className="text-gray-800 dark:text-gray-200 pb-6 pt-12">
             You will be redirected soon...
           </p>
-          <RandomWebsiteMachine />
+          <RandomWebsiteMachine channel={pageContext.channel} />
         </div>
       </div>
     </div>
   </Layout>
 )
-
-export default ShufflePage
+export default PageTemplate

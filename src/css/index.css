@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply h-screen leading-normal text-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased;
+    @apply h-screen leading-normal tracking-normal text-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-50 antialiased;
 }
 
 .weblinkicon {

@@ -52,8 +52,8 @@ module.exports = {
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
-      name: `data`,
       options: {
+        name: `channels`,
         path: `src/json/`,
       },
     },
@@ -77,33 +77,35 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-next-seo',
+      resolve: "gatsby-plugin-next-seo",
       options: {
-        title: 'Web Shuffle',
-        language: 'en',
-        description: 'Shuffle a random link from the most influential sites across the web.',
+        title: "Web Shuffle",
+        language: "en",
+        description:
+          "Shuffle a random link from the most influential sites across the web.",
         twitter: {
-          cardType: 'website',
-          site: '@mickschroeder',
-          url: 'https://webshuffle.mickschroeder.com',
-          site_name: 'Web Shuffle',
-        },        openGraph: {
-          type: 'website',
-          locale: 'en',
-          url: 'https://webshuffle.mickschroeder.com',
-          site_name: 'Web Shuffle',
+          cardType: "website",
+          site: "@mickschroeder",
+          url: "https://webshuffle.mickschroeder.com",
+          site_name: "Web Shuffle",
+        },
+        openGraph: {
+          type: "website",
+          locale: "en",
+          url: "https://webshuffle.mickschroeder.com",
+          site_name: "Web Shuffle",
           images: [
             {
-              url: 'https://webshuffle.mickschroeder.com/images/webshuffle-large-promo.png',
+              url: "https://webshuffle.mickschroeder.com/images/webshuffle-large-promo.png",
               width: 920,
               height: 680,
-              alt: 'Shuffle the Web',
+              alt: "Shuffle the Web",
             },
             {
-              url: 'https://webshuffle.mickschroeder.com/images/webshuffle-small-promo.png',
+              url: "https://webshuffle.mickschroeder.com/images/webshuffle-small-promo.png",
               width: 440,
               height: 280,
-              alt: 'Shuffle the Web',
+              alt: "Shuffle the Web",
             },
           ],
         },
@@ -117,6 +119,5 @@ module.exports = {
         purgeOnly: [`src/css/index.css`],
       },
     },
-    
   ],
 }

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 
 const NotFoundPage = () => (
   <Layout>

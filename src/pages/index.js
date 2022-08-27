@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import AdSense from "react-adsense"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import { GatsbySeo } from "gatsby-plugin-next-seo"
 import Layout from "../components/layout"
 import LinkGrid from "../components/linkGrid"
 
@@ -15,100 +15,124 @@ import GoogleChromeIcon from "../images/assets/googlechrome.svg"
 
 const IndexPage = () => (
   <Layout>
-  <GatsbySeo/>
+    <GatsbySeo />
     <div className="text-center">
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
-    <div className="w-full h-full flex-grow flex-1 flex flex-wrap shadow-2xl">
-      <div className="w-full flex items-stretch justify-center bg-gray-200 dark:bg-gray-800">
-        <div className="md:p-10 flex flex-row-reverse ">
-          <div className="container text-center md:max-w-md p-5">
-          <Link
-                  to="/redirect"
-                >
-                   <WebShuffleIcon
-            className="mx-auto"
-            alt="Logo"
-            width="120"
-            height="120"
-          />                
-            <h1 className="py-3 text-6xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl">
-              Web Shuffle
-            </h1></Link>
-            <h2 className="text-md tracking-tight text-gray-700 dark:text-blue-300 sm:text-lg">
-              Curated by{" "}
-              <a href="https://mickschroeder.com" rel="external">
-                Mick Schroeder
-              </a>
-            </h2>
-            <p className="text-gray-800 dark:text-gray-200 pt-4 pb-3">
-              Shuffle a random link from the most influential sites across the web.
-            </p>
-            <div className="my-3">
-              <div className="inline-flex rounded-md shadow">
-              <Link
-                  to="/redirect"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
-                >
-                  Shuffle
-                  <RandomIcon
-                    alt="Random"
-                    className="fill-current ml-3"
-                    width="32"
-                    height="32"
-                  />
-                </Link>
-              </div>
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 pt-14 mx-auto flex flex-wrap items-center">
+        <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
+          <h2 className="my-6 md:my-7 text-5xl text-white opacity-75 font-bold leading-none text-center">
+            Take me to a{" "}
+            <span className="text-blue-800 dark:text-blue-300">random</span>{" "}
+            website, please.
+          </h2>
+          <p className="text-gray-800 dark:text-gray-500 pb-7 leading-relaxed mt-4 text-center md:max-w-md">
+            Hit the "Shuffle" button and you will be sent to a random website
+            from the most influential sites across the web.
+          </p>
+          <div className="mt-7 mb-7 text-center">
+            <Link
+              to="/redirect"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
+            >
+              Shuffle
+              <RandomIcon
+                alt="Random"
+                className="fill-current ml-3"
+                width="32"
+                height="32"
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-1/2 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <LinkGrid />
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
             </div>
-            <div>
-              <div className="my-3">
-              <h3 className="text-gray-800 font-bold dark:text-gray-400 pt-6 pb-6">
-              Add to your browser:
-            </h3>
-                <div className="inline-flex rounded-md shadow ml-6">
-                  <a
-                    href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
-                    className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
-                  >
-                    <GoogleChromeIcon
-                      alt="Random"
-                      className="fill-current mr-3"
-                      width="24"
-                      height="24"
-                    />
-                    Chrome Extension
-                  </a>
-                </div>
-              </div>
-              <div>
-                <p className="ml-6 text-sm text-gray-800 dark:text-gray-200">
-                  Bookmark:{" "}
-                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
-                  (Drag to your Favorites Bar)
-                </p>
-              </div>
+            <h2 class="text-white text-lg title-font font-medium">Browser Extension</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base pt-3">You can add the Web Shuffle button to your browser.</p>
+            <div className="py-7">
+            <a
+                href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
+                className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
+              >
+                <GoogleChromeIcon
+                  alt="Random"
+                  className="fill-current mr-3"
+                  width="24"
+                  height="24"
+                />
+                Chrome Extension
+              </a>{" "}
             </div>
+            
           </div>
         </div>
       </div>
-      <div className="w-full p-12">
-      </div>
-      <div className="w-full p-12">
-      <LinkGrid />
-        <div>
-          {" "}
-          <p className="text-sm text-center	p-6 pt-12 text-gray-light">
-            <Link
-              to="/redirect"
-              className="text-indigo-600 dark:text-indigo-400 font-bold"
-            >
-              Shuffle
-            </Link>{" "}
-            these sites and more...
-          </p>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">Bookmark</h2>
+          </div>
+          <div class="flex-grow flex items-center justify-center">
+            <p class="leading-relaxed text-base">
+            <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
+              &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg title-font font-medium">Open Source</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base">
+            This program is free software: you can redistribute it and/or modify it under the terms of the
+             <a href="https://www.gnu.org/licenses/agpl.html" rel="external" className="text-indigo-500 text-bold">&nbsp;GNU Affero General Public License&nbsp;</a> 
+            as published by the 
+            <a href="https://www.fsf.org/" rel="external" className="text-indigo-500 text-bold">&nbsp;Free Software Foundation</a>.
+              </p>
+            <a href="https://github.com/mick-schroeder/gatsby-web-shuffle" className="mt-3 text-indigo-400 inline-flex items-center">Source code on Github
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
+  </div>
+</section>
   </Layout>
 )
 

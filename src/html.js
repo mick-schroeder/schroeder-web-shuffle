@@ -22,7 +22,10 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
       </body>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
     </html>
   )
 }

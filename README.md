@@ -1,8 +1,12 @@
 # 🔀 Web Shuffle
 
-A passive web browsing experience. Channel surf the web. 
- 
-Shuffle to the most influential sites across the web.
+Random website button
+
+Take me to a random website, please.
+
+A passive web browsing experience. Channel surf the web.
+
+Hit Shuffle and I will take you to the most influential sites across the web.
 
 ## Tech Stack
 

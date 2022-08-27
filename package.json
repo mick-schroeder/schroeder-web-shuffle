@@ -2,7 +2,7 @@
   "name": "gatsby-web-shuffle",
   "private": true,
   "description": "Shuffle to the most influential sites across the web.",
-  "version": "1.0.1",
+  "version": "1.1",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.4.8",

@@ -2,12 +2,17 @@ import PropTypes from "prop-types"
 import React from "react"
 
 // json
-import JSONData from "../json/data.json"
+import JSONData from "../json/WebLinks.json"
 
-class Redirect extends React.Component {
+class RandomWebsiteMachine extends React.Component {
   componentDidMount() {
-    var rand = JSONData.weblinks[~~(Math.random() * JSONData.weblinks.length)]
+    if (this.props.channel) {
+      JSONData = JSONData.filter(d => d.channel == this.props.channel)
+      //console.log('JSONData filtered')
+      //console.log(JSONData)
+    }
 
+    var rand = JSONData[~~(Math.random() * JSONData.length)]
     window.location.href = rand.url
   }
 
@@ -27,4 +32,4 @@ class Redirect extends React.Component {
   }
 }
 
-export default Redirect
+export default RandomWebsiteMachine
