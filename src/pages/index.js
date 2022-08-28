@@ -22,16 +22,16 @@ const IndexPage = () => (
     <section className="text-gray-600 body-font">
       <div className="container px-5 pt-14 mx-auto flex flex-wrap items-center">
         <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
-          <h2 className="my-6 md:my-7 text-5xl text-white opacity-75 font-bold leading-none text-center">
+          <h2 className="my-6 md:my-5 text-5xl text-white opacity-75 font-bold leading-none text-center">
             Take me to a{" "}
-            <span className="text-blue-800 dark:text-blue-300">random</span>{" "}
+            <span className="text-blue-700 dark:text-blue-400">random</span>{" "}
             website, please.
           </h2>
-          <p className="text-gray-800 dark:text-gray-500 pb-7 leading-relaxed mt-4 text-center md:max-w-md">
+          <p className="text-gray-800 dark:text-gray-500 mb-3 leading-relaxed mt-3 text-center md:max-w-md">
             Hit the "Shuffle" button and you will be sent to a random website
             from the most influential sites across the web.
           </p>
-          <div className="mt-7 mb-7 text-center">
+          <div className="mt-4 mb-4 text-center">
             <Link
               to="/redirect"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
