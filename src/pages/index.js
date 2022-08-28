@@ -20,7 +20,7 @@ const IndexPage = () => (
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
     <section className="text-slate-500 dark:text-slate-400 body-font">
-      <div className="container px-5 pt-14 mx-auto flex flex-wrap items-center">
+      <div className="container px-5 pt-7 mx-auto flex flex-wrap items-center">
         <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
           <h2 className="my-6 md:my-5 text-5xl text-slate-900 dark:text-white opacity-75 font-bold tracking-tight leading-none text-center">
             Take me to a{" "}
