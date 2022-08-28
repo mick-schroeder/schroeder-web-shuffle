@@ -24,8 +24,7 @@ const Header = ({ siteTitle }) => (
       <Link to="/">
         <div className="flex flex-row items-center space-x-3">
           <WebShuffleIcon className="" alt="Logo" width="42" height="42" />
-
-          <h1 className="text-5xl tracking-tight font-serif font-bold text-gray-900 dark:text-gray-50">
+          <h1 className="text-3xl tracking-tight font-serif font-bold text-gray-50">
             Web Shuffle
           </h1>
         </div>

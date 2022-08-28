@@ -19,15 +19,15 @@ const IndexPage = () => (
     <div className="text-center">
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
-    <section className="text-gray-600 body-font">
+    <section className="text-slate-500 dark:text-slate-400 body-font">
       <div className="container px-5 pt-14 mx-auto flex flex-wrap items-center">
         <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
-          <h2 className="my-6 md:my-5 text-5xl text-white opacity-75 font-bold leading-none text-center">
+          <h2 className="my-6 md:my-5 text-5xl text-slate-900 dark:text-white opacity-75 font-bold tracking-tight leading-none text-center">
             Take me to a{" "}
             <span className="text-blue-700 dark:text-blue-400">random</span>{" "}
             website, please.
           </h2>
-          <p className="text-gray-800 dark:text-gray-500 mb-3 leading-relaxed mt-3 text-center md:max-w-md">
+          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
             Hit the "Shuffle" button and you will be sent to a random website
             from the most influential sites across the web.
           </p>
@@ -51,21 +51,21 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section class="text-gray-400 bg-gray-900 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
-        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div class="flex items-center mb-3">
-            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+    <section className="text-gray-400 bg-gray-900 body-font">
+  <div className="container px-5 py-24 mx-auto flex flex-wrap">
+    <div className="flex flex-wrap -m-4">
+      <div className="p-4 md:w-1/3 grow md:grow-0">
+        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div className="flex items-center mb-3">
+            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
-            <h2 class="text-white text-lg title-font font-medium">Browser Extension</h2>
+            <h2 className="text-white text-lg title-font font-medium">Browser Extension</h2>
           </div>
-          <div class="flex-grow">
-            <p class="leading-relaxed text-base pt-3">You can add the Web Shuffle button to your browser.</p>
+          <div className="flex-grow">
+            <p className="leading-relaxed text-base pt-3">You can add the Web Shuffle button to your browser.</p>
             <div className="py-7">
             <a
                 href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
@@ -84,46 +84,46 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div class="p-4 md:w-1/3">
-        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div class="flex items-center mb-3">
-            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+      <div className="p-4 md:w-1/3 grow md:grow-0">
+        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div className="flex items-center mb-3">
+            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                 <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
-            <h2 class="text-white text-lg title-font font-medium">Bookmark</h2>
+            <h2 className="text-white text-lg title-font font-medium">Bookmark</h2>
           </div>
-          <div class="flex-grow flex items-center justify-center">
-            <p class="leading-relaxed text-base">
+          <div className="flex-grow flex items-center justify-center">
+            <p className="leading-relaxed text-base">
             <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
               &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
             </p>
           </div>
         </div>
       </div>
-      <div class="p-4 md:w-1/3">
-        <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div class="flex items-center mb-3">
-            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+      <div className="p-4 md:w-1/3 grow md:grow-0">
+        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+          <div className="flex items-center mb-3">
+            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                 <circle cx="6" cy="6" r="3"></circle>
                 <circle cx="6" cy="18" r="3"></circle>
                 <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
               </svg>
             </div>
-            <h2 class="text-white text-lg title-font font-medium">Open Source</h2>
+            <h2 className="text-white text-lg title-font font-medium">Open Source</h2>
           </div>
-          <div class="flex-grow">
-            <p class="leading-relaxed text-base">
+          <div className="flex-grow">
+            <p className="leading-relaxed text-base">
             This program is free software: you can redistribute it and/or modify it under the terms of the
              <a href="https://www.gnu.org/licenses/agpl.html" rel="external" className="text-indigo-500 text-bold">&nbsp;GNU Affero General Public License&nbsp;</a> 
             as published by the 
             <a href="https://www.fsf.org/" rel="external" className="text-indigo-500 text-bold">&nbsp;Free Software Foundation</a>.
               </p>
             <a href="https://github.com/mick-schroeder/gatsby-web-shuffle" className="mt-3 text-indigo-400 inline-flex items-center">Source code on Github
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
             </a>
