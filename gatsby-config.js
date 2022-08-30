@@ -15,6 +15,9 @@ module.exports = {
       options: {
         trackingIds: ["G-RMM4MSRDQM"],
       },
+      pluginConfig: {
+        exclude: ["/preview/**"],
+      },
     },
     `gatsby-plugin-sitemap`,
     {

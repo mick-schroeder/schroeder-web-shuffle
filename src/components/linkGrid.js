@@ -123,7 +123,6 @@ const LinkGrid = ({}) => (
           </div>
         </div>
       </a>
-      
     </div>
   </div>
 )

@@ -52,87 +52,144 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="text-gray-400 bg-gray-900 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
-    <div className="flex flex-wrap -m-4">
-      <div className="p-4 md:w-1/3 grow md:grow-0">
-        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div className="flex items-center mb-3">
-            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
+      <div className="container px-5 py-24 mx-auto flex flex-wrap">
+        <div className="flex flex-wrap -m-4">
+          <div className="p-4 md:w-1/3 grow md:grow-0">
+            <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div className="flex items-center mb-3">
+                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 className="text-white text-lg title-font font-medium">
+                  Browser Extension
+                </h2>
+              </div>
+              <div className="flex-grow">
+                <p className="leading-relaxed text-base pt-3">
+                  You can add the Web Shuffle button to your browser.
+                </p>
+                <div className="py-7">
+                  <a
+                    href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
+                    className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
+                  >
+                    <GoogleChromeIcon
+                      alt="Random"
+                      className="fill-current mr-3"
+                      width="24"
+                      height="24"
+                    />
+                    Chrome Extension
+                  </a>{" "}
+                </div>
+              </div>
             </div>
-            <h2 className="text-white text-lg title-font font-medium">Browser Extension</h2>
           </div>
-          <div className="flex-grow">
-            <p className="leading-relaxed text-base pt-3">You can add the Web Shuffle button to your browser.</p>
-            <div className="py-7">
-            <a
-                href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
-                className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
-              >
-                <GoogleChromeIcon
-                  alt="Random"
-                  className="fill-current mr-3"
-                  width="24"
-                  height="24"
-                />
-                Chrome Extension
-              </a>{" "}
+          <div className="p-4 md:w-1/3 grow md:grow-0">
+            <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div className="flex items-center mb-3">
+                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 className="text-white text-lg title-font font-medium">
+                  Bookmark
+                </h2>
+              </div>
+              <div className="flex-grow flex items-center justify-center">
+                <p className="leading-relaxed text-base">
+                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
+                  &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
+                </p>
+              </div>
             </div>
-            
+          </div>
+          <div className="p-4 md:w-1/3 grow md:grow-0">
+            <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+              <div className="flex items-center mb-3">
+                <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                  </svg>
+                </div>
+                <h2 className="text-white text-lg title-font font-medium">
+                  Open Source
+                </h2>
+              </div>
+              <div className="flex-grow">
+                <p className="leading-relaxed text-base">
+                  This program is free software: you can redistribute it and/or
+                  modify it under the terms of the
+                  <a
+                    href="https://www.gnu.org/licenses/agpl.html"
+                    rel="external"
+                    className="text-indigo-500 text-bold"
+                  >
+                    &nbsp;GNU Affero General Public License&nbsp;
+                  </a>
+                  as published by the
+                  <a
+                    href="https://www.fsf.org/"
+                    rel="external"
+                    className="text-indigo-500 text-bold"
+                  >
+                    &nbsp;Free Software Foundation
+                  </a>
+                  .
+                </p>
+                <a
+                  href="https://github.com/mick-schroeder/gatsby-web-shuffle"
+                  className="mt-3 text-indigo-400 inline-flex items-center"
+                >
+                  Source code on Github
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="p-4 md:w-1/3 grow md:grow-0">
-        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div className="flex items-center mb-3">
-            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <h2 className="text-white text-lg title-font font-medium">Bookmark</h2>
-          </div>
-          <div className="flex-grow flex items-center justify-center">
-            <p className="leading-relaxed text-base">
-            <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
-              &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="p-4 md:w-1/3 grow md:grow-0">
-        <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
-          <div className="flex items-center mb-3">
-            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-              </svg>
-            </div>
-            <h2 className="text-white text-lg title-font font-medium">Open Source</h2>
-          </div>
-          <div className="flex-grow">
-            <p className="leading-relaxed text-base">
-            This program is free software: you can redistribute it and/or modify it under the terms of the
-             <a href="https://www.gnu.org/licenses/agpl.html" rel="external" className="text-indigo-500 text-bold">&nbsp;GNU Affero General Public License&nbsp;</a> 
-            as published by the 
-            <a href="https://www.fsf.org/" rel="external" className="text-indigo-500 text-bold">&nbsp;Free Software Foundation</a>.
-              </p>
-            <a href="https://github.com/mick-schroeder/gatsby-web-shuffle" className="mt-3 text-indigo-400 inline-flex items-center">Source code on Github
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
   </Layout>
 )
 
