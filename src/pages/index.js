@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import LinkGrid from "../components/linkGrid"
 
 // left
-import WebShuffleIcon from "../images/assets/icon-web-shuffle.svg"
+import RandomWebsiteIcon from "../images/assets/icon-random-website.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -28,7 +28,7 @@ const IndexPage = () => (
             website, please.
           </h2>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-            Hit the "Shuffle" button and you will be sent to a random website
+            Hit the "Random Website" button and you will be sent to a random website
             from the most influential sites across the web.
           </p>
           <div className="mt-4 mb-4 text-center">
@@ -36,7 +36,7 @@ const IndexPage = () => (
               to="/redirect"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
             >
-              Shuffle
+              Random Website
               <RandomIcon
                 alt="Random"
                 className="fill-current ml-3"
@@ -76,7 +76,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                  You can add the Web Shuffle button to your browser.
+                  You can add the Random Website button to your browser.
                 </p>
                 <div className="py-7">
                   <a
@@ -113,12 +113,16 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                  Bookmark
-                </h2>
+                  Bookmark </h2>
               </div>
+              <p className="leading-relaxed text-base pt-3">
+                  Bookmark <span className="text-indigo-500 text-bold"><a href="https://randomwebsite.mickschroeder.com/redirect">this link</a></span>{" "}
+                  or drag <a href="https://randomwebsite.mickschroeder.com/redirect">🔀</a>{" "} to your favorites bar.
+                </p>
               <div className="flex-grow flex items-center justify-center">
+                
                 <p className="leading-relaxed text-base">
-                  <a href="https://webshuffle.mickschroeder.com/redirect">🔀</a>{" "}
+                  <a href="https://randomwebsite.mickschroeder.com/redirect">🔀</a>{" "}
                   &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
                 </p>
               </div>
@@ -168,7 +172,7 @@ const IndexPage = () => (
                   .
                 </p>
                 <a
-                  href="https://github.com/mick-schroeder/gatsby-web-shuffle"
+                  href="https://github.com/mick-schroeder/gatsby-random-website"
                   className="mt-3 text-indigo-400 inline-flex items-center"
                 >
                   Source code on Github

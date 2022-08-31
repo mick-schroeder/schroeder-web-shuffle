@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Shuffle`,
-    description: `Shuffle to the most influential sites across the web.`,
-    titleTemplate: `Web Shuffle`,
+    title: `Random Website`,
+    description: `Take me to a random website, please.`,
+    titleTemplate: `Random Website`,
     author: `@mick_schroeder`,
-    siteUrl: `https://webshuffle.mickschroeder.com`,
-    url: `https://webshuffle.mickschroeder.com`,
-    image: `icon-webshuffle.png`,
+    siteUrl: `https://randomwebsite.mickschroeder.com`,
+    url: `https://randomwebsite.mickschroeder.com`,
+    image: `icon-randomwebsite.png`,
     twitterUsername: `@mick_schroeder`,
   },
   plugins: [
@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://webshuffle.mickschroeder.com",
-        sitemap: "https://webshuffle.mickschroeder.com/sitemap.xml",
+        host: "https://randomwebsite.mickschroeder.com",
+        sitemap: "https://randomwebsite.mickschroeder.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
         env: {
           development: {
@@ -65,9 +65,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Web Shuffle`,
-        short_name: `WebShuffle`,
-        icon: `src/images/assets/icon-web-shuffle-square.svg`,
+        name: `Random Website`,
+        short_name: `RandomWebsite`,
+        icon: `src/images/assets/icon-random-website-square.svg`,
         start_url: `.`,
         background_color: `#000`,
         theme_color: `#1F2838`,
@@ -82,33 +82,33 @@ module.exports = {
     {
       resolve: "gatsby-plugin-next-seo",
       options: {
-        title: "Web Shuffle",
+        title: "Random Website",
         language: "en",
         description:
-          "Shuffle a random link from the most influential sites across the web.",
+          "Take me to a random website, please.",
         twitter: {
           cardType: "website",
           site: "@mickschroeder",
-          url: "https://webshuffle.mickschroeder.com",
-          site_name: "Web Shuffle",
+          url: "https://randomwebsite.mickschroeder.com",
+          site_name: "Random Website",
         },
         openGraph: {
           type: "website",
           locale: "en",
-          url: "https://webshuffle.mickschroeder.com",
-          site_name: "Web Shuffle",
+          url: "https://randomwebsite.mickschroeder.com",
+          site_name: "Random Website",
           images: [
             {
-              url: "https://webshuffle.mickschroeder.com/images/webshuffle-large-promo.png",
+              url: "https://randomwebsite.mickschroeder.com/images/randomwebsite-large-promo.png",
               width: 920,
               height: 680,
-              alt: "Shuffle the Web",
+              alt: "Logo",
             },
             {
-              url: "https://webshuffle.mickschroeder.com/images/webshuffle-small-promo.png",
+              url: "https://randomwebsite.mickschroeder.com/images/randomwebsite-small-promo.png",
               width: 440,
               height: 280,
-              alt: "Shuffle the Web",
+              alt: "Logo",
             },
           ],
         },

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-web-shuffle",
+  "name": "gatsby-random-website",
   "private": true,
-  "description": "Shuffle to the most influential sites across the web.",
-  "version": "1.1",
+  "description": "Take me to a random website, please.",
+  "version": "2.0",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.4.8",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle"
+    "url": "https://github.com/mick-schroeder/gatsby-random-website"
   },
   "bugs": {
-    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle/issues"
+    "url": "https://github.com/mick-schroeder/gatsby-random-website/issues"
   }
 }
