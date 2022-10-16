@@ -116,7 +116,7 @@ const IndexPage = () => (
                   Bookmark </h2>
               </div>
               <p className="leading-relaxed text-base pt-3">
-                  Bookmark <span className="text-indigo-500 text-bold"><a href="https://randomwebsite.mickschroeder.com/redirect">this link</a></span>{" "}
+                  Bookmark <span className="text-indigo-500 text-bold"><a href="https://randomwebsite.mickschroeder.com/redirect">Random Website</a></span>{" "}
                   or drag <a href="https://randomwebsite.mickschroeder.com/redirect">🔀</a>{" "} to your favorites bar.
                 </p>
               <div className="flex-grow flex items-center justify-center">

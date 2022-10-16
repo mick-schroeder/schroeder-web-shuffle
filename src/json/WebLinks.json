@@ -432,6 +432,14 @@
     "color": ""
   },
   {
+    "title": "RedditP",
+    "url": "https://www.redditp.com/",
+    "channel": "Social",
+    "fav": "TRUE",
+    "icon": "reddit.svg",
+    "color": ""
+  },
+  {
     "title": "Reuters",
     "url": "https://www.reuters.com/",
     "channel": "News",
