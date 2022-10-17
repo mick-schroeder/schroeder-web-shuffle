@@ -2,7 +2,7 @@
   "name": "gatsby-random-website",
   "private": true,
   "description": "Take me to a random website, please.",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.4.8",
