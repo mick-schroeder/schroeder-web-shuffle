@@ -11,13 +11,14 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: ["G-RMM4MSRDQM"],
-      },
-      pluginConfig: {
-        exclude: ["/preview/**"],
-      },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      }
     },
     `gatsby-plugin-sitemap`,
     {
@@ -84,8 +85,7 @@ module.exports = {
       options: {
         title: "Random Website",
         language: "en",
-        description:
-          "Take me to a random website, please.",
+        description: "Take me to a random website, please.",
         twitter: {
           cardType: "website",
           site: "@mickschroeder",

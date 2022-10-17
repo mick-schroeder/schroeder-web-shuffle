@@ -28,13 +28,14 @@ const IndexPage = () => (
             website, please.
           </h2>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-            Hit the "Random Website" button and you will be sent to a random website
-            from the most influential sites across the web.
+            Hit the "Random Website" button and you will be sent to a random
+            website from the most influential sites across the web.
           </p>
           <div className="mt-4 mb-4 text-center">
             <Link
               to="/redirect"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
+              target="_blank"
             >
               Random Website
               <RandomIcon
@@ -113,16 +114,27 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                  Bookmark </h2>
+                  Bookmark{" "}
+                </h2>
               </div>
               <p className="leading-relaxed text-base pt-3">
-                  Bookmark <span className="text-indigo-500 text-bold"><a href="https://randomwebsite.mickschroeder.com/redirect">Random Website</a></span>{" "}
-                  or drag <a href="https://randomwebsite.mickschroeder.com/redirect">🔀</a>{" "} to your favorites bar.
-                </p>
+                Bookmark{" "}
+                <span className="text-indigo-500 text-bold">
+                  <a href="/redirect" target="_blank">
+                    Random Website
+                  </a>
+                </span>{" "}
+                or drag{" "}
+                <a href="/redirect" target="_blank">
+                  🔀
+                </a>{" "}
+                to your favorites bar.
+              </p>
               <div className="flex-grow flex items-center justify-center">
-                
                 <p className="leading-relaxed text-base">
-                  <a href="https://randomwebsite.mickschroeder.com/redirect">🔀</a>{" "}
+                  <a href="/redirect" target="_blank">
+                    🔀
+                  </a>{" "}
                   &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
                 </p>
               </div>

@@ -33,6 +33,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/redirect"
           className="inline-flex items-center justify-center text-xs px-3 py-2 border border-transparent tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
+          target="_blank"
         >
           Random Website
           <RandomIcon
