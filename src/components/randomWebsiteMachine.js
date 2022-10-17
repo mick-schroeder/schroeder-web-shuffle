@@ -14,9 +14,9 @@ class RandomWebsiteMachine extends React.Component {
 
     var rand = JSONData[~~(Math.random() * JSONData.length)]
     
-    window.gtag('event', 'Random Website Generated', {
-      'event_label' : rand.url
-    });
+   // window.gtag('event', 'Random Website Generated', {
+   //   'event_label' : rand.url
+  //  });
 
     window.location.href = rand.url
   }
