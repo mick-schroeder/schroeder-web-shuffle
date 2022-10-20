@@ -1,15 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "icon-random-website.png" }) {
         childImageSharp {
-          fixed(width: 128, quality: 100) {
-            ...GatsbyImageSharpFixed_withWebp_noBase64
-          }
+          gatsbyImageData(layout: FIXED)
         }
       }
     }

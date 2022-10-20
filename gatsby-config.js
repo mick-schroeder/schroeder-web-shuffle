@@ -11,14 +11,14 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-gtag',
+      resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingIds: ["G-RMM4MSRDQM"],
         pluginConfig: {
           head: true,
           respectDNT: true,
         },
-      }
+      },
     },
     `gatsby-plugin-sitemap`,
     {

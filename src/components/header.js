@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
 
       <Link to="/">
         <div className="flex flex-row items-center space-x-3">
-          <RandomWebsiteIcon className="" alt="Logo" width="42" height="42" />
+          <RandomWebsiteIcon className="" alt="Logo" width="30" height="30" />
           <h1 className="text-3xl tracking-tight font-serif font-bold text-gray-50">
             Random Website
           </h1>
