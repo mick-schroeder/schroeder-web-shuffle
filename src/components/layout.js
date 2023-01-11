@@ -46,10 +46,11 @@ const Layout = ({ children }) => {
             These links are being provided as a convenience and for
             informational purposes only; they do not constitute an endorsement
             or an approval or opinions of that organization or individual.{" "}
+            Some links may be sponsored or affiliate programs that earn commission.
             <br />
             Not responsible for the accuracy, legality or content of the
             external site or for that of subsequent links. Contact the external
-            site for answers to questions regarding its content.
+            site for answers to questions regarding their content.
           </p>{" "}
         </footer>
       </div>

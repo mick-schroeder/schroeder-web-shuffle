@@ -28,13 +28,15 @@ const IndexPage = () => (
             website, please.
           </h2>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-            Hit the "Random Website" button and you will be sent to a random
-            website from the most influential sites across the web.
+          Welcome to Random Website, the ultimate destination for discovering the most valuable and influential websites on the internet.
+          With our curated list of top sites, you'll never be at a loss for something interesting to do online. </p>
+          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
+          Simply click the "Random Website" button and let us take you on a journey of discovery.
           </p>
           <div className="mt-4 mb-4 text-center">
             <Link
               to="/redirect"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-400 hover:bg-blue-700"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-600 hover:bg-blue-500"
               target="_blank"
             >
               Random Website
@@ -77,7 +79,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                  You can add the Random Website button to your browser.
+                Introducing the Random Website browser extension, the ultimate browsing companion. It adds a "Random Website" button to your browser's toolbar to help you discover the most valuable and influential websites on the internet. 
                 </p>
                 <div className="py-7">
                   <a
@@ -228,8 +230,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                  One click to web surf the most important and influential
-                  websites you should visit every day.
+                Experience the thrill of web surfing by channel surfing the web with just one click on the "Random Website" button.
                 </p>
               </div>
             </div>
@@ -262,14 +263,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                  Hit the{" "}
-                  <span className="text-indigo-500 text-bold">
-                    <Link to="/redirect" className="font-bold" target="_blank">
-                      Random Website
-                    </Link>
-                  </span>{" "}
-                  button to "stumble" similar to the former site StumbleUpon.
-                </p>
+                As opposed to traditional social bookmarks or websites like StumbleUpon or TheUselessWeb, our website is tailored to give you the best experience possible by providing you with a curated list of handpicked websites you might be interested in.</p>
               </div>
             </div>
           </div>
@@ -304,7 +298,8 @@ const IndexPage = () => (
                     </Link>
                   </span>{" "}
                   algorithm is backed by an editor curated list of the most
-                  influential websites on the internet.
+                  influential websites on the internet. We want to take the effort out of finding new websites, giving you more time to enjoy them!
+                
                 </p>
               </div>
             </div>
