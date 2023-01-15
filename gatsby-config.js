@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Random Website`,
+    title: `Web Shuffle`,
     description: `Take me to a random website, please.`,
-    titleTemplate: `Random Website`,
+    titleTemplate: `Web Shuffle`,
     author: `@mick_schroeder`,
     siteUrl: `https://randomwebsite.mickschroeder.com`,
     url: `https://randomwebsite.mickschroeder.com`,
@@ -66,8 +66,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Random Website`,
-        short_name: `RandomWebsite`,
+        name: `Web Shuffle`,
+        short_name: `WebShuffle`,
         icon: `src/images/assets/icon-random-website-square.svg`,
         start_url: `.`,
         background_color: `#000`,
@@ -83,20 +83,20 @@ module.exports = {
     {
       resolve: "gatsby-plugin-next-seo",
       options: {
-        title: "Random Website",
+        title: "Web Shuffle",
         language: "en",
         description: "Take me to a random website, please.",
         twitter: {
           cardType: "website",
           site: "@mickschroeder",
           url: "https://randomwebsite.mickschroeder.com",
-          site_name: "Random Website",
+          site_name: "Web Shuffle",
         },
         openGraph: {
           type: "website",
           locale: "en",
           url: "https://randomwebsite.mickschroeder.com",
-          site_name: "Random Website",
+          site_name: "Web Shuffle",
           images: [
             {
               url: "https://randomwebsite.mickschroeder.com/images/randomwebsite-large-promo.png",

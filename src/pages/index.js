@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import LinkGrid from "../components/linkGrid"
 
 // left
-//import RandomWebsiteIcon from "../images/assets/icon-random-website.svg"
+//import WebShuffleIcon from "../images/assets/icon-random-website.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -28,18 +28,17 @@ const IndexPage = () => (
             website, please.
           </h2>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-          Welcome to Random Website, the ultimate destination for discovering the most valuable and influential websites on the internet.
-          With our curated list of top sites, you'll never be at a loss for something interesting to do online. </p>
-          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-          Simply click the "Random Website" button and let us take you on a journey of discovery.
+          Welcome to Web Shuffle, the ultimate destination for discovering the most valuable and influential websites on the internet.
           </p>
+          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
+          Simply click the <b>Web Shuffle</b> button and let us take you to the best of the web from our curated list of top sites.</p>
           <div className="mt-4 mb-4 text-center">
             <Link
               to="/redirect"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-blue-600 hover:bg-blue-500"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-600 hover:bg-green-500"
               target="_blank"
             >
-              Random Website
+              Web Shuffle
               <RandomIcon
                 alt="Random"
                 className="fill-current ml-3"
@@ -79,7 +78,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Introducing the Random Website browser extension, the ultimate browsing companion. It adds a "Random Website" button to your browser's toolbar to help you discover the most valuable and influential websites on the internet. 
+                Introducing the Web Shuffle browser extension, the ultimate browsing companion. It adds a "Web Shuffle" button to your browser's toolbar to help you discover the most valuable and influential websites on the internet. 
                 </p>
                 <div className="py-7">
                   <a
@@ -121,10 +120,10 @@ const IndexPage = () => (
                 </h2>
               </div>
               <p className="leading-relaxed text-base pt-3">
-                Bookmark{" "}
+                Bookmark the URL for {" "}
                 <span className="text-indigo-500 text-bold">
                   <Link to="/redirect" className="font-bold" target="_blank">
-                    Random Website
+                    Web Shuffle
                   </Link>
                 </span>{" "}
                 or drag{" "}
@@ -230,7 +229,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Experience the thrill of web surfing by channel surfing the web with just one click on the "Random Website" button.
+                Experience the thrill of web surfing by channel surfing the web with just one click on the "Web Shuffle" button.
                 </p>
               </div>
             </div>
@@ -263,7 +262,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                As opposed to traditional social bookmarks or websites like StumbleUpon or TheUselessWeb, our website is tailored to give you the best experience possible by providing you with a curated list of handpicked websites you might be interested in.</p>
+                As opposed to similar websites like StumbleUpon or TheUselessWeb, our algorighm is designed to focus on the top sites on the web.</p>
               </div>
             </div>
           </div>
@@ -294,7 +293,7 @@ const IndexPage = () => (
                   The{" "}
                   <span className="text-indigo-500 text-bold">
                     <Link to="/redirect" className="font-bold" target="_blank">
-                      Random Website
+                      Web Shuffle
                     </Link>
                   </span>{" "}
                   algorithm is backed by an editor curated list of the most

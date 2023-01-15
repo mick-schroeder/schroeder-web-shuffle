@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 // json
 import JSONData from "../json/WebLinks.json"
 
-class RandomWebsiteMachine extends React.Component {
+class WebShuffleMachine extends React.Component {
   componentDidMount() {
     if (this.props.channel) {
       JSONData = JSONData.filter(d => d.channel == this.props.channel)
@@ -38,4 +38,4 @@ class RandomWebsiteMachine extends React.Component {
   }
 }
 
-export default RandomWebsiteMachine
+export default WebShuffleMachine
