@@ -2,7 +2,7 @@
   "name": "gatsby-web-shuffle",
   "private": true,
   "description": "Take me to a random website, please.",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "Mick Schroeder <mschroeder@gmail.com>",
   "dependencies": {
     "autoprefixer": "^10.4.12",
