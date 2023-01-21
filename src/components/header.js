@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
       <div className="rounded-md shadow hidden md:block">
         <Link
           to="/redirect"
-          className="inline-flex items-center justify-center text-xs px-3 py-2 border border-transparent tracking-ex font-bold rounded-md text-white bg-green-600 hover:bg-green-500"
+          className="inline-flex items-center justify-center text-xs px-3 py-2 border border-transparent tracking-ex font-bold rounded-md text-white bg-green-700 hover:bg-green-500"
           target="_blank"
         >
           Web Shuffle

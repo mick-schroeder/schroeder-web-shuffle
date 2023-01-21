@@ -35,7 +35,7 @@ const IndexPage = () => (
           <div className="mt-4 mb-4 text-center">
             <Link
               to="/redirect"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-600 hover:bg-green-500"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-700 hover:bg-green-500"
               target="_blank"
             >
               Web Shuffle

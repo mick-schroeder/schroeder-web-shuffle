@@ -4,8 +4,8 @@ module.exports = {
     description: `Take me to a random website, please.`,
     titleTemplate: `Web Shuffle`,
     author: `@mick_schroeder`,
-    siteUrl: `https://randomwebsite.mickschroeder.com`,
-    url: `https://randomwebsite.mickschroeder.com`,
+    siteUrl: `https://webshuffle.mickschroeder.com`,
+    url: `https://webshuffle.mickschroeder.com`,
     image: `icon-randomwebsite.png`,
     twitterUsername: `@mick_schroeder`,
   },
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://randomwebsite.mickschroeder.com",
-        sitemap: "https://randomwebsite.mickschroeder.com/sitemap.xml",
+        host: "https://webshuffle.mickschroeder.com",
+        sitemap: "https://webshuffle.mickschroeder.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
         env: {
           development: {
@@ -89,17 +89,17 @@ module.exports = {
         twitter: {
           cardType: "website",
           site: "@mickschroeder",
-          url: "https://randomwebsite.mickschroeder.com",
+          url: "https://webshuffle.mickschroeder.com",
           site_name: "Web Shuffle",
         },
         openGraph: {
           type: "website",
           locale: "en",
-          url: "https://randomwebsite.mickschroeder.com",
+          url: "https://webshuffle.mickschroeder.com",
           site_name: "Web Shuffle",
           images: [
             {
-              url: "https://randomwebsite.mickschroeder.com/images/randomwebsite-large-promo.png",
+              url: "https://webshuffle.mickschroeder.com/images/randomwebsite-large-promo.png",
               width: 920,
               height: 680,
               alt: "Logo",
