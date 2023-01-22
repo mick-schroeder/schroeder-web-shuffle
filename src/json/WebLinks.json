@@ -119,6 +119,14 @@
     "icon": "",
     "color": ""
   },
+    {
+    "title": "Daily Mail",
+    "url": "https://www.dailymail.co.uk",
+    "channel": "",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
   {
     "title": "Digitaltrends",
     "url": "https://www.digitaltrends.com/",
@@ -130,6 +138,14 @@
   {
     "title": "Drudge Report",
     "url": "https://www.drudgereport.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+    {
+    "title": "DW",
+    "url": "https://www.dw.com/",
     "channel": "News",
     "fav": "FALSE",
     "icon": "",
@@ -215,6 +231,22 @@
     "icon": "",
     "color": ""
   },
+    {
+    "title": "The Hill",
+    "url": "https://thehill.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+    {
+    "title": "The Hollywood Reporter",
+    "url": "https://www.hollywoodreporter.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  }, 
   {
     "title": "The Independent",
     "url": "https://www.independent.co.uk/",
@@ -298,6 +330,14 @@
   {
     "title": "Mick Schroeder",
     "url": "https://mickschroeder.com",
+    "channel": "",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+    {
+    "title": "Mirror",
+    "url": "https://www.mirror.co.uk/",
     "channel": "News",
     "fav": "FALSE",
     "icon": "",
@@ -415,6 +455,14 @@
     "icon": "",
     "color": ""
   },
+    {
+    "title": "Radio Free Europe Radio Liberty",
+    "url": "https://www.rferl.org/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
   {
     "title": "Realclearpolitics",
     "url": "https://www.realclearpolitics.com/",
@@ -490,6 +538,14 @@
   {
     "title": "Scientific American",
     "url": "https://www.scientificamerican.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+    {
+    "title": "The Sun",
+    "url": "https://www.thesun.co.uk/",
     "channel": "News",
     "fav": "FALSE",
     "icon": "",
