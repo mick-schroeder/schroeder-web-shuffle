@@ -28,7 +28,7 @@ const IndexPage = () => (
             website, please.
           </h2>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-          Welcome to Web Shuffle, the ultimate destination for discovering the most valuable and influential websites on the internet.
+          Welcome to Web Shuffle, the ultimate destination for discovering the best and most influential websites on the internet.
           </p>
           <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
           Simply click the <b>Web Shuffle</b> button and let us take you to the best of the web from our curated list of top sites.</p>
@@ -78,7 +78,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Introducing the Web Shuffle browser extension, the ultimate browsing companion. It adds a "Web Shuffle" button to your browser's toolbar to help you discover the most valuable and influential websites on the internet. 
+                Introducing the Web Shuffle browser extension, the ultimate browsing companion. It adds a "Web Shuffle" button to your browser's toolbar to help you discover the best and most influential websites on the internet. 
                 </p>
                 <div className="py-7">
                   <a

@@ -8,6 +8,142 @@
     "color": ""
   },
   {
+    "title": "ABC News",
+    "url": "https://abcnews.go.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Sky News",
+    "url": "https://news.sky.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "The Wrap",
+    "url": "https://www.thewrap.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Vogue",
+    "url": "https://www.vogue.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Vanity Fair",
+    "url": "https://www.vanityfair.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "E Online",
+    "url": "https://www.eonline.com/",
+    "channel": "Entertainment",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Bleacher Report",
+    "url": "https://bleacherreport.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "TMZ",
+    "url": "https://www.tmz.com/",
+    "channel": "Entertainment",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Pop Sugar",
+    "url": "https://www.popsugar.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "NY Daily News",
+    "url": "https://www.nydailynews.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "PAge Six",
+    "url": "https://pagesix.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "MSNBC",
+    "url": "https://www.msnbc.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "People",
+    "url": "https://people.com/",
+    "channel": "Entertainment",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Newsweek",
+    "url": "https://www.newsweek.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Business Insider",
+    "url": "https://www.businessinsider.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Forbes",
+    "url": "https://www.forbes.com/?sh=620e46712254",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Financial Times",
+    "url": "https://www.ft.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
     "title": "Amazon",
     "url": "https://amazon.com",
     "channel": "Deals",
@@ -59,22 +195,6 @@
     "title": "BBC",
     "url": "https://www.bbc.com/news",
     "channel": "News",
-    "fav": "FALSE",
-    "icon": "",
-    "color": ""
-  },
-  {
-    "title": "Trend Hunter",
-    "url": "https://www.trendhunter.com/",
-    "channel": "",
-    "fav": "FALSE",
-    "icon": "",
-    "color": ""
-  },
-  {
-    "title": "Cool Hunting",
-    "url": "https://coolhunting.com/",
-    "channel": "",
     "fav": "FALSE",
     "icon": "",
     "color": ""
@@ -234,6 +354,14 @@
   {
     "title": "Fastcompany",
     "url": "https://www.fastcompany.com/",
+    "channel": "News",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Foreign Affairs",
+    "url": "https://foreignaffairs.com/",
     "channel": "News",
     "fav": "FALSE",
     "icon": "",
@@ -842,6 +970,14 @@
   {
     "title": "Fiverr",
     "url": "http://www.fiverr.com/s2/790163d37c",
+    "channel": "Referral",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Visible",
+    "url": "  https://www.visible.com/get/?3qcv7F",
     "channel": "Referral",
     "fav": "FALSE",
     "icon": "",

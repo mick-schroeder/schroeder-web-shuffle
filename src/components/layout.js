@@ -43,7 +43,8 @@ const Layout = ({ children }) => {
             without any warranty; without even the implied warranty of
             merchantability or fitness for a particular purpose.{" "}
             <br />
-            Some links may be sponsored or affiliate programs that earn commission.{" "}
+            Some links may be sponsored or affiliate programs that earn commission. 
+            This site uses cookies and analytics trackers and is supported by advertising.{" "}
             <br />
             These links are being provided as a convenience and for
             informational purposes only; they do not constitute an endorsement
