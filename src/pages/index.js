@@ -19,23 +19,21 @@ const IndexPage = () => (
     <div className="text-center">
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
-    <section className="text-slate-500 dark:text-slate-400 body-font">
-      <div className="container px-5 pt-7 mx-auto flex flex-wrap items-center">
+    <section className="text-slate-600 dark:text-slate-400 body-font">
+      <div className="container px-5 py-7 mx-auto flex flex-wrap items-center">
         <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
-          <h2 className="m-6 md:my-5 text-5xl text-slate-900 dark:text-white opacity-75 font-bold tracking-tight leading-none text-center">
+          <h2 className="m-6 md:my-5 text-6xl text-slate-800 dark:text-white font-bold tracking-tight leading-none text-center">
             Take me to a{" "}
             <span className="text-blue-700 dark:text-blue-400">random</span>{" "}
             website, please.
           </h2>
-          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
+          <p className="text-xl mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
           Welcome to Web Shuffle, the ultimate destination for discovering the best and most influential websites on the internet.
           </p>
-          <p className=" mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-          Simply click the <b>Web Shuffle</b> button and let us take you to the best of the web from our curated list of top sites.</p>
           <div className="mt-4 mb-4 text-center">
-            <Link
-              to="/redirect"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-700 hover:bg-green-500"
+            <a
+              href="/redirect"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-600 hover:bg-green-500"
               target="_blank"
             >
               Web Shuffle
@@ -45,10 +43,14 @@ const IndexPage = () => (
                 width="32"
                 height="32"
               />
-            </Link>
+            </a>
           </div>
+          <p className=" mb-3 mt-3 px-6 text-center md:max-w-md leading-relaxed text-base text-sm text-gray-500">
+          Simply click the <b>Web Shuffle</b> button and let us take you to the best of the web from our curated list of top sites.</p>
+
+
         </div>
-        <div className="md:w-1/2 bg-gray-100 dark:bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <div className="md:w-1/2 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
           <LinkGrid />
         </div>
       </div>
@@ -122,21 +124,21 @@ const IndexPage = () => (
               <p className="leading-relaxed text-base pt-3">
                 Bookmark the URL for {" "}
                 <span className="text-indigo-500 text-bold">
-                  <Link to="/redirect" className="font-bold" target="_blank">
+                  <a href="/redirect" className="font-bold" target="_blank">
                     Web Shuffle
-                  </Link>
+                  </a>
                 </span>{" "}
                 or drag{" "}
-                <Link to="/redirect" className="font-bold" target="_blank">
+                <a href="/redirect" className="font-bold" target="_blank">
                   🔀
-                </Link>{" "}
+                </a>{" "}
                 to your favorites bar.
               </p>
               <div className="flex-grow flex items-center justify-center">
                 <p className="leading-relaxed text-base">
-                  <Link to="/redirect" className="font-bold" target="_blank">
+                  <a href="/redirect" className="font-bold" target="_blank">
                     🔀
-                  </Link>{" "}
+                  </a>{" "}
                   &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
                 </p>
               </div>
@@ -292,9 +294,9 @@ const IndexPage = () => (
                 <p className="leading-relaxed text-base pt-3">
                   The{" "}
                   <span className="text-indigo-500 text-bold">
-                    <Link to="/redirect" className="font-bold" target="_blank">
+                    <a href="/redirect" className="font-bold" target="_blank">
                       Web Shuffle
-                    </Link>
+                    </a>
                   </span>{" "}
                   algorithm is backed by an editor curated list of the most
                   influential websites on the internet. We want to take the effort out of finding new websites, giving you more time to enjoy them!

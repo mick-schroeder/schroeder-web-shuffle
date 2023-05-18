@@ -28,7 +28,7 @@ class WebShuffleMachine extends React.Component {
         <div className="inline-flex rounded-md shadow-lg">
           <Link
             to="/redirect"
-            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
+            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-normal tracking-ex font-bold rounded-md text-white bg-green-600 hover:bg-green-500"
           >
             Redirect Now
           </Link>
