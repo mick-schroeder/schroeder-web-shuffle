@@ -21,22 +21,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: "https://webshuffle.mickschroeder.com",
-        sitemap: "https://webshuffle.mickschroeder.com/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
-        env: {
-          development: {
-            policy: [{ userAgent: "*", disallow: ["/"] }],
-          },
-          production: {
-            policy: [{ userAgent: "*", allow: "/" }],
-          },
-        },
-      },
-    },
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
