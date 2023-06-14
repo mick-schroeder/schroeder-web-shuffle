@@ -24,6 +24,22 @@
     "color": ""
   },
   {
+    "title": "A.V. Club",
+    "url": "https://avclub.com/",
+    "channel": "Entertainment",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
+    "title": "Pinterest",
+    "url": "https://www.pinterest.com/today/",
+    "channel": "Socials",
+    "fav": "FALSE",
+    "icon": "",
+    "color": ""
+  },
+  {
     "title": "The Wrap",
     "url": "https://www.thewrap.com/",
     "channel": "News",
@@ -346,7 +362,7 @@
   {
     "title": "Facebook",
     "url": "https://www.facebook.com/",
-    "channel": "Social",
+    "channel": "Socials",
     "fav": "TRUE",
     "icon": "facebook.svg",
     "color": ""
@@ -458,7 +474,7 @@
   {
     "title": "Instagram",
     "url": "https://www.instagram.com/",
-    "channel": "Social",
+    "channel": "Socials",
     "fav": "FALSE",
     "icon": "",
     "color": ""
@@ -634,7 +650,7 @@
   {
     "title": "Reddit",
     "url": "https://www.reddit.com/",
-    "channel": "Social",
+    "channel": "Socials",
     "fav": "TRUE",
     "icon": "reddit.svg",
     "color": ""
@@ -642,7 +658,7 @@
   {
     "title": "RedditP",
     "url": "https://www.redditp.com/",
-    "channel": "Social",
+    "channel": "Socials",
     "fav": "TRUE",
     "icon": "reddit.svg",
     "color": ""
@@ -850,7 +866,7 @@
   {
     "title": "Twitter",
     "url": "https://twitter.com/",
-    "channel": "Social",
+    "channel": "Socials",
     "fav": "TRUE",
     "icon": "twitter.svg",
     "color": ""
