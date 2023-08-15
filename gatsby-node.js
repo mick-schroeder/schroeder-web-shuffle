@@ -8,7 +8,6 @@ exports.onPostBuild = ({ reporter }) => {
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  // Query all project data
   const result = await graphql(`
     {
       allWebLinksJson {
@@ -35,7 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       const channelName = edge.node.channel.toLowerCase()
 
       createPage({
-        path: `/channel/${channelName}`,
+        path: `/channels/${channelName}`,
         component: path.resolve(`./src/templates/channels.js`),
         context: {
           channel: edge.node.channel,

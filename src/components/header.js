@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
       >
         <MickSchroederIcon
           className="fill-current text-white"
-          height="24px"
+          height="18px"
           alt="Mick Schroeder Logo"
         />
       </a>

@@ -23,13 +23,11 @@ const IndexPage = () => (
       <div className="container px-5 py-7 mx-auto flex flex-wrap items-center">
         <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
           <h2 className="m-6 md:my-5 text-6xl text-slate-800 dark:text-white font-bold tracking-tight leading-none text-center">
-            Take me to a{" "}
-            <span className="text-blue-700 dark:text-blue-400">random</span>{" "}
-            website, please.
+            Welcome to{" "}
+            <span className="text-blue-700 dark:text-blue-400">Web Shuffle</span>{", "} the <span className="">AI curated</span>{" "}<span className="">shuffle button</span> for the internet.
           </h2>
-          <p className="text-xl mb-3 mt-3 text-center md:max-w-md leading-relaxed text-base">
-          Welcome to Web Shuffle, the ultimate destination for discovering the best and most influential websites on the internet.
-          </p>
+          <p className="mb-3 mt-3 px-6 text-center md:max-w-md leading-relaxed text-base">
+          Simply click the <b>Web Shuffle</b> button and let us take you to the best and most influential websites on the internet.</p>
           <div className="mt-4 mb-4 text-center">
             <a
               href="/redirect"
@@ -45,10 +43,6 @@ const IndexPage = () => (
               />
             </a>
           </div>
-          <p className=" mb-3 mt-3 px-6 text-center md:max-w-md leading-relaxed text-base text-sm">
-          Simply click the <b>Web Shuffle</b> button and let us take you to the best of the web from our curated list of top sites.</p>
-
-
         </div>
         <div className="md:w-1/2 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
           <LinkGrid />
@@ -80,7 +74,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Introducing the Web Shuffle browser extension, the ultimate browsing companion. It adds a "Web Shuffle" button to your browser's toolbar to help you discover the best and most influential websites on the internet. 
+                Enhance your web browser with our browser extension. It adds the Web Shuffle button to your browser's toolbar.
                 </p>
                 <div className="py-7">
                   <a
@@ -259,12 +253,13 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                  StumbleUpon Alternative
+                  StumbleUpon or The Useless Web Alternative
                 </h2>
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                As opposed to similar websites like StumbleUpon or TheUselessWeb, our algorighm is designed to focus on the top sites on the web.</p>
+                StumbleUpon and The Useless Web are fun for wasting time. Our algorighm is designed to focus on a curated list of the top sites on the web.
+                </p>
               </div>
             </div>
           </div>
@@ -287,7 +282,7 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                  Curated
+                  AI Editor Curated
                 </h2>
               </div>
               <div className="flex-grow">
@@ -298,9 +293,8 @@ const IndexPage = () => (
                       Web Shuffle
                     </a>
                   </span>{" "}
-                  algorithm is backed by an editor curated list of the most
-                  influential websites on the internet. We want to take the effort out of finding new websites, giving you more time to enjoy them!
-                
+                  algorithm is backed by an AI editor curated list of the most
+                  influential websites on the internet.
                 </p>
               </div>
             </div>

@@ -4,7 +4,7 @@ import React from "react"
 
 const LinkGrid = ({}) => (
   <div className="flex items-center justify-center">
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 text-gray-800 dark:text-gray-200 justify-items-center max-w-screen-lg">
+    <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 text-gray-800 dark:text-gray-200 justify-items-center max-w-screen-lg">
       <a href="https://nytimes.com/" target="_blank" rel="noreferrer">
         {" "}
         <div className="weblinkicon bg-gray-50">
@@ -115,6 +115,23 @@ const LinkGrid = ({}) => (
           <div className="square">
             <img
               src="./imdb.svg"
+              alt="Logo"
+              className="fill-current"
+              width="64"
+              height="64"
+            />
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.google.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div className="weblinkicon bg-blue-300">
+          <div className="square">
+            <img
+              src="./google.svg"
               alt="Logo"
               className="fill-current"
               width="64"
