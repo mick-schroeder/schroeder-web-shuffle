@@ -3,9 +3,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 // json
-import JSONData from "../json/WebLinks.json"
+import JSONData from "../json/mick-schroeder.json"
 
-class WebShuffleMachine extends React.Component {
+class PressShuffleMachine extends React.Component {
   componentDidMount() {
     if (this.props.channel) {
       JSONData = JSONData.filter(d => d.channel == this.props.channel)
@@ -38,4 +38,4 @@ class WebShuffleMachine extends React.Component {
   }
 }
 
-export default WebShuffleMachine
+export default PressShuffleMachine

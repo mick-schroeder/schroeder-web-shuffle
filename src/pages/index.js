@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import LinkGrid from "../components/linkGrid"
 
 // left
-//import WebShuffleIcon from "../images/assets/icon-random-website.svg"
+//import PressShuffleIcon from "../images/assets/icon-random-website.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 //import SafariIcon from "../images/assets/safari.svg"
 //import MicrosoftEdgeIcon from "../images/assets/microsoftedge.svg"
@@ -20,21 +20,21 @@ const IndexPage = () => (
       <AdSense.Google client="ca-pub-6344797609391119" slot="1966196909" />
     </div>
     <section className="text-slate-600 dark:text-slate-400 body-font">
-      <div className="container px-5 py-7 mx-auto flex flex-wrap items-center">
-        <div className="md:w-1/2 md:pr-16 lg:pr-0 pr-0 flex flex-col items-center">
+      <div className="container max-w-5xl	px-2 py-4 mx-auto flex flex-wrap items-center ">
+        <div className="flex flex-col items-center">
           <h2 className="m-6 md:my-5 text-6xl text-slate-800 dark:text-white font-bold tracking-tight leading-none text-center">
             Welcome to{" "}
-            <span className="text-blue-700 dark:text-blue-400">Web Shuffle</span>{", "} the <span className="">AI curated</span>{" "}<span className="">shuffle button</span> for the internet.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500 font-extrabold">Press Shuffle</span>
+            {", "} the <span className="">AI curated</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500">shuffle button</span> for news websites.
           </h2>
-          <p className="mb-3 mt-3 px-6 text-center md:max-w-md leading-relaxed text-base">
-          Simply click the <b>Web Shuffle</b> button and let us take you to the best and most influential websites on the internet.</p>
+
           <div className="mt-4 mb-4 text-center">
             <a
               href="/redirect"
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
+              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl uppercase tracking-tightest font-black rounded-md text-white bg-green-500 hover:bg-green-700"
               target="_blank"
             >
-              Web Shuffle
+              Press Shuffle
               <RandomIcon
                 alt="Random"
                 className="fill-current ml-3"
@@ -42,15 +42,19 @@ const IndexPage = () => (
                 height="32"
               />
             </a>
+            <p class="mt-6 mb-8 font-normal max-w-prose text-center text-gray-500 sm:px-16 xl:px-48 dark:text-gray-400 ">          Simply click the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button and let us take you to the best and most influential news sites.</p>
+
+           
           </div>
+          
         </div>
-        <div className="md:w-1/2 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <div className="md:ml-auto w-full mt-10 md:mt-0">
           <LinkGrid />
         </div>
       </div>
     </section>
     <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap">
+      <div className="container max-w-5xl	px-5 py-8 mx-auto flex flex-wrap">
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/3 grow md:grow-0">
             <div className="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
@@ -74,7 +78,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Enhance your web browser with our browser extension. It adds the Web Shuffle button to your browser's toolbar.
+                Enhance your web browser with our browser extension. It adds the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button to your browser's toolbar.
                 </p>
                 <div className="py-7">
                   <a
@@ -118,8 +122,8 @@ const IndexPage = () => (
               <p className="leading-relaxed text-base pt-3">
                 Bookmark the URL for {" "}
                 <span className="text-indigo-500 text-bold">
-                  <a href="/redirect" className="font-bold" target="_blank">
-                    Web Shuffle
+                  <a href="/redirect" className="uppercase tracking-tightest font-black" target="_blank">
+                    Press Shuffle
                   </a>
                 </span>{" "}
                 or drag{" "}
@@ -225,7 +229,7 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Experience the thrill of web surfing by channel surfing the web with just one click on the "Web Shuffle" button.
+                Experience the thrill of web surfing by channel surfing the web with just one click on the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button.
                 </p>
               </div>
             </div>
@@ -253,12 +257,12 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                  StumbleUpon or The Useless Web Alternative
+                Alternative to StumbleUpon 
                 </h2>
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                StumbleUpon and The Useless Web are fun for wasting time. Our algorighm is designed to focus on a curated list of the top sites on the web.
+                StumbleUpon and The Useless Web are fun for wasting time. Our algorighm is designed to focus on a curated list of the top new sites on the web.
                 </p>
               </div>
             </div>
@@ -288,13 +292,12 @@ const IndexPage = () => (
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
                   The{" "}
-                  <span className="text-indigo-500 text-bold">
-                    <a href="/redirect" className="font-bold" target="_blank">
-                      Web Shuffle
+                    <a href="/redirect" className="text-indigo-500 uppercase tracking-tightest font-black" target="_blank">
+                      Press Shuffle
                     </a>
-                  </span>{" "}
+                  {" "}
                   algorithm is backed by an AI editor curated list of the most
-                  influential websites on the internet.
+                  influential news websites on the internet.
                 </p>
               </div>
             </div>

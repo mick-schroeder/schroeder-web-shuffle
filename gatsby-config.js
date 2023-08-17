@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Shuffle`,
+    title: `Press Shuffle`,
     description: `Take me to a random website, please.`,
-    titleTemplate: `Web Shuffle`,
+    titleTemplate: `Press Shuffle`,
     author: `@mick_schroeder`,
-    siteUrl: `https://webshuffle.mickschroeder.com`,
-    url: `https://webshuffle.mickschroeder.com`,
+    siteUrl: `https://pressshuffle.com`,
+    url: `https://pressshuffle.com`,
     image: `icon-randomwebsite.png`,
     twitterUsername: `@mick_schroeder`,
   },
@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Web Shuffle`,
-        short_name: `WebShuffle`,
+        name: `Press Shuffle`,
+        short_name: `PressShuffle`,
         icon: `src/images/assets/icon-random-website-square.svg`,
         start_url: `.`,
         background_color: `#000`,
@@ -68,29 +68,29 @@ module.exports = {
     {
       resolve: "gatsby-plugin-next-seo",
       options: {
-        title: "Web Shuffle",
+        title: "Press Shuffle",
         language: "en",
         description: "Take me to a random website, please.",
         twitter: {
           cardType: "website",
           site: "@mickschroeder",
-          url: "https://webshuffle.mickschroeder.com",
-          site_name: "Web Shuffle",
+          url: "https://pressshuffle.com",
+          site_name: "Press Shuffle",
         },
         openGraph: {
           type: "website",
           locale: "en",
-          url: "https://webshuffle.mickschroeder.com",
-          site_name: "Web Shuffle",
+          url: "https://pressshuffle.com",
+          site_name: "Press Shuffle",
           images: [
             {
-              url: "https://webshuffle.mickschroeder.com/images/randomwebsite-large-promo.png",
+              url: "https://pressshuffle.com/images/randomwebsite-large-promo.png",
               width: 920,
               height: 680,
               alt: "Logo",
             },
             {
-              url: "https://randomwebsite.mickschroeder.com/images/randomwebsite-small-promo.png",
+              url: "https://pressshuffle.com/images/randomwebsite-small-promo.png",
               width: 440,
               height: 280,
               alt: "Logo",

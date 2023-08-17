@@ -1,14 +1,14 @@
 //import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import WebShuffleIcon from "../images/assets/icon-random-website.svg"
+import PressShuffleIcon from "../images/assets/icon-random-website.svg"
 import RandomIcon from "../images/assets/random-solid.svg"
 import MickSchroederIcon from "../images/assets/mickschroeder.svg"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header className="navigation bg-black p-5 flex items-center justify-around">
-    <div className="container gap-y-7 md:gap-y-0 flex flex-col md:flex-row items-center justify-around">
+  <header className="navigation bg-black p-3 flex items-center justify-around">
+    <div className="container gap-y-6 md:gap-y-0 flex flex-col md:flex-row items-center justify-around">
       <a
         href="https://mickschroeder.com"
         rel="external"
@@ -23,19 +23,19 @@ const Header = ({ siteTitle }) => (
 
       <Link to="/">
         <div className="flex flex-row items-center space-x-3">
-          <WebShuffleIcon className="" alt="Logo" width="30" height="30" />
-          <h1 className="text-3xl tracking-tight font-serif font-bold text-gray-50">
-            Web Shuffle
+          <PressShuffleIcon className="" alt="Logo" width="40" height="40" />
+          <h1 className=" text-4xl uppercase tracking-tightest font-black text-gray-50">
+            Press Shuffle
           </h1>
         </div>
       </Link>
-      <div className="rounded-md shadow hidden md:block">
+      <div className="rounded-md shadow hidden md:block uppercase tracking-tightest font-black">
         <a
           href="/redirect"
-          className="inline-flex items-center justify-center text-xs px-3 py-2 border border-transparent tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
+          className="inline-flex items-center justify-center text-xs px-2 py-2 border border-transparent tracking-ex font-bold rounded-md text-white bg-green-500 hover:bg-green-700"
           target="_blank"
         >
-          Web Shuffle
+          Press Shuffle
           <RandomIcon
             alt="Random"
             className="fill-current ml-3"

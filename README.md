@@ -1,8 +1,8 @@
-# 🔀 Web Shuffle
+# 🔀 Press Shuffle
 
 Take me to a random website, please.
 
-Hit the "Web Shuffle" button and you will be sent to a random website from the most influential sites across the web.
+Hit the "Press Shuffle" button and you will be sent to a random website from the most influential sites across the web.
 
 ## Tech Stack
 

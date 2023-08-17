@@ -10,10 +10,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const result = await graphql(`
     {
-      allWebLinksJson {
+      allMickSchroederJson {
         edges {
           node {
-            channel
+            tag
           }
         }
       }
@@ -25,7 +25,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   // Generate single project pages
-  const channels = result.data.allWebLinksJson.edges
+  const channels = result.data.allMickSchroederJson.edges
 
   //console.log(channels)
 
@@ -35,7 +35,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
       createPage({
         path: `/channels/${channelName}`,
-        component: path.resolve(`./src/templates/channels.js`),
+        component: path.resolve(`./src/templates/channel.js`),
         context: {
           channel: edge.node.channel,
         },
