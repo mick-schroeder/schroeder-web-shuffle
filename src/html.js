@@ -24,7 +24,7 @@ export default function HTML(props) {
       </body>
       <script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6344797609391119"
       ></script>
     </html>
   )
