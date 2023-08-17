@@ -8,7 +8,6 @@ import { Link, graphql } from "gatsby"
 // icons
 import WebShuffleIcon from "../images/assets/icon-random-website.svg"
 
-
 const Page = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
 
 export const query = graphql`

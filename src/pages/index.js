@@ -24,8 +24,14 @@ const IndexPage = () => (
         <div className="flex flex-col items-center">
           <h2 className="m-6 md:my-5 text-6xl text-slate-800 dark:text-white font-bold tracking-tight leading-none text-center">
             Welcome to{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500 font-extrabold">Press Shuffle</span>
-            {", "} the <span className="">AI curated</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500">shuffle button</span> for news websites.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500 font-extrabold">
+              Press Shuffle
+            </span>
+            {", "} the <span className="">AI curated</span>{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-pink-500">
+              shuffle button
+            </span>{" "}
+            for news websites.
           </h2>
 
           <div className="mt-4 mb-4 text-center">
@@ -42,11 +48,16 @@ const IndexPage = () => (
                 height="32"
               />
             </a>
-            <p class="mt-6 mb-8 font-normal max-w-prose text-center text-gray-500 sm:px-16 xl:px-48 dark:text-gray-400 ">          Simply click the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button and let us take you to the best and most influential news sites.</p>
-
-           
+            <p class="mt-6 mb-8 font-normal max-w-prose text-center text-gray-500 sm:px-16 xl:px-48 dark:text-gray-400 ">
+              {" "}
+              Simply click the{" "}
+              <span className="uppercase tracking-tightest font-black">
+                Press Shuffle
+              </span>{" "}
+              button and let us take you to the best and most influential news
+              sites.
+            </p>
           </div>
-          
         </div>
         <div className="md:ml-auto w-full mt-10 md:mt-0">
           <LinkGrid />
@@ -78,7 +89,12 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Enhance your web browser with our browser extension. It adds the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button to your browser's toolbar.
+                  Enhance your web browser with our browser extension. It adds
+                  the{" "}
+                  <span className="uppercase tracking-tightest font-black">
+                    Press Shuffle
+                  </span>{" "}
+                  button to your browser's toolbar.
                 </p>
                 <div className="py-7">
                   <a
@@ -120,9 +136,13 @@ const IndexPage = () => (
                 </h2>
               </div>
               <p className="leading-relaxed text-base pt-3">
-                Bookmark the URL for {" "}
+                Bookmark the URL for{" "}
                 <span className="text-indigo-500 text-bold">
-                  <a href="/redirect" className="uppercase tracking-tightest font-black" target="_blank">
+                  <a
+                    href="/redirect"
+                    className="uppercase tracking-tightest font-black"
+                    target="_blank"
+                  >
                     Press Shuffle
                   </a>
                 </span>{" "}
@@ -229,7 +249,12 @@ const IndexPage = () => (
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                Experience the thrill of web surfing by channel surfing the web with just one click on the <span className="uppercase tracking-tightest font-black">Press Shuffle</span> button.
+                  Experience the thrill of web surfing by channel surfing the
+                  web with just one click on the{" "}
+                  <span className="uppercase tracking-tightest font-black">
+                    Press Shuffle
+                  </span>{" "}
+                  button.
                 </p>
               </div>
             </div>
@@ -257,12 +282,14 @@ const IndexPage = () => (
                   </svg>
                 </div>
                 <h2 className="text-white text-lg title-font font-medium">
-                Alternative to StumbleUpon 
+                  Alternative to StumbleUpon
                 </h2>
               </div>
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
-                StumbleUpon and The Useless Web are fun for wasting time. Our algorighm is designed to focus on a curated list of the top new sites on the web.
+                  StumbleUpon and The Useless Web are fun for wasting time. Our
+                  algorighm is designed to focus on a curated list of the top
+                  new sites on the web.
                 </p>
               </div>
             </div>
@@ -292,10 +319,13 @@ const IndexPage = () => (
               <div className="flex-grow">
                 <p className="leading-relaxed text-base pt-3">
                   The{" "}
-                    <a href="/redirect" className="text-indigo-500 uppercase tracking-tightest font-black" target="_blank">
-                      Press Shuffle
-                    </a>
-                  {" "}
+                  <a
+                    href="/redirect"
+                    className="text-indigo-500 uppercase tracking-tightest font-black"
+                    target="_blank"
+                  >
+                    Press Shuffle
+                  </a>{" "}
                   algorithm is backed by an AI editor curated list of the most
                   influential news websites on the internet.
                 </p>

@@ -38,7 +38,7 @@ const LinkGrid = ({}) => (
         <div className="weblinkicon bg-purple-400">
           <div className="square">
             <img
-              src="./instagram-brands.svg"
+              src="./instagram.svg"
               alt="Logo"
               className="fill-current"
               width="64"
