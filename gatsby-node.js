@@ -143,8 +143,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild("Error loading Sources result", resultSources.errors);
     return;
   }
-
-  const browser = await puppeteer.launch({ headless: 'new' });
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'],headless: 'new' });
   const page = await browser.newPage();
   await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
   await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'dark' }]);
