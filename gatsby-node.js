@@ -1,12 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 const puppeteer = require("puppeteer");
-const {
-        Upload
-      } = require("@aws-sdk/lib-storage"),
-      {
-        S3
-      } = require("@aws-sdk/client-s3");
+const AWS = require("aws-sdk");
+require('aws-sdk/lib/maintenance_mode_message').suppress = true;
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
@@ -21,7 +17,7 @@ const PAGE_NAVIGATION_TIMEOUT = 30000;
 const CACHE_TIMEOUT = 23 * 60 * 60 * 1000; //23 hours
 
 // AWS S3 setup
-const s3 = new S3({
+const s3 = new AWS.S3({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 });
@@ -53,10 +49,7 @@ async function uploadToS3(filePath, slug) {
     Body: data,
     ContentType: "image/jpeg",
   };
-  await new Upload({
-    client: s3,
-    params
-  }).done();
+  await s3.upload(params).promise();
 }
 
 async function screenshotExistsInS3(slug) {
@@ -64,7 +57,7 @@ async function screenshotExistsInS3(slug) {
     const objectData = await s3.headObject({
       Bucket: BUCKET_NAME,
       Key: `${slug}.jpg`
-    });
+    }).promise();
     const lastModifiedDate = new Date(objectData.LastModified);
     const now = new Date();
     return (now - lastModifiedDate) < CACHE_TIMEOUT;
