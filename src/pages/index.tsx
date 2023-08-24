@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { PageProps } from "gatsby";
 import { Link } from "gatsby";
-import CardsSources from "../components/cards";
+import CardsSources from "../components/sources-gallery";
 import RedirectButton from "../components/redirect-button";
 import HomePage from "../components/next-site-up";
 import SiteLayout from "../components/site-layout";
@@ -54,7 +54,8 @@ const IndexPage: React.FC<PageProps> = () => {
             internet's virtual newsstand where you can instantly browse the
             daily front pages of leading websites.{" "}
           </p>
-          <CardsSources />
+          <CardsSources limit={6} />
+
           <p className="text-gray-500 dark:text-gray-400 py-6  text-center">
             <Link
               to="/sources"

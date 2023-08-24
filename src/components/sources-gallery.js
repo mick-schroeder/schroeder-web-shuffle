@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import StarRating from "../components/star-rating";
+import StarRating from "./star-rating";
 
-const FeaturesSection = () => {
+const SourcesGallery = ({ limit }) => {
   const data = useStaticQuery(graphql`
     query {
       allSourcesJson {
@@ -14,6 +14,7 @@ const FeaturesSection = () => {
             score
             tag
             url
+            slug
             image {
               childImageSharp {
                 gatsbyImageData
@@ -25,9 +26,10 @@ const FeaturesSection = () => {
     }
   `);
 
-  const sources = data.allSourcesJson.edges
-    .sort((a, b) => 0.5 - Math.random())
-    .slice(0, 6);
+
+const shuffledSources = limit ? data.allSourcesJson.edges.sort((a, b) => 0.5 - Math.random()) : data.allSourcesJson.edges;
+
+const sources = limit ? shuffledSources.slice(0, limit) : shuffledSources;
 
   return (
     <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
@@ -40,9 +42,7 @@ const FeaturesSection = () => {
             className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
           >
             <Link
-              to={node.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              to={`/sources/${node.slug}`}
               aria-label={`View ${node.name}`}
             >
               <GatsbyImage image={image} alt={node.name} />
@@ -98,4 +98,4 @@ const FeaturesSection = () => {
   );
 };
 
-export default FeaturesSection;
+export default SourcesGallery;

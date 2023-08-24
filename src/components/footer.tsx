@@ -2,6 +2,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
+const currentYear = new Date().getFullYear();
+
 export default function FooterWithSocialMediaIcons() {
   return (
     <footer className="bg-white rounded-lg shadow dark:bg-gray-900">
@@ -50,7 +52,7 @@ export default function FooterWithSocialMediaIcons() {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <p>
             {" "}
-            Web Shuffle™ © 2023 Mick Schroeder, LLC. All Rights Reserved.
+            Web Shuffle™ © 2021-{currentYear} Mick Schroeder, LLC. All Rights Reserved.
           </p>
           <p className="py-4 md:p-10 text-xs text-justify text-gray-500 dark:text-gray-400">
             This program is distributed in the hope that it will be useful, but
