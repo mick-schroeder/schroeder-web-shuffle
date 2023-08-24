@@ -1,45 +1,83 @@
-const { func } = require("prop-types")
-const path = require(`path`)
+const path = require("path");
 
-exports.onPostBuild = ({ reporter }) => {
-  reporter.info(`Your Gatsby site has been built!`)
-}
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  // MDX PAGES
+  const resultTemplatePath = path.resolve(`src/templates/MDXPageTemplate.js`);
 
   const result = await graphql(`
     {
-      allMickSchroederJson {
+      allFile(filter: { sourceInstanceName: { eq: "mdx-pages" } }) {
+        nodes {
+          childMdx {
+            id
+            body
+            frontmatter {
+              title
+            }
+            internal {
+              contentFilePath
+            }
+          }
+          relativePath
+        }
+      }
+    }
+  `);
+  if (result.errors) {
+    reporter.panicOnBuild("Error loading MDX result", result.errors);
+  } else {
+    const postTemplate = path.resolve(`./src/templates/MDXPageTemplate.js`);
+
+    result.data.allFile.nodes.forEach(({ relativePath, childMdx }) => {
+      createPage({
+        path: `${path.basename(relativePath, ".mdx")}`,
+        component: `${postTemplate}?__contentFilePath=${childMdx.internal.contentFilePath}`,
+        context: {
+          body: childMdx.body,
+          title: childMdx.frontmatter.title,
+          id: childMdx.id,
+        },
+      });
+    });
+  }
+
+  // SOURCES
+
+  const resultSources = await graphql(`
+    query {
+      allSourcesJson {
         edges {
+          previous {
+            slug
+          }
           node {
-            tag
+            slug
+          }
+          next {
+            slug
           }
         }
       }
     }
-  `)
-  if (result.errors) {
-    reporter.panic("Error loading channels", queryResult.errors)
-    return
-  }
+  `);
 
-  // Generate single project pages
-  const channels = result.data.allMickSchroederJson.edges
-
-  //console.log(channels)
-
-  channels.forEach(edge => {
-    if (edge.node.channel) {
-      const channelName = edge.node.channel.toLowerCase()
+  if (resultSources.errors) {
+    reporter.panicOnBuild("Error loading Sources result", resultSources.errors);
+  } else {
+    resultSources.data.allSourcesJson.edges.forEach((edge) => {
+      const pagePath = `/sources/${edge.node.slug}`; // Create page path
 
       createPage({
-        path: `/channels/${channelName}`,
-        component: path.resolve(`./src/templates/channel.js`),
+        path: pagePath,
+        component: path.resolve("./src/templates/SourceTemplate.js"), // Create a template for the page
         context: {
-          channel: edge.node.channel,
+          slug: edge.node.slug,
+          prevSlug: edge.previous ? edge.previous.slug : null,
+          nextSlug: edge.next ? edge.next.slug : null,
         },
-      })
-    }
-  })
-}
+      });
+    });
+  }
+};

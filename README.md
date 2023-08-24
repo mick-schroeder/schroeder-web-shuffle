@@ -1,8 +1,8 @@
-# 🔀 Press Shuffle
+# 🔀 Web Shuffle
 
 Take me to a random website, please.
 
-Hit the "Press Shuffle" button and you will be sent to a random website from the most influential sites across the web.
+Hit the "Web Shuffle" button and you will be sent to a random website from the most influential sites across the web.
 
 ## Tech Stack
 
@@ -15,8 +15,8 @@ Hit the "Press Shuffle" button and you will be sent to a random website from the
 ### Development
 
     ```shell
-    git clone https://github.com/mick-schroeder/gatsby-random-website.git
-    cd gatsby-random-website
+    git clone https://github.com/mick-schroeder/gatsby-web-shuffle.git
+    cd gatsby-web-shuffle
     npm install
     npm run develop
     ```

@@ -1,15 +1,17 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./gatsby-ssr.js",
-    "./src/**/*.js",
-    "./src/**/*.css",
-    "./src/**/*.html",
-  ],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "media",
 
+  content: [
+    `./src/pages/**/*.{js,jsx,ts,tsx,mdx}`,
+    `./src/mdx-pages/**/*.{js,jsx,ts,tsx,mdx}`,
+    `./src/templates/**/*.{js,jsx,ts,tsx,mdx}`,
+    `./src/components/**/*.{js,jsx,ts,tsx,mdx}`,
+  ],
   theme: {
-    extend: {},
+    extend: {
+      
+    },
   },
-  variants: {},
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

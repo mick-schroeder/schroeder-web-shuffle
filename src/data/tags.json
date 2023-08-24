@@ -1,0 +1,11 @@
+[
+  { "name": "Entertainment", "icon": "", "color": "" },
+  { "name": "News", "icon": "", "color": "" },
+  { "name": "Shopping", "icon": "", "color": "" },
+  { "name": "Tech", "icon": "", "color": "" },
+  { "name": "Aggregator", "icon": "", "color": "" },
+  { "name": "Sponsor", "icon": "", "color": "" },
+  { "name": "Socials", "icon": "", "color": "" },
+  { "name": "Education", "icon": "", "color": "" },
+  { "name": "Science", "icon": "", "color": "" }
+]

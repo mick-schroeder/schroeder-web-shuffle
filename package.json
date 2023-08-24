@@ -1,59 +1,56 @@
 {
-  "name": "gatsby-press-shuffle",
+  "name": "gatsby-web-shuffle",
+  "version": "5.0.0",
   "private": true,
-  "description": "Take me to a random website, please.",
-  "version": "4.0.0",
-  "author": "Mick Schroeder <mschroeder@gmail.com>",
+  "license": "AGPL-3.0",
+  "description": "Simply click the Web Shuffle button and let us take you to the best and most influential websites.",
+  "author": "Mick Schroeder, LLC <contact@mickschroeder.com>",
+  "engines": {
+    "node": "^18.0.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,md,mdx,json,css}\"",
+    "check-updates": "npm-check-updates",
+    "upgrade": "npm-check-updates -u && npm install",
+    "upgrade-minor": "npm-check-updates --target minor -u && npm install"
+  },
   "dependencies": {
+    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.15",
-    "cssnano": "^5.1.15",
-    "gatsby": "^4.25.7",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-google-gtag": "^4.25.0",
-    "gatsby-plugin-layout": "^3.25.0",
-    "gatsby-plugin-manifest": "^4.25.0",
-    "gatsby-plugin-next-seo": "^1.11.0",
-    "gatsby-plugin-offline": "^5.25.0",
-    "gatsby-plugin-postcss": "^5.25.0",
-    "gatsby-plugin-purgecss": "^6.2.1",
-    "gatsby-plugin-react-helmet": "^5.25.0",
-    "gatsby-plugin-react-svg": "^3.3.0",
-    "gatsby-plugin-sharp": "^4.25.1",
-    "gatsby-plugin-sitemap": "^5.25.0",
-    "gatsby-source-filesystem": "^4.25.0",
-    "gatsby-transformer-json": "^4.25.0",
-    "gatsby-transformer-sharp": "^4.25.0",
-    "postcss": "^8.4.27",
-    "postcss-import": "^15.1.0",
-    "prop-types": "^15.8.1",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.5.0",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-mdx": "^5.11.0",
+    "gatsby-plugin-offline": "^6.11.0",
+    "gatsby-plugin-postcss": "^6.11.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-sitemap": "^6.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-json": "^5.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
+    "postcss": "^8.4.28",
     "react": "^18.2.0",
-    "react-adsense": "^0.1.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-helmet-async": "^1.3.0",
-    "react-icons": "^4.10.1",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "AGPL-3.0-or-later",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle"
-  },
-  "bugs": {
-    "url": "https://github.com/mick-schroeder/gatsby-web-shuffle/issues"
+    "@types/node": "^20.5.3",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "npm-check-updates": "^16.13.1",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
   }
 }
