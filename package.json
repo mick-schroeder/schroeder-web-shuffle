@@ -22,11 +22,12 @@
     "upgrade-minor": "npm-check-updates --target minor -u && npm install"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.398.0",
+    "@aws-sdk/lib-storage": "^3.398.0",
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.15",
-    "aws-sdk": "^2.1443.0",
     "dotenv": "^16.3.1",
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.5.0",
