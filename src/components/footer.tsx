@@ -38,7 +38,7 @@ export default function FooterWithSocialMediaIcons() {
             </li>
             <li>
               <Link
-                to="mailto:we@mickschroeder.com"
+                to="mailto:webshuffle@mickschroeder.com"
                 className="hover:underline"
               >
                 Contact

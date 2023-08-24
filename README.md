@@ -15,8 +15,8 @@ Hit the "Web Shuffle" button and you will be sent to a random website from the m
 ### Development
 
     ```shell
-    git clone https://github.com/mick-schroeder/gatsby-web-shuffle.git
-    cd gatsby-web-shuffle
+    git clone https://github.com/mick-schroeder/schroeder-web-shuffle.git
+    cd schroeder-web-shuffle
     npm install
     npm run develop
     ```

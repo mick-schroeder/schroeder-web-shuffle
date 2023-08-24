@@ -90,12 +90,6 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-    /*     {
-      resolve: "gatsby-plugin-sources",
-      options: {
-        sourcesJsonPath: "./src/data/sources.json",
-      },
-    }, */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
