@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { Link } from "gatsby";
+import logo from "../images/logo.svg"
 
 const currentYear = new Date().getFullYear();
 
@@ -11,7 +12,7 @@ export default function FooterWithSocialMediaIcons() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center mb-4 sm:mb-0">
             <img
-              src="/logo.svg"
+              src={logo}
               className="h-8 mr-3"
               alt="Web Shuffle Logo"
             />
@@ -39,12 +40,12 @@ export default function FooterWithSocialMediaIcons() {
               </Link>
             </li>
             <li>
-              <Link
-                to="mailto:webshuffle@mickschroeder.com"
+              <a
+                href="mailto:webshuffle@mickschroeder.com"
                 className="hover:underline"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

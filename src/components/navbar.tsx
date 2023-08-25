@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import RedirectButton from "./redirect-button";
+import logo from "../images/logo.svg"
 
 const NAV_ITEMS = [
   { title: "Home", slug: "" },
@@ -19,7 +20,7 @@ export default function DefaultNavbar() {
         <div className="flex-none">
           <Link to="/" className="flex items-center">
             <img
-              src="/logo.svg"
+              src={logo}
               className="h-8 mr-3 transition-transform transform hover:rotate-3"
               alt="Logo"
             />

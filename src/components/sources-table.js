@@ -73,13 +73,13 @@ const SourcesTable = () => {
           </td>
           <td className="px-6 py-4">
             {" "}
-            <Link
-              y={website.url}
+            <a
+              href={website.url}
               target=""
               className="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline"
             >
               {website.url}
-            </Link>
+            </a>
           </td>
         </tr>
       ))}

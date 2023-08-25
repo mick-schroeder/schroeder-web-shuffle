@@ -115,15 +115,15 @@ const SourceTemplate = ({ data, pageContext }) => {
     </ol>
   </nav>
 
-  <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-    <Link to={source.url}>
+  <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+    <a href={source.url}>
       <GatsbyImage
         className="w-full md:w-60 rounded-lg sm:rounded-none sm:rounded-l-lg"
         image={image}
         alt={source.name}
       />
-    </Link>
-    <div class="p-5 prose dark:prose-invert">
+    </a>
+    <div className="p-5 prose dark:prose-invert">
       <h1 className="text-2xl md:text-3xl font-bold mb-4">{source.name}</h1>
       <p>
         <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">

@@ -2,10 +2,10 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Web Shuffle`,
-    description: `The AI curated shuffle button for the web.`,
+    title: `Web Shuffle: AI-Curated Exploration of Top News Websites`,
+    description: `Simply click the Web Shuffle button and let our AI curator take you to the best and most influential websites.`,
     twitterUsername: `@mick_schroeder`,
-    image: `/press-shuffle-large-promo.png`,
+    image: `/web-shuffle-large-promo.png`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
   },
   graphqlTypegen: true,
@@ -39,7 +39,6 @@ const config: GatsbyConfig = {
         },
       },
     },
-    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -103,7 +102,15 @@ const config: GatsbyConfig = {
         extensions: [".mdx"],
         gatsbyRemarkPlugins: [],
       },
+      
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        createLinkInHead: true,
+      },
+    }
+
   ],
 };
 

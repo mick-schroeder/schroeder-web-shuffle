@@ -46,12 +46,12 @@ const Features = () => (
                 button to your browser's toolbar.
               </p>
               <div className="py-7">
-                <Link
-                  to="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
+                <a
+                  href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
                   className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
                 >
                   Chrome Extension
-                </Link>{" "}
+                </a>{" "}
               </div>
             </div>
           </div>
@@ -144,25 +144,25 @@ const Features = () => (
               <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
                 This program is free software: you can redistribute it and/or
                 modify it under the terms of the
-                <Link
-                  to="https://www.gnu.org/licenses/agpl.html"
+                <a
+                  href="https://www.gnu.org/licenses/agpl.html"
                   rel="external"
                   className="text-indigo-600 dark:text-indigo-400 font-bold"
                 >
                   &nbsp;GNU Affero General Public License&nbsp;
-                </Link>
+                </a>
                 as published by the
-                <Link
-                  to="https://www.fsf.org/"
+                <a
+                  href="https://www.fsf.org/"
                   rel="external"
                   className="text-indigo-600 dark:text-indigo-400 font-bold"
                 >
                   &nbsp;Free Software Foundation
-                </Link>
+                </a>
                 .
               </p>
-              <Link
-                to="https://github.com/mick-schroeder/gatsby-random-website"
+              <a
+                href="https://github.com/mick-schroeder/gatsby-random-website"
                 className="mt-3 font-bold text-indigo-600 dark:text-indigo-400 inline-flex items-cente"
               >
                 Source code on Github
@@ -177,7 +177,7 @@ const Features = () => (
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

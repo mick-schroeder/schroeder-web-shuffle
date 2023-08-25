@@ -56,14 +56,14 @@ const sources = limit ? shuffledSources.slice(0, limit) : shuffledSources;
                 </span>
               </div>
 
-              <Link to={node.url} className="block mb-1">
+              <a href={node.url} className="block mb-1">
                 <h3 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white hover:text-blue-600">
                   {node.name}
                 </h3>
-              </Link>
+              </a>
 
-              <Link
-                to={node.url}
+              <a
+                href={node.url}
                 className="text-xs font-semibold inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const sources = limit ? shuffledSources.slice(0, limit) : shuffledSources;
                     d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         );
