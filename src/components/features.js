@@ -39,7 +39,7 @@ const Features = () => (
                   to="/redirect"
                   className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Web Shuffle
                 </Link>{" "}
@@ -86,7 +86,7 @@ const Features = () => (
                   to="/redirect"
                   className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Web Shuffle
                 </Link>{" "}
@@ -96,7 +96,7 @@ const Features = () => (
                 to="/redirect"
                 className="font-bold"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
               >
                 🔀
               </Link>{" "}
@@ -108,7 +108,7 @@ const Features = () => (
                   to="/redirect"
                   className="font-bold"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   🔀
                 </Link>{" "}
@@ -210,7 +210,7 @@ const Features = () => (
                   to="/redirect"
                   className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Web Shuffle
                 </Link>{" "}
@@ -283,7 +283,7 @@ const Features = () => (
                   to="/redirect"
                   className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   Web Shuffle
                 </Link>{" "}

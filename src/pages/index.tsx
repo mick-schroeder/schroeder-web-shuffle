@@ -18,7 +18,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-slate-700 dark:text-white">
                 Welcome to
                 <br />
-                <span className="text-transparent uppercase tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
+                <span className="text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
                   Web Shuffle
                 </span>
                 <br />

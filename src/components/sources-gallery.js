@@ -66,7 +66,7 @@ const sources = limit ? shuffledSources.slice(0, limit) : shuffledSources;
                 href={node.url}
                 className="text-xs font-semibold inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
               >
                 <p className="truncate mr-2">
                   {node.url.length > 30

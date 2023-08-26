@@ -104,13 +104,27 @@ const config: GatsbyConfig = {
       },
       
     },
+    
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        createLinkInHead: true,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://webshuffle.mickschroeder.com',
+        sitemap: 'https://webshuffle.mickschroeder.com/sitemap-index.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }, {userAgent: '*', disallow: ['/redirect'] }]
+          }
+        }
+      }
     }
-
   ],
 };
 
