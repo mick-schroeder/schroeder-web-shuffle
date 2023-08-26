@@ -2555,15 +2555,31 @@ type SitePluginSortInput = {
 };
 
 type SiteSiteMetadata = {
+  readonly author: Maybe<Scalars['String']>;
+  readonly authorUrl: Maybe<Scalars['String']>;
   readonly description: Maybe<Scalars['String']>;
+  readonly email: Maybe<Scalars['String']>;
+  readonly founding_year: Maybe<Scalars['Date']>;
   readonly image: Maybe<Scalars['String']>;
   readonly siteUrl: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
   readonly twitterUsername: Maybe<Scalars['String']>;
 };
 
+
+type SiteSiteMetadata_founding_yearArgs = {
+  difference: InputMaybe<Scalars['String']>;
+  formatString: InputMaybe<Scalars['String']>;
+  fromNow: InputMaybe<Scalars['Boolean']>;
+  locale: InputMaybe<Scalars['String']>;
+};
+
 type SiteSiteMetadataFieldSelector = {
+  readonly author: InputMaybe<FieldSelectorEnum>;
+  readonly authorUrl: InputMaybe<FieldSelectorEnum>;
   readonly description: InputMaybe<FieldSelectorEnum>;
+  readonly email: InputMaybe<FieldSelectorEnum>;
+  readonly founding_year: InputMaybe<FieldSelectorEnum>;
   readonly image: InputMaybe<FieldSelectorEnum>;
   readonly siteUrl: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
@@ -2571,7 +2587,11 @@ type SiteSiteMetadataFieldSelector = {
 };
 
 type SiteSiteMetadataFilterInput = {
+  readonly author: InputMaybe<StringQueryOperatorInput>;
+  readonly authorUrl: InputMaybe<StringQueryOperatorInput>;
   readonly description: InputMaybe<StringQueryOperatorInput>;
+  readonly email: InputMaybe<StringQueryOperatorInput>;
+  readonly founding_year: InputMaybe<DateQueryOperatorInput>;
   readonly image: InputMaybe<StringQueryOperatorInput>;
   readonly siteUrl: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
@@ -2579,7 +2599,11 @@ type SiteSiteMetadataFilterInput = {
 };
 
 type SiteSiteMetadataSortInput = {
+  readonly author: InputMaybe<SortOrderEnum>;
+  readonly authorUrl: InputMaybe<SortOrderEnum>;
   readonly description: InputMaybe<SortOrderEnum>;
+  readonly email: InputMaybe<SortOrderEnum>;
+  readonly founding_year: InputMaybe<SortOrderEnum>;
   readonly image: InputMaybe<SortOrderEnum>;
   readonly siteUrl: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;

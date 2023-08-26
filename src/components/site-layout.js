@@ -1,7 +1,7 @@
 import React from "react";
 import { NextSiteProvider } from "./next-site-context";
 import Navbar from "./navbar";
-import Footerbar from "./footer";
+import FooterBar from "./footer";
 
 const SiteLayout = ({ children }) => (
   <NextSiteProvider>
@@ -17,9 +17,7 @@ const SiteLayout = ({ children }) => (
         </main>
       </div>
       {/* Footer */}
-      <footer className="">
-        <Footerbar />
-      </footer>
+      <FooterBar />
     </div>
   </NextSiteProvider>
 );

@@ -2,10 +2,14 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Web Shuffle: AI-Curated Exploration of Top News Websites`,
+    title: `Web Shuffle`,
     description: `Simply click the Web Shuffle button and let our AI curator take you to the best and most influential websites.`,
     twitterUsername: `@mick_schroeder`,
     image: `/web-shuffle-large-promo.png`,
+    author: `Mick Schroeder, LLC`,
+    authorUrl: `https://mickschroeder.com`,
+    founding_year: `2021`,
+    email: `webshuffle@mickschroeder.com`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
   },
   graphqlTypegen: true,
