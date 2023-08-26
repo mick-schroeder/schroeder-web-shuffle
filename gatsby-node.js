@@ -2,10 +2,15 @@ const path = require("path");
 const fs = require("fs");
 const puppeteer = require("puppeteer");
 const AWS = require("aws-sdk");
+const sharp = require('sharp');
+
 require('aws-sdk/lib/maintenance_mode_message').suppress = true;
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
+
+const shouldForceRegenerate = process.env.FORCE_REGENERATE === "true";
+
 
 // Constants
 const BUCKET_NAME = "web-shuffle-screenshots";
@@ -25,32 +30,68 @@ const s3 = new AWS.S3({
 const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = process.env.NODE_ENV === "production";
 
-async function generateScreenshot(page, url, slug, reporter) {
+async function generatePlaceholderImage(slug) {
   try {
-    await page.goto(url, { waitUntil: "networkidle2", timeout: PAGE_NAVIGATION_TIMEOUT });
+      await sharp({
+          create: {
+              width: VIEWPORT_WIDTH,
+              height: VIEWPORT_HEIGHT,
+              channels: 3,
+              background: { r: 200, g: 200, b: 200 }
+          }
+      })
+      .jpeg()
+      .toFile(`${SCREENSHOT_PATH}/${slug}.jpg`);
   } catch (error) {
-    if (error.message.includes("Navigation timeout")) {
-      reporter.warn(`Navigation timeout reached for ${url}, attempting screenshot anyway...`);
-    } else {
-      throw error;
-    }
+      throw new Error(`Failed to generate placeholder image: ${error.message}`);
   }
-  await page.screenshot({
-    path: `${SCREENSHOT_PATH}/${slug}.jpg`,
-    quality: SCREENSHOT_QUALITY
-  });
 }
 
-async function uploadToS3(filePath, slug) {
-  const data = fs.readFileSync(filePath);
-  const params = {
-    Bucket: BUCKET_NAME,
-    Key: `${slug}.jpg`,
-    Body: data,
-    ContentType: "image/jpeg",
-  };
-  await s3.upload(params).promise();
+async function generateScreenshot(page, url, slug, reporter, retryCount = 3) {
+  let success = false;
+
+  for (let attempt = 1; attempt <= retryCount; attempt++) {
+    try {
+      await page.goto(url, { waitUntil: "networkidle2", timeout: PAGE_NAVIGATION_TIMEOUT });
+      await page.screenshot({
+        path: `${SCREENSHOT_PATH}/${slug}.jpg`,
+        quality: 80
+      });
+      success = true;
+      break;  // Exit loop if screenshot is successful
+    } catch (error) {
+      if (error.name === 'TimeoutError' && attempt < retryCount) {
+        reporter.warn(`Attempt ${attempt} failed for ${url}. Retrying...`);
+      } else if (attempt === retryCount) {
+        try {
+          await generatePlaceholderImage(slug);
+          reporter.warn(`Generated placeholder image for ${url} after failing to capture screenshot.`);
+        } catch (placeholderError) {
+          reporter.error(`Failed to generate placeholder image for ${url}: ${placeholderError.message}`);
+        }
+      }
+    }
+  }
+
+  return success;
 }
+
+
+async function uploadToS3(filePath, slug, reporter) {
+  try {
+    const data = fs.readFileSync(filePath);
+    const params = {
+      Bucket: BUCKET_NAME,
+      Key: `${slug}.jpg`,
+      Body: data,
+      ContentType: "image/jpeg",
+    };
+    await s3.upload(params).promise();
+  } catch (error) {
+    reporter.warn(`Failed to upload ${slug}.jpg to S3: ${error.message}`);
+  }
+}
+
 
 async function screenshotExistsInS3(slug) {
   try {
@@ -69,10 +110,28 @@ async function screenshotExistsInS3(slug) {
 
 async function shouldGenerateScreenshot(slug) {
   if (isDevelopment) {
+    if (shouldForceRegenerate) return true;
     return !fs.existsSync(`${SCREENSHOT_PATH}/${slug}.jpg`);
   }
   if (isProduction) {
     return !(await screenshotExistsInS3(slug));
+  }
+}
+
+async function downloadFromS3(slug, reporter) {
+  try {
+    const params = {
+      Bucket: BUCKET_NAME,
+      Key: `${slug}.jpg`,
+    };
+    const stream = require('stream');
+    const util = require('util');
+    const pipeline = util.promisify(stream.pipeline);
+    const s3Stream = s3.getObject(params).createReadStream();
+    const fileWriteStream = fs.createWriteStream(`${SCREENSHOT_PATH}/${slug}.jpg`);
+    await pipeline(s3Stream, fileWriteStream);
+  } catch (error) {
+    reporter.warn(`Failed to download ${slug}.jpg from S3: ${error.message}`);
   }
 }
 
@@ -157,10 +216,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         reporter.log(`Generating screenshot for ${edge.node.url}.`);
         await generateScreenshot(page, edge.node.url, edge.node.slug, reporter);
         if (isProduction) {
-          await uploadToS3(`${SCREENSHOT_PATH}/${edge.node.slug}.jpg`, edge.node.slug);
+          await uploadToS3(`${SCREENSHOT_PATH}/${edge.node.slug}.jpg`, edge.node.slug, reporter);
         }
       } catch (error) {
         reporter.warn(`Failed to generate/upload screenshot for ${edge.node.url}: ${error.message}`);
+      }
+    } else if (isProduction) {
+      try {
+        reporter.log(`Downloading screenshot for ${edge.node.url} from S3.`);
+        await downloadFromS3(edge.node.slug, reporter);
+      } catch (error) {
+        reporter.warn(`Failed to download screenshot for ${edge.node.url} from S3: ${error.message}`);
       }
     }
 
@@ -173,7 +239,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nextSlug: edge.next ? edge.next.slug : null,
       },
     });
-  }
+}
 
   await browser.close();
 };
