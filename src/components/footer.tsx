@@ -56,7 +56,7 @@ const FooterBar = () => {
         <div className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <p>
             {" "}
-            {data.site.siteMetadata.title}™ © 2021-{currentYear} <a href={data.site.siteMetadata.siteUrl}>{data.site.siteMetadata.author}</a>. All Rights Reserved.
+            {data.site.siteMetadata.title}™ © 2021-{currentYear} <a href={data.site.siteMetadata.authorUrl} className="font-semibold hover:underline">{data.site.siteMetadata.author}</a>. All Rights Reserved.
           </p>
           <p className="py-4 md:p-10 text-xs text-justify text-gray-500 dark:text-gray-400">
             This program is distributed in the hope that it will be useful, but
