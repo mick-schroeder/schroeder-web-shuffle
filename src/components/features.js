@@ -37,7 +37,7 @@ const Features = () => (
                 Enhance your web browser with our browser extension. It adds the{" "}
                 <Link
                   to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
+                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
                   target="_blank"
                   rel="noopener"
                 >
@@ -84,7 +84,7 @@ const Features = () => (
                 {" "}
                 <Link
                   to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
+                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
                   target="_blank"
                   rel="noopener"
                 >
@@ -208,7 +208,7 @@ const Features = () => (
                 with just one click on the{" "}
                 <Link
                   to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
+                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
                   target="_blank"
                   rel="noopener"
                 >
@@ -281,7 +281,7 @@ const Features = () => (
                 The{" "}
                 <Link
                   to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 uppercase tracking-tightest font-black"
+                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
                   target="_blank"
                   rel="noopener"
                 >

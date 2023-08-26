@@ -24,7 +24,7 @@ export default function DefaultNavbar() {
               className="h-8 mr-3 transition-transform transform hover:rotate-3"
               alt="Logo"
             />
-            <span className="self-center text-2xl font-black tracking-tighter uppercase self-center whitespace-nowrap dark:text-slate-100">
+            <span className="self-center text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-slate-100">
               Web Shuffle
             </span>
           </Link>

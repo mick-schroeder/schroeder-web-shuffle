@@ -38,7 +38,7 @@ const FooterBar = () => {
               className="h-8 mr-3"
               alt={`${data.site.siteMetadata.title} Logo`}
             />
-            <span className="text-2xl font-black tracking-tighter uppercase self-center whitespace-nowrap dark:text-slate-100">
+            <span className="text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-slate-100">
               {data.site.siteMetadata.title}
             </span>
           </Link>
