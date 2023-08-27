@@ -8,7 +8,7 @@ const config: GatsbyConfig = {
     image: `/web-shuffle-large-promo.png`,
     author: `Mick Schroeder, LLC`,
     authorUrl: `https://mickschroeder.com`,
-    founding_year: `2021`,
+    foundingYear: `2021`,
     email: `webshuffle@mickschroeder.com`,
     siteUrl: `https://webshuffle.mickschroeder.com`,
   },
