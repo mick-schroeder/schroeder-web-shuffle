@@ -80,3 +80,4 @@ const WebsitesPage = () => {
 };
 
 export default WebsitesPage;
+export const Head = () => <SEO />;

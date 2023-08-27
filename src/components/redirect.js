@@ -19,8 +19,8 @@ const Redirecter = () => {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center ">
-        <div className="bg-white dark:bg-gray-700 rounded-lg p-8 shadow-md">
+      <div className="flex items-center justify-center">
+        <div className="bg-white dark:bg-gray-700 rounded-lg p-8 shadow-md md:my-16 ">
           <p className="text-xl font-bold mb-4 text-black dark:text-slate-300">
             Redirecting...
           </p>
