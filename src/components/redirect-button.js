@@ -23,9 +23,8 @@ const RedirectButton = () => {
         focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-md
       "
     >
+    <img src={WebShuffleIcon} className="w-3.5 h-3.5 mr-2 fill-white" alt="Web Shuffle Icon" />
       Web Shuffle
-      <img src={WebShuffleIcon} className="w-3.5 h-3.5 ml-2 fill-white" alt="Web Shuffle Icon" />
-
     </a>
   );
 };

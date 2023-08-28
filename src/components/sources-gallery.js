@@ -45,14 +45,14 @@ useEffect(() => {
         return (
           <div
             key={node.name}
-            className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
+            className="bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg shadow hover:shadow-lg dark:bg-slate-800 dark:border-slate-700 overflow-hidden hover:dark:bg-slate-700 hover:dark:border-slate-600"
           >
     
             <div className="p-4">
             <a href={node.url} className="block mb-1">
-            <h3 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white hover:text-blue-600">
+            <h4 className="text-lg font-semibold text-gray-900 dark:text-white hover:text-blue-600">
               {node.name}
-            </h3>
+            </h4>
           
             </a>  <div className="flex items-center justify-between">
             <StarRating score={node.score} />
