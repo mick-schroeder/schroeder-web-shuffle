@@ -3,6 +3,7 @@ import SiteLayout from "../components/site-layout";
 import { graphql, Link, navigate } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import StarRating from "../components/star-rating";
+import { SEO } from "../components/seo";
 
 export const query = graphql`
   query GetSourceBySlug($slug: String!) {
@@ -252,3 +253,4 @@ const SourceTemplate = ({ data, pageContext }) => {
 };
 
 export default SourceTemplate;
+export const Head = () => <SEO />;

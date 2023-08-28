@@ -6,9 +6,8 @@ import logo from "../images/logo.svg"
 const NAV_ITEMS = [
   { title: "Home", slug: "" },
   { title: "About", slug: "about" },
-  { title: "Apps", slug: "apps" },
+  { title: "Newsstand", slug: "newsstand" },
   { title: "Sources", slug: "sources" },
-  { title: "API", slug: "api" },
 ];
 
 export default function DefaultNavbar() {
@@ -24,7 +23,7 @@ export default function DefaultNavbar() {
               className="h-8 mr-3 transition-transform transform hover:rotate-3"
               alt="Logo"
             />
-            <span className="self-center text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-slate-100">
+            <span className="self-center text-2xl font-black tracking-tighter whitespace-nowrap dark:text-slate-100">
               Web Shuffle
             </span>
           </Link>
