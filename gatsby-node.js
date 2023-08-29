@@ -1,4 +1,3 @@
-
 const path = require("path");
 const fs = require("fs");
 const puppeteer = require("puppeteer");
@@ -12,9 +11,11 @@ require("dotenv").config({
 
 const shouldForceRegenerate = process.env.FORCE_REGENERATE === "true";
 
+
 // Constants
 const BUCKET_NAME = "web-shuffle-screenshots";
 const SCREENSHOT_PATH = "./src/images/screenshots";
+
 const SCREENSHOT_QUALITY = 80;
 const VIEWPORT_WIDTH = 1024;
 const VIEWPORT_HEIGHT = 1366;
@@ -30,7 +31,13 @@ const s3 = new AWS.S3({
 const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = process.env.NODE_ENV === "production";
 
+if (!fs.existsSync(SCREENSHOT_PATH)) {
+  fs.mkdirSync(SCREENSHOT_PATH, { recursive: true });
+}
+
 async function generatePlaceholderImage(slug) {
+  const screenshotFullPath = path.join(SCREENSHOT_PATH, `${slug}.jpg`);
+
   try {
       await sharp({
           create: {
@@ -41,20 +48,20 @@ async function generatePlaceholderImage(slug) {
           }
       })
       .jpeg()
-      .toFile(`${SCREENSHOT_PATH}/${slug}.jpg`);
+      .toFile(screenshotFullPath);
   } catch (error) {
       throw new Error(`Failed to generate placeholder image: ${error.message}`);
   }
 }
 
-async function generateScreenshot(page, url, slug, reporter, retryCount = 3) {
+async function generateScreenshot(screenshotFullPath, page, url, slug, reporter, retryCount = 3) {
   let success = false;
 
   for (let attempt = 1; attempt <= retryCount; attempt++) {
     try {
       await page.goto(url, { waitUntil: "networkidle2", timeout: PAGE_NAVIGATION_TIMEOUT });
       await page.screenshot({
-        path: `${SCREENSHOT_PATH}/${slug}.jpg`,
+        path: screenshotFullPath,
         quality: 80
       });
       success = true;
@@ -108,10 +115,10 @@ async function screenshotExistsInS3(slug) {
   }
 }
 
-async function shouldGenerateScreenshot(slug) {
+async function shouldGenerateScreenshot(screenshotFullPath, slug) {
   if (isDevelopment) {
     if (shouldForceRegenerate) return true;
-    return !fs.existsSync(`${SCREENSHOT_PATH}/${slug}.jpg`);
+    return !fs.existsSync(screenshotFullPath);
   }
   if (isProduction) {
     return !(await screenshotExistsInS3(slug));
@@ -137,7 +144,10 @@ async function downloadFromS3(slug, reporter) {
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
+  
+
   const resultTemplatePath = path.resolve(`src/templates/MDXPageTemplate.js`);
+
   const result = await graphql(`
     {
       allFile(filter: { sourceInstanceName: { eq: "mdx-pages" } }) {
@@ -201,21 +211,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return;
   }
   const browser = await puppeteer.launch({ args: ['--no-sandbox'],headless: 'new' });
-
-  
   const page = await browser.newPage();
   await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
   await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'dark' }]);
 
   for (const edge of resultSources.data.allSourcesJson.edges) {
     const pagePath = `/sources/${edge.node.slug}`; 
+    const screenshotFullPath = path.join(SCREENSHOT_PATH, `${edge.node.slug}.jpg`);
 
-    if (await shouldGenerateScreenshot(edge.node.slug)) {
+    if (await shouldGenerateScreenshot(screenshotFullPath, edge.node.slug)) {
       try {
         reporter.log(`Generating screenshot for ${edge.node.url}.`);
-        await generateScreenshot(page, edge.node.url, edge.node.slug, reporter);
+        await generateScreenshot(screenshotFullPath, page, edge.node.url, edge.node.slug, reporter);
         if (isProduction) {
-          await uploadToS3(`${SCREENSHOT_PATH}/${edge.node.slug}.jpg`, edge.node.slug, reporter);
+          await uploadToS3(screenshotFullPath, edge.node.slug, reporter);
         }
       } catch (error) {
         reporter.warn(`Failed to generate/upload screenshot for ${edge.node.url}: ${error.message}`);
