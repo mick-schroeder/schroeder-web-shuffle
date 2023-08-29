@@ -95,13 +95,6 @@ const config: GatsbyConfig = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `mdx-pages`,
-        path: `${__dirname}/src/mdx-pages`, // Directory containing your MDX files
-      },
-    },
-    {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx"],
@@ -109,7 +102,13 @@ const config: GatsbyConfig = {
       },
       
     },
-    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdx-pages`,
+        path: `${__dirname}/src/mdx-pages`, // Directory containing your MDX files
+      },
+    }, 
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {

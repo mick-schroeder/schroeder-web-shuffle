@@ -58,10 +58,10 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <p className="text-gray-500 dark:text-gray-400 py-6  text-center">
             <Link
-              to="/sources"
+              to="/newsstand"
               className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
             >
-              View all of our sources
+              View all in our Digital Newsstand
               <svg
                 className="w-4 h-4 ml-2"
                 aria-hidden="true"

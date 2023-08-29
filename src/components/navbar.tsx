@@ -5,9 +5,9 @@ import logo from "../images/logo.svg"
 
 const NAV_ITEMS = [
   { title: "Home", slug: "" },
-  { title: "About", slug: "about" },
+  { title: "Apps", slug: "apps" },
   { title: "Newsstand", slug: "newsstand" },
-  { title: "Sources", slug: "sources" },
+ // { title: "Sources", slug: "sources" },
 ];
 
 export default function DefaultNavbar() {
@@ -78,5 +78,6 @@ export default function DefaultNavbar() {
         </div>
       </div>
     </nav>
+    
   );
 }
