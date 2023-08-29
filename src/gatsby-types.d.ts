@@ -1807,7 +1807,7 @@ type Query_sourcesJsonArgs = {
   color: InputMaybe<StringQueryOperatorInput>;
   description: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
-  image: InputMaybe<StringQueryOperatorInput>;
+  image: InputMaybe<FileFilterInput>;
   internal: InputMaybe<InternalFilterInput>;
   name: InputMaybe<StringQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
@@ -2639,7 +2639,7 @@ type SourcesJson = Node & {
   readonly color: Maybe<Scalars['String']>;
   readonly description: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
-  readonly image: Maybe<Scalars['String']>;
+  readonly image: Maybe<File>;
   readonly internal: Internal;
   readonly name: Maybe<Scalars['String']>;
   readonly parent: Maybe<Node>;
@@ -2699,7 +2699,7 @@ type SourcesJsonFieldSelector = {
   readonly color: InputMaybe<FieldSelectorEnum>;
   readonly description: InputMaybe<FieldSelectorEnum>;
   readonly id: InputMaybe<FieldSelectorEnum>;
-  readonly image: InputMaybe<FieldSelectorEnum>;
+  readonly image: InputMaybe<FileFieldSelector>;
   readonly internal: InputMaybe<InternalFieldSelector>;
   readonly name: InputMaybe<FieldSelectorEnum>;
   readonly parent: InputMaybe<NodeFieldSelector>;
@@ -2714,7 +2714,7 @@ type SourcesJsonFilterInput = {
   readonly color: InputMaybe<StringQueryOperatorInput>;
   readonly description: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
-  readonly image: InputMaybe<StringQueryOperatorInput>;
+  readonly image: InputMaybe<FileFilterInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
   readonly name: InputMaybe<StringQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
@@ -2774,7 +2774,7 @@ type SourcesJsonSortInput = {
   readonly color: InputMaybe<SortOrderEnum>;
   readonly description: InputMaybe<SortOrderEnum>;
   readonly id: InputMaybe<SortOrderEnum>;
-  readonly image: InputMaybe<SortOrderEnum>;
+  readonly image: InputMaybe<FileSortInput>;
   readonly internal: InputMaybe<InternalSortInput>;
   readonly name: InputMaybe<SortOrderEnum>;
   readonly parent: InputMaybe<NodeSortInput>;
@@ -2961,6 +2961,13 @@ type GatsbyImageSharpFluid_withWebp_noBase64Fragment = { readonly aspectRatio: n
 type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = { readonly tracedSVG: string | null, readonly aspectRatio: number, readonly src: string, readonly srcSet: string, readonly srcWebp: string | null, readonly srcSetWebp: string | null, readonly sizes: string };
 
 type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: number, readonly maxWidth: number };
+
+type GetSourceBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type GetSourceBySlugQuery = { readonly sourcesJson: { readonly name: string | null, readonly url: string | null, readonly tag: string | null, readonly score: string | null, readonly color: string | null, readonly description: string | null, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null };
 
 
 }

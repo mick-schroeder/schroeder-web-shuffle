@@ -5,12 +5,9 @@ const AWS = require("aws-sdk");
 const sharp = require('sharp');
 
 require('aws-sdk/lib/maintenance_mode_message').suppress = true;
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+
 
 const shouldForceRegenerate = process.env.FORCE_REGENERATE === "true";
-
 
 // Constants
 const BUCKET_NAME = "web-shuffle-screenshots";
@@ -59,7 +56,7 @@ async function generateScreenshot(screenshotFullPath, page, url, slug, reporter,
 
   for (let attempt = 1; attempt <= retryCount; attempt++) {
     try {
-      await page.goto(url, { waitUntil: "networkidle2", timeout: PAGE_NAVIGATION_TIMEOUT });
+      await page.goto(url, { waitUntil: "networkidle0", timeout: PAGE_NAVIGATION_TIMEOUT });
       await page.screenshot({
         path: screenshotFullPath,
         quality: 80
@@ -115,12 +112,15 @@ async function screenshotExistsInS3(slug) {
   }
 }
 
-async function shouldGenerateScreenshot(screenshotFullPath, slug) {
-  if (isDevelopment) {
-    if (shouldForceRegenerate) return true;
+async function shouldGenerateScreenshot(screenshotFullPath, slug, reporter) {
+  if (shouldForceRegenerate) {
+    reporter.log(`Regenerated ${slug}.jpg because shouldForceRegenerate is true `);
+    return true;
+  }
+  else if (isDevelopment) {
     return !fs.existsSync(screenshotFullPath);
   }
-  if (isProduction) {
+  else if (isProduction) {
     return !(await screenshotExistsInS3(slug));
   }
 }
@@ -215,29 +215,36 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
   await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'dark' }]);
 
+    
+  
+
   for (const edge of resultSources.data.allSourcesJson.edges) {
     const pagePath = `/sources/${edge.node.slug}`; 
+
     const screenshotFullPath = path.join(SCREENSHOT_PATH, `${edge.node.slug}.jpg`);
 
-    if (await shouldGenerateScreenshot(screenshotFullPath, edge.node.slug)) {
+    if (await shouldGenerateScreenshot(screenshotFullPath, edge.node.slug, reporter)) {
       try {
-        reporter.log(`Generating screenshot for ${edge.node.url}.`);
-        await generateScreenshot(screenshotFullPath, page, edge.node.url, edge.node.slug, reporter);
-        if (isProduction) {
-          await uploadToS3(screenshotFullPath, edge.node.slug, reporter);
-        }
+          reporter.log(`Generating screenshot for ${edge.node.url}.`);
+          await generateScreenshot(screenshotFullPath, page, edge.node.url, edge.node.slug, reporter);
+          if (isProduction) {
+              await uploadToS3(screenshotFullPath, edge.node.slug, reporter);
+          }
       } catch (error) {
-        reporter.warn(`Failed to generate/upload screenshot for ${edge.node.url}: ${error.message}`);
+          reporter.warn(`Failed to generate/upload screenshot for ${edge.node.url}: ${error.message}`);
       }
-    } else if (isProduction) {
-      try {
-        reporter.log(`Downloading screenshot for ${edge.node.url} from S3.`);
+    } else {
+      if (isProduction) {
+          try {
+              reporter.log(`Downloading existing screenshot for ${edge.node.url} from S3.`);
         await downloadFromS3(edge.node.slug, reporter);
-      } catch (error) {
-        reporter.warn(`Failed to download screenshot for ${edge.node.url} from S3: ${error.message}`);
+          } catch (error) {
+              reporter.warn(`Failed to download screenshot for ${edge.node.url} from S3: ${error.message}`);
+          }
+      } else {
+          reporter.log(`Screenshot for ${edge.node.url} is up-to-date.`);
       }
-    }
-
+  }
     createPage({
       path: pagePath,
       component: path.resolve("./src/templates/SourceTemplate.js"),
@@ -245,9 +252,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: edge.node.slug,
         prevSlug: edge.previous ? edge.previous.slug : null,
         nextSlug: edge.next ? edge.next.slug : null,
-      },
+      }
     });
-}
+  }
 
   await browser.close();
 };
