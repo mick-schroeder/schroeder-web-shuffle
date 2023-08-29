@@ -2561,6 +2561,7 @@ type SiteSiteMetadata = {
   readonly email: Maybe<Scalars['String']>;
   readonly foundingYear: Maybe<Scalars['Date']>;
   readonly image: Maybe<Scalars['String']>;
+  readonly name: Maybe<Scalars['String']>;
   readonly siteUrl: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
   readonly twitterUsername: Maybe<Scalars['String']>;
@@ -2581,6 +2582,7 @@ type SiteSiteMetadataFieldSelector = {
   readonly email: InputMaybe<FieldSelectorEnum>;
   readonly foundingYear: InputMaybe<FieldSelectorEnum>;
   readonly image: InputMaybe<FieldSelectorEnum>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
   readonly siteUrl: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
   readonly twitterUsername: InputMaybe<FieldSelectorEnum>;
@@ -2593,6 +2595,7 @@ type SiteSiteMetadataFilterInput = {
   readonly email: InputMaybe<StringQueryOperatorInput>;
   readonly foundingYear: InputMaybe<DateQueryOperatorInput>;
   readonly image: InputMaybe<StringQueryOperatorInput>;
+  readonly name: InputMaybe<StringQueryOperatorInput>;
   readonly siteUrl: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly twitterUsername: InputMaybe<StringQueryOperatorInput>;
@@ -2605,6 +2608,7 @@ type SiteSiteMetadataSortInput = {
   readonly email: InputMaybe<SortOrderEnum>;
   readonly foundingYear: InputMaybe<SortOrderEnum>;
   readonly image: InputMaybe<SortOrderEnum>;
+  readonly name: InputMaybe<SortOrderEnum>;
   readonly siteUrl: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
   readonly twitterUsername: InputMaybe<SortOrderEnum>;

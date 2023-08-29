@@ -20,7 +20,7 @@ const FooterBar = () => {
     query {
       site {
         siteMetadata {
-          title
+          name
           author
           authorUrl
           foundingYear
@@ -37,10 +37,10 @@ const FooterBar = () => {
             <img
               src={logo}
               className="h-8 mr-3"
-              alt={`${data.site.siteMetadata.title} Logo`}
+              alt={`${data.site.siteMetadata.name} Logo`}
             />
             <span className="text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-slate-100">
-              {data.site.siteMetadata.title}
+              {data.site.siteMetadata.name}
             </span>
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -57,7 +57,7 @@ const FooterBar = () => {
         <div className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <p>
             {" "}
-            {data.site.siteMetadata.title}™ © {data.site.siteMetadata.foundingYear}-{currentYear} <a href={data.site.siteMetadata.authorUrl} className="font-semibold hover:underline">{data.site.siteMetadata.author}</a>. All Rights Reserved.
+            {data.site.siteMetadata.name}™ © {data.site.siteMetadata.foundingYear}-{currentYear} <a href={data.site.siteMetadata.authorUrl} className="font-semibold hover:underline">{data.site.siteMetadata.author}</a>. All Rights Reserved.
           </p>
           <p className="py-4 md:p-10 text-xs text-justify text-gray-500 dark:text-gray-400">
             This program is distributed in the hope that it will be useful, but

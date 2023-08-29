@@ -26,5 +26,5 @@ const NewstandPage = () => {
 
 export default NewstandPage;
 export const Head = () => (
-  <SEO title="Web Shuffle - Sources" />
+  <SEO title="Web Shuffle - Digital Newsstand - AI Curated front pages of the top websites on the internet." />
 )

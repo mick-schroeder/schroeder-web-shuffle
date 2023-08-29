@@ -5,6 +5,7 @@ export const useSiteMetadata = () => {
     query {
       site {
         siteMetadata {
+          name
           title
           description
           twitterUsername

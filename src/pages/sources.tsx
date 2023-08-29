@@ -32,5 +32,5 @@ const WebsitesPage = () => {
 
 export default WebsitesPage;
 export const Head = () => (
-  <SEO title="Web Shuffle - Sources" />
+  <SEO title="Web Shuffle - Sources - AI Curated list of the internet’s top-tier websites." />
 )
