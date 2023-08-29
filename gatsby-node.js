@@ -18,7 +18,7 @@ const VIEWPORT_WIDTH = 1024;
 const VIEWPORT_HEIGHT = 1366;
 const PAGE_NAVIGATION_TIMEOUT = 30000; //30 seconds
 const CACHE_TIMEOUT = 12 * 60 * 60 * 1000; //12 hours
-const CONCURRENT_PAGES = 10;
+const CONCURRENT_PAGES = 5;
 const RETRIES = 2;
 
 // AWS S3 setup
