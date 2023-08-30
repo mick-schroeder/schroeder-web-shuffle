@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useMemo } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import StarRating from "./star-rating";
 
-const SourcesGallery = ({ limit }) => {
+const SourcesGallery = ({ limit, sort }) => {
   const data = useStaticQuery(graphql`
-    query {
+	query {
       allSourcesJson {
         edges {
           node {
@@ -24,25 +24,36 @@ const SourcesGallery = ({ limit }) => {
         }
       }
     }
-  `);
+      `);
 
-const [sources, setSources] = useState([]);
-
-useEffect(() => {
-  let shuffledSources = [...data.allSourcesJson.edges];
-  if (limit) {
-    shuffledSources = shuffledSources.sort(() => 0.5 - Math.random());
-    shuffledSources = shuffledSources.slice(0, limit);
-  }
-  setSources(shuffledSources);
-}, [limit, data.allSourcesJson.edges]);
+  const sortedSources = useMemo(() => {
+    let sourcesCopy = [...data.allSourcesJson.edges];
+    switch(sort) {
+      case 'random':
+        sourcesCopy.sort(() => 0.5 - Math.random());
+        break;
+      case 'alphabetical':
+        sourcesCopy.sort((a, b) => a.node.name.localeCompare(b.node.name));
+        break;
+      case 'rating':
+        sourcesCopy.sort((a, b) => b.node.score - a.node.score);
+        break;
+      default:
+        break;
+    }
+    if (limit) {
+      return sourcesCopy.slice(0, limit);
+    }
+    return sourcesCopy;
+  }, [data.allSourcesJson.edges, limit, sort]);
 
   return (
-    <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      {sources.map(({ node }) => {
-        const image = getImage(node.image);
+    <section>
+      <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        {sortedSources.map(({ node }) => {
+          const image = getImage(node.image);
+          return (
 
-        return (
           <div
             key={node.name}
             className="bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg shadow hover:shadow-lg dark:bg-slate-800 dark:border-slate-700 overflow-hidden hover:dark:bg-slate-700 hover:dark:border-slate-600"
@@ -107,9 +118,10 @@ useEffect(() => {
             </div>
     
                     </div>
-        );
-      })}
-    </div>
+                          );
+        })}
+      </div>
+    </section>
   );
 };
 

@@ -54,14 +54,19 @@ const IndexPage: React.FC<PageProps> = () => {
             internet's virtual newsstand where you can instantly browse the
             daily front pages of leading websites.{" "}
           </p>
-          <CardsSources limit={6} />
+          <h3 class="text-2xl font-bold dark:text-white py-4">Top Sources</h3>
+          <CardsSources limit={6} sort="rating" />
+          <h3 class="text-2xl font-bold dark:text-white py-4">More Sources</h3>
+          <CardsSources limit={6} sort="random" />
+          <div className="text-center mt-8">          <RedirectButton />
+</div>
 
           <p className="text-gray-500 dark:text-gray-400 py-6  text-center">
             <Link
               to="/newsstand"
               className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
             >
-              View all in our Digital Newsstand
+              Browse all of the sources in our Digital Newsstand
               <svg
                 className="w-4 h-4 ml-2"
                 aria-hidden="true"
