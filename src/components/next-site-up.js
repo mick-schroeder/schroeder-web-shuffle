@@ -1,16 +1,16 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+//import { GatsbyImage } from "gatsby-plugin-image";
 import { useNextSiteContext } from "./next-site-context";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
 
 const HomePage = () => {
   const {
     nextSite,
     nextSiteName,
-    nextSiteSlug,
+    //nextSiteSlug,
     refreshNextSite,
     nextSiteDescription,
-    nextSiteImage,
+   // nextSiteImage,
   } = useNextSiteContext();
 
   const handleClick = (event) => {
@@ -65,6 +65,7 @@ const HomePage = () => {
           <p className="mb-2 font-semibold text-gray-700 dark:text-gray-400">
             <a
               onClick={handleClick}
+              href={nextSite}
               className="cursor-pointer inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
               target="_blank"
               rel="noopener"

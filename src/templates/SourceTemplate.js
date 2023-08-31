@@ -51,7 +51,7 @@ const SourceTemplate = ({ data, pageContext }) => {
     <SiteLayout>
     <SEO title={`Web Shuffle - ${source.name}`} description={source.description} />
 <section>
-<div class="p-4 mx-auto max-w-screen-xl">
+<div className="p-4 mx-auto max-w-screen-xl">
 
 <nav className="flex pt-2 pb-8" aria-label="Breadcrumb">
 <ol className="inline-flex items-center space-x-1 :space-x-3">
@@ -186,8 +186,8 @@ const SourceTemplate = ({ data, pageContext }) => {
         Description
       </dt>
       <dd className="mb-4 font-normal text-gray-500 sm:mb-5 dark:text-gray-400">
-        <blockquote class="p-4 my-4 border-l-4 border-gray-300 dark:border-gray-700">
-        <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white max-w-sm">"{source.description}"</p>
+        <blockquote className="p-4 my-4 border-l-4 border-gray-300 dark:border-gray-700">
+        <p className="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white max-w-sm">"{source.description}"</p>
     </blockquote>
       </dd>
     </dl>
