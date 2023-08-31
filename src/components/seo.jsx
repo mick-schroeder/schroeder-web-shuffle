@@ -40,15 +40,14 @@ export const SEO = ({ title, description, pathname, children }) => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <script type="application/ld+json">{`
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": {seo.url},
-      "name": {seo.name},
-
-      "logo": "https://webshuffle.mickschroeder.com/logo.svg"
-    }`}
-    </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "${seo.url}",
+        "name": "${seo.title}",
+        "logo": "https://webshuffle.mickschroeder.com/logo.svg"
+      }`}
+      </script>
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6344797609391119"

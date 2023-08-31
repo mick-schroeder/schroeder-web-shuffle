@@ -21,18 +21,18 @@ const HomePage = () => {
 
   return (
     <div className="min-h-full p-4 sm:p-12 flex flex-col justify-center items-center ">
-      <div className="w-full sm:max-w-lg p-6 bg-slate-100 border border-slate-200 rounded-lg shadow-lg dark:bg-slate-800 dark:border-slate-700">
+      <div className="w-full sm:max-w-sm p-6 bg-gray-100 border border-gray-200  dark:border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
         <div className="flex justify-between items-start mb-6">
           <p className="text-lg font-semibold text-gray-700 dark:text-gray-400">
             Next Site Up:
           </p>
           <button
             onClick={refreshNextSite}
-            className="text-slate-200 px-3 py-2 rounded-lg hover:bg-slate-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
+            className="text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             aria-label="Refresh next site"
           >
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-slate-500"
+              className="w-6 h-6 text-gray-800 dark:text-gray-500"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -69,7 +69,9 @@ const HomePage = () => {
               target="_blank"
               rel="noopener"
             >
-              {nextSite}
+             {nextSite.length > 32
+                ? nextSite.slice(0, 32) + "..."
+                : nextSite}
               <svg
                 className="w-4 h-4 ml-2"
                 aria-hidden="true"

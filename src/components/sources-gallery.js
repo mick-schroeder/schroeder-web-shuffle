@@ -56,7 +56,7 @@ const SourcesGallery = ({ limit, sort }) => {
 
           <div
             key={node.name}
-            className="bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg shadow hover:shadow-lg dark:bg-slate-800 dark:border-slate-700 overflow-hidden hover:dark:bg-slate-700 hover:dark:border-slate-600"
+            className="bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-lg shadow hover:shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:dark:bg-gray-700 hover:dark:border-gray-600"
           >
     
             <div className="p-4">

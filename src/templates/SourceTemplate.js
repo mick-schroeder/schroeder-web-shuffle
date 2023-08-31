@@ -162,36 +162,36 @@ const SourceTemplate = ({ data, pageContext }) => {
               {source.name}
             </h1>
             <dl>
-              <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+              <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
                 Tag
               </dt>
-              <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+              <dd className="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                   {source.tag}
                 </span>
               </dd>
             </dl>
             <dl>
-              <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+              <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
               AI Rating
               </dt>
-              <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+              <dd className="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
                 <StarRating score={source.score} />
               </dd>
             </dl>
             <dl>
-              <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+              <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
                 Description
               </dt>
-              <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
+              <dd className="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
                 {source.description}
               </dd>
             </dl>
             <dl>
-              <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+              <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
                 URL
               </dt>
-              <dd class="mb-4">
+              <dd className="mb-4">
                 {" "}
                 <a
                   href={source.url}

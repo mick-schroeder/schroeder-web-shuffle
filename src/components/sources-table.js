@@ -24,7 +24,7 @@ const SourcesTable = () => {
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table className="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
-    <thead className="text-xs text-gray-700 bg-slate-300 dark:bg-gray-700 dark:text-gray-400">
+    <thead className="text-xs text-gray-700 bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
       <tr>
         <th scope="col" className="px-6 py-3">
           Name
@@ -44,7 +44,7 @@ const SourcesTable = () => {
       {websites.map((website) => (
         <tr
           key={website.name}
-          className="bg-slate-50 border-b dark:bg-gray-800 dark:border-gray-700"
+          className="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
         >
           <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
             <Link to={`/sources/${website.slug}`}>
@@ -69,7 +69,9 @@ const SourcesTable = () => {
               target=""
               className="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline"
             >
-              {website.url}
+            {website.url.length > 32
+              ? website.url.slice(0, 32) + "..."
+              : website.url}
             </a>
           </td>
         </tr>

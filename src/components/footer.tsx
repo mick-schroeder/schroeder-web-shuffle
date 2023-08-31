@@ -30,7 +30,7 @@ const FooterBar = () => {
   `);
 
   return (
-    <footer className="bg-white rounded-lg shadow dark:bg-gray-900">
+    <footer className="border-t border-gray-300 dark:border-gray-700">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center mb-4 sm:mb-0">
@@ -39,7 +39,7 @@ const FooterBar = () => {
               className="h-8 mr-3"
               alt={`${data.site.siteMetadata.name} Logo`}
             />
-            <span className="text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-slate-100">
+            <span className="text-2xl font-black tracking-tighter self-center whitespace-nowrap dark:text-gray-100">
               {data.site.siteMetadata.name}
             </span>
           </Link>

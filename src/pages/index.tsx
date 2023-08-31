@@ -11,20 +11,18 @@ import FeaturesSection from "../components/features";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <SiteLayout>
-      <div className="grid lg:grid-cols-2 gap-2 max-w-screen-xl mb-8">
+      <div className="grid md:grid-cols-2 gap-2">
         <section className="">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+          <div className="py-8 px-4 mx-auto sm:py-8 lg:px-6 ">
             <div className="mx-auto max-w-screen-sm text-center">
-              <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-slate-700 dark:text-white">
-                Welcome to
-                <br />
+              <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-700 dark:text-white">
+                Welcome to{" "}
                 <span className="text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
                   Web Shuffle
                 </span>
-                <br />
-                the AI curated shuffle button for the web.
+                {" "}the AI curated shuffle button for the web.
               </h2>
-              <p className="mb-6 text-slate-500 dark:text-slate-400 md:text-lg">
+              <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
                 Simply click the Web Shuffle button and let us take you to the
                 best and most influential websites.
               </p>
@@ -54,9 +52,9 @@ const IndexPage: React.FC<PageProps> = () => {
             internet's virtual newsstand where you can instantly browse the
             daily front pages of leading websites.{" "}
           </p>
-          <h3 class="text-2xl font-bold dark:text-white py-4">Top Sources</h3>
+          <h3 className="text-2xl font-bold dark:text-white py-4">Top Sources</h3>
           <CardsSources limit={6} sort="rating" />
-          <h3 class="text-2xl font-bold dark:text-white py-4">More Sources</h3>
+          <h3 className="text-2xl font-bold dark:text-white py-4">More Sources</h3>
           <CardsSources limit={6} sort="random" />
           <div className="text-center mt-8">          <RedirectButton />
 </div>
