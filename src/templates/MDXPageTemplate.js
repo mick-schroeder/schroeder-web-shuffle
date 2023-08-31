@@ -13,7 +13,7 @@ export default function MDXPageTemplate({ data, children }) {
     <SiteLayout>
     <SEO title={`Web Shuffle - ${data.mdx.frontmatter.title}`} />
 
-      <div className="mx-auto prose dark:prose-invert">
+      <div className="mx-auto prose dark:prose-invert mt-12 p-4">
         <h1>{data.mdx.frontmatter.title}</h1>
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </div>

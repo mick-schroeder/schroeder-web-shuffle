@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Features = () => (
-  <section className="text-gray-400 body-font">
+  <section className="text-gray-400 body-font p-4">
     <h2 className="text-2xl font-extrabold dark:text-white">
       Features:
       <small className="ml-2 font-semibold text-gray-500 dark:text-gray-400">
