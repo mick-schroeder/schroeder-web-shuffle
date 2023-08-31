@@ -17,7 +17,7 @@ export default function DefaultNavbar() {
 
   return (
     <div>
-<nav className="backdrop-blur-lg bg-white/40 dark:bg-gray-900/40 md:fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav className="backdrop-blur-lg bg-white/40 dark:bg-gray-900/40 md:fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center md:justify-between mx-auto p-4">
         <div className="hidden md:block flex-none text-xs font-semibold text-black dark:text-blue-200">
         {formattedDate}

@@ -11,7 +11,7 @@ const WebsitesPage = () => {
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
   <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
     <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Web Shuffle's AI Curated Sources</h2>
-    <h3 className="mb-4 text-2xl font-bold text-gray-900  dark:text-gray-400">Best and most influential websites on the internet</h3>
+    <h3 className="mb-4 text-2xl font-bold text-gray-900  dark:text-gray-400">List of the best and most influential websites on the internet</h3>
 
     <p className="mb-4 font-light">
     Discover the backbone of Web Shuffle – our AI-curated list of the internet’s top-tier websites, each vetted for credibility and impact. 
