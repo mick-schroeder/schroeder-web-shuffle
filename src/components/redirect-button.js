@@ -14,7 +14,7 @@ const RedirectButton = () => {
 
   return (
     <a
-      href={nextSite}
+      href="/redirect"
       onClick={handleClick}
       className="
       cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium 

@@ -21,7 +21,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-full p-4 sm:p-12 flex flex-col justify-center items-center ">
-      <div className="w-full sm:max-w-sm p-6 bg-gray-100 border border-gray-200  dark:border-gray-700 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full sm:max-w-sm p-6 bg-gray-100 border border-gray-300  dark:border-gray-700 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="flex justify-between items-start mb-6">
           <p className="text-lg font-semibold text-gray-700 dark:text-gray-400">
             Next Site Up:

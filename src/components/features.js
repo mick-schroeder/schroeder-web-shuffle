@@ -3,13 +3,13 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Features = () => (
-  <section className="text-gray-400 body-font p-4">
-    <h2 className="text-2xl font-extrabold dark:text-white">
-      Features:
-      <small className="ml-2 font-semibold text-gray-500 dark:text-gray-400">
-        Learn about the features of Web Shuffle.
-      </small>
-    </h2>
+  <section className=" text-gray-500 sm:text-lg dark:text-gray-400 body-font p-4">
+  <h2 className="text-2xl font-extrabold dark:text-white text-black">
+  Features:
+            <small className="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+            Learn everything there us to know about Web Shuffle.
+            </small>
+          </h2>
     <div className="container max-w-5xl	px-5 py-8 mx-auto flex flex-wrap">
       <div className="flex flex-wrap -m-4">
         <div className="p-2 md:w-1/3 grow md:grow-0">
@@ -35,14 +35,14 @@ const Features = () => (
             <div className="flex-grow">
               <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
                 Enhance your web browser with our browser extension. It adds the{" "}
-                <Link
-                  to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
+                <a
+                  href="/redirect"
+                  className="text-blue-600 dark:text-blue-400"
                   target="_blank"
                   rel="noopener"
                 >
                   Web Shuffle
-                </Link>{" "}
+                </a>{" "}
                 button to your browser's toolbar.
               </p>
               <div className="py-7">
@@ -79,40 +79,14 @@ const Features = () => (
               </h2>
             </div>
             <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
-              Bookmark the URL for{" "}
-              <span className="text-indigo-600 dark:text-indigo-400 font-bold">
-                {" "}
-                <Link
-                  to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Web Shuffle
-                </Link>{" "}
-              </span>
-              or drag{" "}
-              <Link
-                to="/redirect"
-                className="font-bold"
-                target="_blank"
-                rel="noopener"
-              >
-                🔀
-              </Link>{" "}
-              to your favorites bar.
+              Bookmark the special "redirect" URL to shuffle from your browser's bookmarks bar.
             </p>
             <div className="flex-grow flex items-center justify-center">
               <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
-                <Link
-                  to="/redirect"
-                  className="font-bold"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  🔀
-                </Link>{" "}
-                &nbsp;&nbsp;← Drag to your Favorites Bar{" "}
+              <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 ml-3"><a href="/redirect" target="_blank"
+              rel="noopener">Web Shuffle</a></span>  
+              {" "}
+                &nbsp;&nbsp;← Drag to your Bookmarks Bar{" "}
               </p>
             </div>
           </div>
@@ -147,23 +121,14 @@ const Features = () => (
                 <a
                   href="https://www.gnu.org/licenses/agpl.html"
                   rel="external"
-                  className="text-indigo-600 dark:text-indigo-400 font-bold"
+                  className="underline"
                 >
                   &nbsp;GNU Affero General Public License&nbsp;
-                </a>
-                as published by the
-                <a
-                  href="https://www.fsf.org/"
-                  rel="external"
-                  className="text-indigo-600 dark:text-indigo-400 font-bold"
-                >
-                  &nbsp;Free Software Foundation
-                </a>
-                .
+                </a>                .
               </p>
               <a
                 href="https://github.com/mick-schroeder/gatsby-random-website"
-                className="mt-3 font-bold text-indigo-600 dark:text-indigo-400 inline-flex items-cente"
+                className="mt-3 font-bold text-blue-600 dark:text-blue-400 inline-flex items-cente"
               >
                 Source code on Github
                 <svg
@@ -206,14 +171,14 @@ const Features = () => (
               <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
                 Experience the thrill of web surfing by channel surfing the web
                 with just one click on the{" "}
-                <Link
-                  to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Web Shuffle
-                </Link>{" "}
+                <a
+                href="/redirect"
+                className="text-blue-600 dark:text-blue-400"
+                target="_blank"
+                rel="noopener"
+              >
+                Web Shuffle
+              </a>{" "}
                 button.
               </p>
             </div>
@@ -279,14 +244,14 @@ const Features = () => (
             <div className="flex-grow">
               <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
                 The{" "}
-                <Link
-                  to="/redirect"
-                  className="text-indigo-600 dark:text-indigo-400 tracking-tightest font-black"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Web Shuffle
-                </Link>{" "}
+                <a
+                href="/redirect"
+                className="text-blue-600 dark:text-blue-400"
+                target="_blank"
+                rel="noopener"
+              >
+                Web Shuffle
+              </a>{" "}
                 algorithm is backed by an AI editor curated list of the most
                 influential news websites on the internet.
               </p>

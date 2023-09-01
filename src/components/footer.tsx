@@ -42,12 +42,12 @@ const FooterBar = () => {
           {data.site.siteMetadata.name}
         </span>
       </Link>
-      <ul className="flex flex-wrap items-center mt-4 py-4 text-sm font-medium text-gray-500  dark:text-gray-400">
+      <ul className="flex flex-wrap items-center mt-4 py-4 text-sm font-medium text-gray-500 dark:text-gray-400">
         {menuLinks.map((link, index) => (
           <li key={index} className="mr-4 hover:underline md:mr-6">
             <a
               href={link.link}
-              className="focus:ring focus:ring-blue-300 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 transition-all duration-300 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              className="focus:ring focus:ring-blue-300 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 transition-all duration-300 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:-gray-border700"
             >
               {link.text}
             </a>

@@ -13,7 +13,7 @@ const WebsitesPage = () => {
     <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Web Shuffle's AI Curated Sources</h2>
     <h3 className="mb-4 text-2xl font-bold text-gray-900  dark:text-gray-400">List of the best and most influential websites on the internet</h3>
 
-    <p className="mb-4 font-light">
+    <p className="mb-4 font-normal md:max-w-screen-md">
     Discover the backbone of Web Shuffle – our AI-curated list of the internet’s top-tier websites, each vetted for credibility and impact. 
     From global news giants to internet memes, our Sources page offers a transparent view into the diverse landscape our AI recommends.
     </p>

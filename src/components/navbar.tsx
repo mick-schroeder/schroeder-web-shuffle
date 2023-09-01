@@ -5,10 +5,10 @@ import logo from "../images/logo.svg"
 
 const NAV_ITEMS = [
   { title: "Home", slug: "" },
-  { title: "About Us", slug: "about" },
+  { title: "About", slug: "about" },
   { title: "Apps", slug: "apps" },
   { title: "Digital Newsstand", slug: "newsstand" },
-  { title: "Our Sources", slug: "sources" },
+  { title: "Sources", slug: "sources" },
 ];
 
 export default function DefaultNavbar() {
@@ -17,7 +17,7 @@ export default function DefaultNavbar() {
 
   return (
     <div>
-<nav className="backdrop-blur-lg bg-white/40 dark:bg-gray-900/40 md:fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-700">
+<nav className="backdrop-blur bg-white/80 dark:bg-gray-900/80 md:fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center md:justify-between mx-auto p-4">
         <div className="hidden md:block flex-none text-xs font-semibold text-black dark:text-blue-200">
         {formattedDate}
@@ -43,19 +43,21 @@ export default function DefaultNavbar() {
         </div>
       </div>
     </nav>
-    <nav className="border-b border-gray-300 dark:border-gray-700">
-    <div className="max-w-screen-xl px-3 py-3 mx-auto md:mt-20">
-        <div className="flex items-center justify-center">
-        <ul className="flex flex-row flex-wrap font-medium mt-0 mr-5 space-x-8 text-sm">
+    <nav className="border-b border-gray-300 dark:border-gray-700 mt-0 md:mt-20">
+    <div className="max-w-screen-xl mx-auto">
+        <div className="flex items-center md:justify-center">
+        <ul className="flex flex-row flex-wrap font-medium mt-0 mx-2 md:mx-5 text-sm ">
                 {NAV_ITEMS.map(({ title, slug }) => (
-              <li key={slug}>
-                <Link
-                  to={`/${slug}`}
-                  className="focus:ring focus:ring-blue-300 block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 transition-all duration-300 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  aria-current="page"
-                >
+                <li key={slug} className="my-2 mx-2 md:mx-2 rounded-lg border md:border-0 border-gray-300 dark:border-gray-700 hover:bg-gray-200 hover:dark:bg-gray-800 py-2 px-4 md:px-2 md:py-0 shadow md:shadow-none ring-1 ring-black ring-opacity-5 focus:outline-none ">
+
+               <Link
+               to={`/${slug}`}
+               className="block p-2 text-gray-900 hover:bg-gray-100 transition-all duration-300 hover:bg-transparent hover:text-blue-700 dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:bg-transparent dark:border-gray-700"
+               aria-current="page"
+               >
                   {title}
-                </Link>
+                
+              </Link>
               </li>
             ))}
             </ul>

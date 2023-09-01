@@ -14,7 +14,7 @@ const BUCKET_NAME = "web-shuffle-screenshots";
 const SCREENSHOT_PATH = "./src/images/screenshots";
 
 const SCREENSHOT_QUALITY = 80;
-const VIEWPORT_WIDTH = 1024;
+const VIEWPORT_WIDTH = 768;
 const VIEWPORT_HEIGHT = 1366;
 const PAGE_NAVIGATION_TIMEOUT = 30000; //30 seconds
 const CACHE_TIMEOUT = 12 * 60 * 60 * 1000; //12 hours

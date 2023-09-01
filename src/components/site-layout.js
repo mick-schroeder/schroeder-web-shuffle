@@ -5,7 +5,7 @@ import FooterBar from "./footer";
 
 const SiteLayout = ({ children }) => (
   <NextSiteProvider>
-    <div className="flex flex-col min-h-screen antialiased bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="flex flex-col min-h-screen antialiased bg-white dark:bg-gray-900 min-h-screen">
       {/* Header */}
       <header className="">
         <Navbar />

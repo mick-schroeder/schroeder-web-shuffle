@@ -7,8 +7,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     name: `Web Shuffle`,
-    title: `Web Shuffle: the AI curated shuffle button for the web.`,
-    description: `Simply click the Web Shuffle button and let our AI curator take you to the best and most influential websites.`,
+    title: `Web Shuffle: AI-curated Web Surfing.`,
+    description: `Web Shuffle’s AI algorithm brings you straight to top internet sites without the fuss.`,
     twitterUsername: `@mick_schroeder`,
     image: `/web-shuffle-large-promo.png`,
     author: `Mick Schroeder, LLC`,
@@ -25,9 +25,9 @@ const config: GatsbyConfig = {
         name: `Web Shuffle`,
         short_name: `WebShuffle`,
         start_url: `/`,
-        background_color: `#111827`,
+        background_color: `#1f2937`,
         lang: `en`,
-        theme_color: `#3b82f6`,
+        theme_color: `#1f2937`,
         display: `standalone`,
         cache_busting_mode: "none",
         icon: `src/images/icon.svg`,
