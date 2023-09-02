@@ -5,7 +5,6 @@ const puppeteer = require("puppeteer");
 const sharp = require("sharp");
 require("aws-sdk/lib/maintenance_mode_message").suppress = true;
 
-const screenshotsBucket = "your-screenshots-bucket-name";
 const shouldForceRegenerate = process.env.FORCE_REGENERATE === "true";
 
 // Constants
@@ -64,7 +63,7 @@ async function generateScreenshot(
       });
       await page.screenshot({
         path: screenshotFullPath,
-        quality: 80,
+        quality: SCREENSHOT_QUALITY,
       });
       success = true;
       break; // Exit loop if screenshot is successful
