@@ -16,7 +16,7 @@ const SCREENSHOT_PATH = "./src/images/screenshots";
 const SCREENSHOT_QUALITY = 80;
 const VIEWPORT_WIDTH = 900;
 const VIEWPORT_HEIGHT = 1600;
-const PAGE_NAVIGATION_TIMEOUT = 30000; //30 seconds
+const PAGE_NAVIGATION_TIMEOUT = 60000; //30 seconds
 const CACHE_TIMEOUT = 12 * 60 * 60 * 1000; //12 hours
 const CONCURRENT_PAGES = 7;
 const RETRIES = 1;
@@ -173,10 +173,11 @@ async function downloadFromS3(slug, reporter) {
 
 async function processChunk(sourcesChunk, browser, reporter) {
   const page = await browser.newPage();
-  await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
   await page.emulateMediaFeatures([
     { name: "prefers-color-scheme", value: "dark" },
   ]);
+  await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
+  //page.setJavaScriptEnabled(false)
 
   for (const edge of sourcesChunk) {
     //reporter.log(`processedPages for ${edge.node.slug}.`);

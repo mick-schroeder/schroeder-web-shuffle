@@ -45,8 +45,8 @@ export default function DefaultNavbar() {
     </nav>
     <nav className="border-b border-gray-300 dark:border-gray-700 mt-0 md:mt-20">
     <div className="max-w-screen-xl mx-auto">
-        <div className="flex items-center md:justify-center">
-        <ul className="flex flex-row flex-wrap font-medium mt-0 mx-2 md:mx-5 text-sm ">
+        <div className="flex items-center justify-center">
+        <ul className="flex items-center justify-around md:justify-center flex-row flex-wrap font-medium mt-0 mx-2 md:mx-5 text-sm ">
                 {NAV_ITEMS.map(({ title, slug }) => (
                 <li key={slug} className="my-2 mx-2 md:mx-2 rounded-lg border md:border-0 border-gray-300 dark:border-gray-700 hover:bg-gray-200 hover:dark:bg-gray-800 py-2 px-4 md:px-2 md:py-0 shadow md:shadow-none ring-1 ring-black ring-opacity-5 focus:outline-none ">
 
