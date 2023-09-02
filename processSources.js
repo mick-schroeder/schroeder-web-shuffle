@@ -252,6 +252,7 @@ const preProcessSources = async (JSON_PATH, CONCURRENT_PAGES, reporter) => {
       const browser = await puppeteer.launch({
         args: ["--no-sandbox"],
         headless: "new",
+        protocolTimeout: 120000, // Set to 120 seconds
       });
     
       await processSources(
