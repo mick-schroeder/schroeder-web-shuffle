@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const { preProcessSources } = require('./processSources.js');
-const { onPreInit } = require("gatsby");
+const { onPreBootstrap } = require("gatsby");
 
 const { report } = require("process");
 
@@ -17,11 +17,17 @@ const CONCURRENT_PAGES = 7;
 const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = process.env.NODE_ENV === "production";
 
-exports.onPreInit = async ({ reporter }) => {
+
+
+exports.onPreBootstrap = async ({ reporter }) => {
   if (!fs.existsSync(SCREENSHOT_PATH)) {
     fs.mkdirSync(SCREENSHOT_PATH, { recursive: true });
   }
-  preProcessSources(JSON_PATH, CONCURRENT_PAGES, reporter);
+  await new Promise(resolve => {
+    preProcessSources(JSON_PATH, CONCURRENT_PAGES, reporter).then(() => {
+      resolve();
+    });
+  });
 };
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
