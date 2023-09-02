@@ -28,7 +28,7 @@ const isDevelopment = process.env.NODE_ENV === "development";
 const isProduction = process.env.NODE_ENV === "production";
 
 async function generatePlaceholderImage(slug) {
-  const screenshotFullPath = path.join(SCREENSHOT_PATH, `${slug}.jpg`);
+  const screenshotFullPath = path.join(SCREENSHOT_PATH, `${slug}.webp`);
 
   try {
     await sharp({
@@ -105,13 +105,13 @@ async function uploadToS3(filePath, slug, reporter) {
     const data = fs.readFileSync(filePath);
     const params = {
       Bucket: BUCKET_NAME,
-      Key: `${slug}.jpg`,
+      Key: `${slug}.webp`,
       Body: data,
       ContentType: "image/jpeg",
     };
     await s3.upload(params).promise();
   } catch (error) {
-    reporter.warn(`Failed to upload ${slug}.jpg to S3: ${error.message}`);
+    reporter.warn(`Failed to upload ${slug}.webp to S3: ${error.message}`);
   }
 }
 
@@ -120,7 +120,7 @@ async function screenshotExistsInS3(slug) {
     const objectData = await s3
       .headObject({
         Bucket: BUCKET_NAME,
-        Key: `${slug}.jpg`,
+        Key: `${slug}.webp`,
       })
       .promise();
     const lastModifiedDate = new Date(objectData.LastModified);
@@ -135,7 +135,7 @@ async function screenshotExistsInS3(slug) {
 async function shouldGenerateScreenshot(screenshotFullPath, slug, reporter) {
   if (shouldForceRegenerate) {
     reporter.log(
-      `Deciding to generate screenshot - Regenerated ${slug}.jpg because shouldForceRegenerate is true `
+      `Deciding to generate screenshot - Regenerated ${slug}.webp because shouldForceRegenerate is true `
     );
     return true;
   } else if (isDevelopment) {
@@ -153,18 +153,18 @@ async function downloadFromS3(slug, reporter) {
   try {
     const params = {
       Bucket: BUCKET_NAME,
-      Key: `${slug}.jpg`,
+      Key: `${slug}.webp`,
     };
     const stream = require("stream");
     const util = require("util");
     const pipeline = util.promisify(stream.pipeline);
     const s3Stream = s3.getObject(params).createReadStream();
     const fileWriteStream = fs.createWriteStream(
-      `${SCREENSHOT_PATH}/${slug}.jpg`
+      `${SCREENSHOT_PATH}/${slug}.webp`
     );
     await pipeline(s3Stream, fileWriteStream);
   } catch (error) {
-    reporter.warn(`Failed to download ${slug}.jpg from S3: ${error.message}`);
+    reporter.warn(`Failed to download ${slug}.webp from S3: ${error.message}`);
   }
 }
 
@@ -179,7 +179,7 @@ async function processChunk(sourcesChunk, browser, reporter) {
 
     const screenshotFullPath = path.join(
       SCREENSHOT_PATH,
-      `${edge.slug}.jpg`
+      `${edge.slug}.webp`
     );
     //reporter.log(`processedPages for ${edge.slug} at ${screenshotFullPath}.`);
 
