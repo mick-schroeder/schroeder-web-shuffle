@@ -12,9 +12,9 @@ const BUCKET_NAME = "web-shuffle-screenshots";
 const SCREENSHOT_PATH = "./src/images/screenshots";
 
 const SCREENSHOT_QUALITY = 80;
-const VIEWPORT_WIDTH = 900;
+const VIEWPORT_WIDTH = 800;
 const VIEWPORT_HEIGHT = 1600;
-const PAGE_NAVIGATION_TIMEOUT = 60000; //30 seconds
+const PAGE_NAVIGATION_TIMEOUT = 30000;
 const CACHE_TIMEOUT = 6 * 60 * 60 * 1000; //3 hours
 const RETRIES = 1;
 
@@ -252,7 +252,7 @@ const preProcessSources = async (JSON_PATH, CONCURRENT_PAGES, reporter) => {
       const browser = await puppeteer.launch({
         args: ["--no-sandbox"],
         headless: "new",
-        protocolTimeout: 120000, // Set to 120 seconds
+        protocolTimeout: 300000,
       });
     
       await processSources(
