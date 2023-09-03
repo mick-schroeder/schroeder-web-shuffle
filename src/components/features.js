@@ -7,7 +7,7 @@ const Features = () => (
   <h2 className="text-2xl font-extrabold dark:text-white text-black">
   Features:
             <small className="ml-2 font-semibold text-gray-500 dark:text-gray-400">
-            Learn everything there us to know about Web Shuffle.
+            Learn everything there is to know about Web Shuffle.
             </small>
           </h2>
     <div className="container max-w-5xl	px-5 py-8 mx-auto flex flex-wrap">
