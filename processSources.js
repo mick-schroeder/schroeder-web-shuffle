@@ -51,7 +51,7 @@ async function generateScreenshot(
   page,
   url,
   slug,
-  reporter
+  reporter,
 ) {
   let success = false;
 
@@ -70,7 +70,7 @@ async function generateScreenshot(
     } catch (error) {
       if (error.name === "TimeoutError" && attempt < RETRIES) {
         reporter.warn(
-          `Attempt ${attempt} failed for ${slug}. Error: ${error.message} Retrying...`
+          `Attempt ${attempt} failed for ${slug}. Error: ${error.message} Retrying...`,
         );
       } else if (attempt === RETRIES) {
         try {
@@ -85,11 +85,11 @@ async function generateScreenshot(
           try {
             await generatePlaceholderImage(slug);
             reporter.warn(
-              `Generated placeholder image for ${slug} after failing to capture screenshot. Error: ${error.message}`
+              `Generated placeholder image for ${slug} after failing to capture screenshot. Error: ${error.message}`,
             );
           } catch (placeholderError) {
             reporter.error(
-              `Failed to generate placeholder image for ${slug}: ${placeholderError.message}`
+              `Failed to generate placeholder image for ${slug}: ${placeholderError.message}`,
             );
           }
         }
@@ -135,12 +135,14 @@ async function screenshotExistsInS3(slug) {
 async function shouldGenerateScreenshot(screenshotFullPath, slug, reporter) {
   if (shouldForceRegenerate) {
     reporter.log(
-      `Deciding to generate screenshot - Regenerated ${slug}.webp because shouldForceRegenerate is true `
+      `Deciding to generate screenshot - Regenerated ${slug}.webp because shouldForceRegenerate is true `,
     );
     return true;
   } else if (isDevelopment) {
     let decision = !fs.existsSync(screenshotFullPath);
-    reporter.log(`Generate new screenshot? (local file doesn't exist) - ${decision}. `);
+    reporter.log(
+      `Generate new screenshot? (local file doesn't exist) - ${decision}. `,
+    );
     return decision;
   } else if (isProduction) {
     let decision = !(await screenshotExistsInS3(slug));
@@ -160,7 +162,7 @@ async function downloadFromS3(slug, reporter) {
     const pipeline = util.promisify(stream.pipeline);
     const s3Stream = s3.getObject(params).createReadStream();
     const fileWriteStream = fs.createWriteStream(
-      `${SCREENSHOT_PATH}/${slug}.webp`
+      `${SCREENSHOT_PATH}/${slug}.webp`,
     );
     await pipeline(s3Stream, fileWriteStream);
   } catch (error) {
@@ -176,19 +178,11 @@ async function processChunk(sourcesChunk, browser, reporter) {
   await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT });
 
   for (const edge of sourcesChunk) {
-
-    const screenshotFullPath = path.join(
-      SCREENSHOT_PATH,
-      `${edge.slug}.webp`
-    );
+    const screenshotFullPath = path.join(SCREENSHOT_PATH, `${edge.slug}.webp`);
     //reporter.log(`processedPages for ${edge.slug} at ${screenshotFullPath}.`);
 
     if (
-      await shouldGenerateScreenshot(
-        screenshotFullPath,
-        edge.slug,
-        reporter
-      )
+      await shouldGenerateScreenshot(screenshotFullPath, edge.slug, reporter)
     ) {
       try {
         reporter.log(`Generating screenshot for ${edge.url}.`);
@@ -197,26 +191,26 @@ async function processChunk(sourcesChunk, browser, reporter) {
           page,
           edge.url,
           edge.slug,
-          reporter
+          reporter,
         );
         if (isProduction) {
           await uploadToS3(screenshotFullPath, edge.slug, reporter);
         }
       } catch (error) {
         reporter.warn(
-          `Failed to generate/upload screenshot for ${edge.url}: ${error.message}`
+          `Failed to generate/upload screenshot for ${edge.url}: ${error.message}`,
         );
       }
     } else {
       if (isProduction) {
         try {
           reporter.log(
-            `Downloading existing screenshot for ${edge.url} from S3.`
+            `Downloading existing screenshot for ${edge.url} from S3.`,
           );
           await downloadFromS3(edge.slug, reporter);
         } catch (error) {
           reporter.warn(
-            `Failed to download screenshot for ${edge.url} from S3: ${error.message}`
+            `Failed to download screenshot for ${edge.url} from S3: ${error.message}`,
           );
         }
       } else {
@@ -235,7 +229,7 @@ async function processSources(sources, CONCURRENT_PAGES, browser, reporter) {
 
   // Use Promise.all to process each chunk concurrently
   await Promise.all(
-    sourceChunks.map((chunk) => processChunk(chunk, browser, reporter))
+    sourceChunks.map((chunk) => processChunk(chunk, browser, reporter)),
   );
 }
 
@@ -246,26 +240,18 @@ const preProcessSources = async (JSON_PATH, CONCURRENT_PAGES, reporter) => {
     console.log(
       "\nI have gotten the task of taking screenshots of " +
         sourcesData.length +
-        " Sources"
+        " Sources",
     );
 
-      const browser = await puppeteer.launch({
-        args: ["--no-sandbox"],
-        headless: "new",
-        protocolTimeout: 300000,
-      });
-    
-      await processSources(
-        sourcesData,
-        CONCURRENT_PAGES,
-        browser,
-        reporter
-      );
-    
-      await browser.close();
-    
+    const browser = await puppeteer.launch({
+      args: ["--no-sandbox"],
+      headless: "new",
+      protocolTimeout: 300000,
+    });
 
-    
+    await processSources(sourcesData, CONCURRENT_PAGES, browser, reporter);
+
+    await browser.close();
   } catch (error) {
     reporter.error("Error loading sources data from JSON:", error);
   }

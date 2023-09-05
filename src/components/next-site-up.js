@@ -10,7 +10,7 @@ const HomePage = () => {
     //nextSiteSlug,
     refreshNextSite,
     nextSiteDescription,
-   // nextSiteImage,
+    // nextSiteImage,
   } = useNextSiteContext();
 
   const handleClick = (event) => {
@@ -70,9 +70,7 @@ const HomePage = () => {
               target="_blank"
               rel="noopener"
             >
-             {nextSite.length > 32
-                ? nextSite.slice(0, 32) + "..."
-                : nextSite}
+              {nextSite.length > 32 ? nextSite.slice(0, 32) + "..." : nextSite}
               <svg
                 className="w-4 h-4 ml-2"
                 aria-hidden="true"

@@ -57,13 +57,9 @@ const IndexPage: React.FC<PageProps> = () => {
               ></path>
             </svg>
             <span className="text-xs bg-blue-600 rounded-full font-bold text-white px-4 py-1.5 ml-3">
-            <a
-                  href="/redirect"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Web Shuffle
-                </a>
+              <a href="/redirect" target="_blank" rel="noopener">
+                Web Shuffle
+              </a>
             </span>
           </div>
         </div>

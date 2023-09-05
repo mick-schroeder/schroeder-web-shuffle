@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 });
 
 import type { GatsbyConfig } from "gatsby";
@@ -68,7 +68,7 @@ const config: GatsbyConfig = {
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: true,
-          respectDNT: true
+          respectDNT: true,
           // Avoids sending pageview hits from custom paths
           //exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
@@ -104,7 +104,6 @@ const config: GatsbyConfig = {
         extensions: [".mdx"],
         gatsbyRemarkPlugins: [],
       },
-      
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -112,27 +111,29 @@ const config: GatsbyConfig = {
         name: `mdx-pages`,
         path: `${__dirname}/src/mdx-pages`, // Directory containing your MDX files
       },
-    }, 
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-      },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: `gatsby-plugin-sitemap`,
+      options: {},
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://webshuffle.mickschroeder.com',
-        sitemap: 'https://webshuffle.mickschroeder.com/sitemap-index.xml',
+        host: "https://webshuffle.mickschroeder.com",
+        sitemap: "https://webshuffle.mickschroeder.com/sitemap-index.xml",
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
+            policy: [{ userAgent: "*", disallow: ["/"] }],
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }, {userAgent: '*', disallow: ['/redirect'] }]
-          }
-        }
-      }
-    }
+            policy: [
+              { userAgent: "*", allow: "/" },
+              { userAgent: "*", disallow: ["/redirect"] },
+            ],
+          },
+        },
+      },
+    },
   ],
 };
 

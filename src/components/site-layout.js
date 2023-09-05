@@ -12,9 +12,7 @@ const SiteLayout = ({ children }) => (
       </header>
       {/* Content */}
       <div className="flex-grow flex flex-col md:flex-row justify-center mb-2">
-        <main className="flex-grow  mx-auto  max-w-screen-xl">
-          {children}
-        </main>
+        <main className="flex-grow  mx-auto  max-w-screen-xl">{children}</main>
       </div>
       {/* Footer */}
       <FooterBar />

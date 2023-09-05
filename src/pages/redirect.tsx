@@ -17,6 +17,4 @@ const RedirectPage = () => {
 };
 
 export default RedirectPage;
-export const Head = () => (
-  <SEO title="Web Shuffle - Redirect" />
-)
+export const Head = () => <SEO title="Web Shuffle - Redirect" />;

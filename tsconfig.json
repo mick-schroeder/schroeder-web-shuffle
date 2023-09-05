@@ -105,6 +105,7 @@
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
-    "./plugins/**/*"
-, "processSources.js"  ]
+    "./plugins/**/*",
+    "processSources.js"
+  ]
 }
