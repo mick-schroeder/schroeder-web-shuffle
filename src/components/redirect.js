@@ -6,17 +6,15 @@ const Redirecter = () => {
   const [isLoading, setIsLoading] = useState(true); // Loading state
 
   useEffect(() => {
-    if (nextSite) {
+    // If nextSite is not available, refresh it
+    if (!nextSite) {
+      refreshNextSite();
+    } else if (nextSite !== window.location.href) { // Avoid redirecting to the same page
       const redirectTimeout = setTimeout(() => {
         setIsLoading(true); // Start loading
-        let redirectSite = nextSite; // save to new variable - about to get refreshed
-        refreshNextSite(); // Refresh the nextSite just before the redirect
-        window.location.href = redirectSite; // Redirect
+        window.location.href = nextSite; // Redirect
       }, 200);
-
       return () => clearTimeout(redirectTimeout); // Clean up on unmount
-    } else {
-      refreshNextSite();
     }
   }, [nextSite]);
 

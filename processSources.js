@@ -14,8 +14,8 @@ const SCREENSHOT_PATH = "./src/images/screenshots";
 const SCREENSHOT_QUALITY = 80;
 const VIEWPORT_WIDTH = 800;
 const VIEWPORT_HEIGHT = 1600;
-const PAGE_NAVIGATION_TIMEOUT = 30000;
-const CACHE_TIMEOUT = 6 * 60 * 60 * 1000; //3 hours
+const PAGE_NAVIGATION_TIMEOUT = 60000;
+const CACHE_TIMEOUT = 6 * 60 * 60 * 1000;
 const RETRIES = 1;
 
 // AWS S3 setup
