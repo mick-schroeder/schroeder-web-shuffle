@@ -85,11 +85,8 @@ const IndexPage: React.FC<PageProps> = () => {
           <h3 className="text-2xl font-bold dark:text-white py-4">
             Top Sources
           </h3>
-          <CardsSources limit={6} sort="rating" />
-          <h3 className="text-2xl font-bold dark:text-white py-4">
-            More Sources
-          </h3>
-          <CardsSources limit={12} sort="random" />
+          <CardsSources sort="rating" />
+   
           <div className="text-center mt-8">
             {" "}
             <RedirectButton />
