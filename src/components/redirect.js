@@ -9,8 +9,7 @@ const Redirecter = () => {
     // If nextSite is not available, refresh it
     if (!nextSite) {
       refreshNextSite();
-    } else if (nextSite !== window.location.href) {
-      // Avoid redirecting to the same page
+    } else if (nextSite !== window.location.href) { // Avoid redirecting to the same page
       const redirectTimeout = setTimeout(() => {
         setIsLoading(true); // Start loading
         window.location.href = nextSite; // Redirect

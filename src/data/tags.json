@@ -1,11 +1,11 @@
 [
-  { "name": "Entertainment", "slug": "entertainment", "icon": "", "color": "" },
-  { "name": "News", "slug": "news", "icon": "", "color": "" },
-  { "name": "Shopping", "slug": "shopping", "icon": "", "color": "" },
-  { "name": "Tech", "slug": "tech", "icon": "", "color": "" },
-  { "name": "Aggregator", "slug": "aggregator", "icon": "", "color": "" },
-  { "name": "Sponsor", "slug": "sponsor", "icon": "", "color": "" },
-  { "name": "Socials", "slug": "socials", "icon": "", "color": "" },
-  { "name": "Education", "slug": "education", "icon": "", "color": "" },
-  { "name": "Science", "slug": "science", "icon": "", "color": "" }
+  { "name": "Entertainment", "icon": "", "color": "" },
+  { "name": "News", "icon": "", "color": "" },
+  { "name": "Shopping", "icon": "", "color": "" },
+  { "name": "Tech", "icon": "", "color": "" },
+  { "name": "Aggregator", "icon": "", "color": "" },
+  { "name": "Sponsor", "icon": "", "color": "" },
+  { "name": "Socials", "icon": "", "color": "" },
+  { "name": "Education", "icon": "", "color": "" },
+  { "name": "Science", "icon": "", "color": "" }
 ]

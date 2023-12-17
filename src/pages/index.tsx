@@ -86,7 +86,7 @@ const IndexPage: React.FC<PageProps> = () => {
             Top Sources
           </h3>
           <CardsSources sort="rating" />
-
+   
           <div className="text-center mt-8">
             {" "}
             <RedirectButton />
