@@ -18,8 +18,9 @@ export default function DefaultNavbar() {
     <div>
       <nav className="backdrop-blur bg-white/80 dark:bg-gray-900/80 md:fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-700">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4">
-       
-        <div className={`flex justify-center order-0 w-full md:w-auto my-6 md:my-0`}>
+          <div
+            className={`flex justify-center order-0 w-full md:w-auto my-6 md:my-0`}
+          >
             <Link to="/" className="flex items-center">
               <img
                 src={logo}
@@ -37,7 +38,6 @@ export default function DefaultNavbar() {
           <div className="flex m-4 md:m-0 order-2">
             <RedirectButton />
           </div>
-
         </div>
       </nav>
       <nav className="border-b border-gray-300 dark:border-gray-700 mt-0 md:mt-20">

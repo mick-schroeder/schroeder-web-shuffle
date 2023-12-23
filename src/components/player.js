@@ -35,10 +35,13 @@ const WebShufflePlayer = () => {
               className="mb-3 w-32"
             />
           )*/}
-          <blockquote title={nextSiteDescription} className="line-clamp-1	text-xs text-ellipsis font-normal text-gray-700 dark:text-gray-400">
+          <blockquote
+            title={nextSiteDescription}
+            className="line-clamp-1	text-xs text-ellipsis font-normal text-gray-700 dark:text-gray-400"
+          >
             {nextSiteDescription}
           </blockquote>
-          
+
           <p className="text-xs mt-1 font-semibold text-gray-700 dark:text-gray-400">
             <a
               onClick={handleClick}

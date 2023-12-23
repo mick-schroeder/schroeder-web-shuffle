@@ -21,7 +21,7 @@
   },
   {
     "name": "Amazon",
-    "url": "https://www.amazon.com/b?_encoding=UTF8&category=schroeder0d-20&linkCode=ur2&linkId=b51b307243535050e877f33322c66b92&camp=1789&creative=9325&node=1036592",
+    "url": "https://www.amazon.com/b?_encoding=UTF8&tag=schroeder0d-20&linkCode=ur2&linkId=b51b307243535050e877f33322c66b92&camp=1789&creative=9325&node=1036592",
     "category": "Shopping",
     "score": "2.64",
     "slug": "amazon",
@@ -296,7 +296,7 @@
     "score": "2.545",
     "slug": "etsy",
     "image": "../images/screenshots/etsy.webp",
-    "description": "The quirky online marketplace for handmade and vincategorye items.",
+    "description": "The quirky online marketplace for handmade and vintage items.",
     "color": "bg-orange-500"
   },
   {
@@ -460,12 +460,12 @@
     "color": "bg-yellow-500"
   },
   {
-    "name": "Inscategoryram",
-    "url": "https://inscategoryram.com/",
+    "name": "Instagram",
+    "url": "https://instagram.com/",
     "category": "Socials",
     "score": "3.91",
-    "slug": "inscategoryram",
-    "image": "../images/screenshots/inscategoryram.webp",
+    "slug": "Instagram",
+    "image": "../images/screenshots/instagram.webp",
     "description": "The addictive photo-sharing platform where everyone's life is picture-perfect, or so they want you to believe.",
     "color": "bg-purple-600"
   },
