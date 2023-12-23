@@ -10,7 +10,7 @@ const SourcesTable = () => {
         nodes {
           name
           url
-          tag
+          category
           score
           slug
           color
@@ -30,7 +30,7 @@ const SourcesTable = () => {
               Name
             </th>
             <th scope="col" className="px-6 py-3">
-              Tag
+              category
             </th>
             <th scope="col" className="px-6 py-3">
               AI Rating
@@ -55,7 +55,7 @@ const SourcesTable = () => {
               </td>
               <td className="px-6 py-4">
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                  {website.tag}
+                  {website.category}
                 </span>
               </td>
               <td className="px-6 py-4">

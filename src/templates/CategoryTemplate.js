@@ -266,4 +266,4 @@ const SourceTemplate = ({ data, pageContext }) => {
   );
 };
 
-export default SourceTemplate;
+export default CategoryTemplate;

@@ -2,38 +2,24 @@ import * as React from "react";
 import { Link } from "gatsby";
 import RedirectButton from "./redirect-button";
 import logo from "../images/logo.svg";
+import WebShufflePlayer from "../components/player";
 
 const NAV_ITEMS = [
   { title: "Home", slug: "" },
   { title: "About", slug: "about" },
   { title: "Apps", slug: "apps" },
+  { title: "Categories", slug: "categories" },
   { title: "Digital Newsstand", slug: "newsstand" },
   { title: "Sources", slug: "sources" },
 ];
 
 export default function DefaultNavbar() {
-  const currentDate = new Date();
-  const formattedDate = currentDate
-    .toLocaleDateString("en-US", {
-      month: "short",
-      day: "2-digit",
-      year: "numeric",
-    })
-    .toUpperCase();
-
   return (
     <div>
       <nav className="backdrop-blur bg-white/80 dark:bg-gray-900/80 md:fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-700">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-center md:justify-between mx-auto p-4">
-          <div className="hidden md:block flex-none text-xs font-semibold text-black dark:text-blue-200">
-            {formattedDate}
-          </div>
-
-          <div className="flex m-4 md:m-0 order-1">
-            <RedirectButton />
-          </div>
-
-          <div className={` flex items-center w-auto order-0`}>
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto px-4">
+       
+        <div className={`flex justify-center order-0 w-full md:w-auto my-6 md:my-0`}>
             <Link to="/" className="flex items-center">
               <img
                 src={logo}
@@ -45,6 +31,13 @@ export default function DefaultNavbar() {
               </span>
             </Link>
           </div>
+
+          <WebShufflePlayer />
+
+          <div className="flex m-4 md:m-0 order-2">
+            <RedirectButton />
+          </div>
+
         </div>
       </nav>
       <nav className="border-b border-gray-300 dark:border-gray-700 mt-0 md:mt-20">

@@ -48,6 +48,140 @@ type BooleanQueryOperatorInput = {
   readonly nin: InputMaybe<ReadonlyArray<InputMaybe<Scalars['Boolean']>>>;
 };
 
+type CategoriesJson = Node & {
+  readonly children: ReadonlyArray<Node>;
+  readonly color: Maybe<Scalars['String']>;
+  readonly icon: Maybe<Scalars['String']>;
+  readonly id: Scalars['ID'];
+  readonly internal: Internal;
+  readonly name: Maybe<Scalars['String']>;
+  readonly parent: Maybe<Node>;
+  readonly slug: Maybe<Scalars['String']>;
+};
+
+type CategoriesJsonConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<CategoriesJsonEdge>;
+  readonly group: ReadonlyArray<CategoriesJsonGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<CategoriesJson>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type CategoriesJsonConnection_distinctArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonConnection_groupArgs = {
+  field: CategoriesJsonFieldSelector;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type CategoriesJsonConnection_maxArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonConnection_minArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonConnection_sumArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+type CategoriesJsonEdge = {
+  readonly next: Maybe<CategoriesJson>;
+  readonly node: CategoriesJson;
+  readonly previous: Maybe<CategoriesJson>;
+};
+
+type CategoriesJsonFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly color: InputMaybe<FieldSelectorEnum>;
+  readonly icon: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly slug: InputMaybe<FieldSelectorEnum>;
+};
+
+type CategoriesJsonFilterInput = {
+  readonly children: InputMaybe<NodeFilterListInput>;
+  readonly color: InputMaybe<StringQueryOperatorInput>;
+  readonly icon: InputMaybe<StringQueryOperatorInput>;
+  readonly id: InputMaybe<StringQueryOperatorInput>;
+  readonly internal: InputMaybe<InternalFilterInput>;
+  readonly name: InputMaybe<StringQueryOperatorInput>;
+  readonly parent: InputMaybe<NodeFilterInput>;
+  readonly slug: InputMaybe<StringQueryOperatorInput>;
+};
+
+type CategoriesJsonFilterListInput = {
+  readonly elemMatch: InputMaybe<CategoriesJsonFilterInput>;
+};
+
+type CategoriesJsonGroupConnection = {
+  readonly distinct: ReadonlyArray<Scalars['String']>;
+  readonly edges: ReadonlyArray<CategoriesJsonEdge>;
+  readonly field: Scalars['String'];
+  readonly fieldValue: Maybe<Scalars['String']>;
+  readonly group: ReadonlyArray<CategoriesJsonGroupConnection>;
+  readonly max: Maybe<Scalars['Float']>;
+  readonly min: Maybe<Scalars['Float']>;
+  readonly nodes: ReadonlyArray<CategoriesJson>;
+  readonly pageInfo: PageInfo;
+  readonly sum: Maybe<Scalars['Float']>;
+  readonly totalCount: Scalars['Int'];
+};
+
+
+type CategoriesJsonGroupConnection_distinctArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonGroupConnection_groupArgs = {
+  field: CategoriesJsonFieldSelector;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+};
+
+
+type CategoriesJsonGroupConnection_maxArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonGroupConnection_minArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+
+type CategoriesJsonGroupConnection_sumArgs = {
+  field: CategoriesJsonFieldSelector;
+};
+
+type CategoriesJsonSortInput = {
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly color: InputMaybe<SortOrderEnum>;
+  readonly icon: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly slug: InputMaybe<SortOrderEnum>;
+};
+
 type DateQueryOperatorInput = {
   readonly eq: InputMaybe<Scalars['Date']>;
   readonly gt: InputMaybe<Scalars['Date']>;
@@ -378,23 +512,23 @@ type File = Node & {
   readonly blksize: Maybe<Scalars['Int']>;
   readonly blocks: Maybe<Scalars['Int']>;
   readonly changeTime: Scalars['Date'];
+  /** Returns the first child node of type CategoriesJson or null if there are no children of given type on this node */
+  readonly childCategoriesJson: Maybe<CategoriesJson>;
   /** Returns the first child node of type ImageSharp or null if there are no children of given type on this node */
   readonly childImageSharp: Maybe<ImageSharp>;
   /** Returns the first child node of type Mdx or null if there are no children of given type on this node */
   readonly childMdx: Maybe<Mdx>;
   /** Returns the first child node of type SourcesJson or null if there are no children of given type on this node */
   readonly childSourcesJson: Maybe<SourcesJson>;
-  /** Returns the first child node of type TagsJson or null if there are no children of given type on this node */
-  readonly childTagsJson: Maybe<TagsJson>;
   readonly children: ReadonlyArray<Node>;
+  /** Returns all children nodes filtered by type CategoriesJson */
+  readonly childrenCategoriesJson: Maybe<ReadonlyArray<Maybe<CategoriesJson>>>;
   /** Returns all children nodes filtered by type ImageSharp */
   readonly childrenImageSharp: Maybe<ReadonlyArray<Maybe<ImageSharp>>>;
   /** Returns all children nodes filtered by type Mdx */
   readonly childrenMdx: Maybe<ReadonlyArray<Maybe<Mdx>>>;
   /** Returns all children nodes filtered by type SourcesJson */
   readonly childrenSourcesJson: Maybe<ReadonlyArray<Maybe<SourcesJson>>>;
-  /** Returns all children nodes filtered by type TagsJson */
-  readonly childrenTagsJson: Maybe<ReadonlyArray<Maybe<TagsJson>>>;
   readonly ctime: Scalars['Date'];
   readonly ctimeMs: Scalars['Float'];
   readonly dev: Scalars['Int'];
@@ -537,15 +671,15 @@ type FileFieldSelector = {
   readonly blksize: InputMaybe<FieldSelectorEnum>;
   readonly blocks: InputMaybe<FieldSelectorEnum>;
   readonly changeTime: InputMaybe<FieldSelectorEnum>;
+  readonly childCategoriesJson: InputMaybe<CategoriesJsonFieldSelector>;
   readonly childImageSharp: InputMaybe<ImageSharpFieldSelector>;
   readonly childMdx: InputMaybe<MdxFieldSelector>;
   readonly childSourcesJson: InputMaybe<SourcesJsonFieldSelector>;
-  readonly childTagsJson: InputMaybe<TagsJsonFieldSelector>;
   readonly children: InputMaybe<NodeFieldSelector>;
+  readonly childrenCategoriesJson: InputMaybe<CategoriesJsonFieldSelector>;
   readonly childrenImageSharp: InputMaybe<ImageSharpFieldSelector>;
   readonly childrenMdx: InputMaybe<MdxFieldSelector>;
   readonly childrenSourcesJson: InputMaybe<SourcesJsonFieldSelector>;
-  readonly childrenTagsJson: InputMaybe<TagsJsonFieldSelector>;
   readonly ctime: InputMaybe<FieldSelectorEnum>;
   readonly ctimeMs: InputMaybe<FieldSelectorEnum>;
   readonly dev: InputMaybe<FieldSelectorEnum>;
@@ -586,15 +720,15 @@ type FileFilterInput = {
   readonly blksize: InputMaybe<IntQueryOperatorInput>;
   readonly blocks: InputMaybe<IntQueryOperatorInput>;
   readonly changeTime: InputMaybe<DateQueryOperatorInput>;
+  readonly childCategoriesJson: InputMaybe<CategoriesJsonFilterInput>;
   readonly childImageSharp: InputMaybe<ImageSharpFilterInput>;
   readonly childMdx: InputMaybe<MdxFilterInput>;
   readonly childSourcesJson: InputMaybe<SourcesJsonFilterInput>;
-  readonly childTagsJson: InputMaybe<TagsJsonFilterInput>;
   readonly children: InputMaybe<NodeFilterListInput>;
+  readonly childrenCategoriesJson: InputMaybe<CategoriesJsonFilterListInput>;
   readonly childrenImageSharp: InputMaybe<ImageSharpFilterListInput>;
   readonly childrenMdx: InputMaybe<MdxFilterListInput>;
   readonly childrenSourcesJson: InputMaybe<SourcesJsonFilterListInput>;
-  readonly childrenTagsJson: InputMaybe<TagsJsonFilterListInput>;
   readonly ctime: InputMaybe<DateQueryOperatorInput>;
   readonly ctimeMs: InputMaybe<FloatQueryOperatorInput>;
   readonly dev: InputMaybe<IntQueryOperatorInput>;
@@ -676,15 +810,15 @@ type FileSortInput = {
   readonly blksize: InputMaybe<SortOrderEnum>;
   readonly blocks: InputMaybe<SortOrderEnum>;
   readonly changeTime: InputMaybe<SortOrderEnum>;
+  readonly childCategoriesJson: InputMaybe<CategoriesJsonSortInput>;
   readonly childImageSharp: InputMaybe<ImageSharpSortInput>;
   readonly childMdx: InputMaybe<MdxSortInput>;
   readonly childSourcesJson: InputMaybe<SourcesJsonSortInput>;
-  readonly childTagsJson: InputMaybe<TagsJsonSortInput>;
   readonly children: InputMaybe<NodeSortInput>;
+  readonly childrenCategoriesJson: InputMaybe<CategoriesJsonSortInput>;
   readonly childrenImageSharp: InputMaybe<ImageSharpSortInput>;
   readonly childrenMdx: InputMaybe<MdxSortInput>;
   readonly childrenSourcesJson: InputMaybe<SourcesJsonSortInput>;
-  readonly childrenTagsJson: InputMaybe<TagsJsonSortInput>;
   readonly ctime: InputMaybe<SortOrderEnum>;
   readonly ctimeMs: InputMaybe<SortOrderEnum>;
   readonly dev: InputMaybe<SortOrderEnum>;
@@ -1502,6 +1636,7 @@ type PotraceTurnPolicy =
   | 'white';
 
 type Query = {
+  readonly allCategoriesJson: CategoriesJsonConnection;
   readonly allDirectory: DirectoryConnection;
   readonly allFile: FileConnection;
   readonly allImageSharp: ImageSharpConnection;
@@ -1512,7 +1647,7 @@ type Query = {
   readonly allSitePage: SitePageConnection;
   readonly allSitePlugin: SitePluginConnection;
   readonly allSourcesJson: SourcesJsonConnection;
-  readonly allTagsJson: TagsJsonConnection;
+  readonly categoriesJson: Maybe<CategoriesJson>;
   readonly directory: Maybe<Directory>;
   readonly file: Maybe<File>;
   readonly imageSharp: Maybe<ImageSharp>;
@@ -1523,7 +1658,14 @@ type Query = {
   readonly sitePage: Maybe<SitePage>;
   readonly sitePlugin: Maybe<SitePlugin>;
   readonly sourcesJson: Maybe<SourcesJson>;
-  readonly tagsJson: Maybe<TagsJson>;
+};
+
+
+type Query_allCategoriesJsonArgs = {
+  filter: InputMaybe<CategoriesJsonFilterInput>;
+  limit: InputMaybe<Scalars['Int']>;
+  skip: InputMaybe<Scalars['Int']>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<CategoriesJsonSortInput>>>;
 };
 
 
@@ -1607,11 +1749,15 @@ type Query_allSourcesJsonArgs = {
 };
 
 
-type Query_allTagsJsonArgs = {
-  filter: InputMaybe<TagsJsonFilterInput>;
-  limit: InputMaybe<Scalars['Int']>;
-  skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<ReadonlyArray<InputMaybe<TagsJsonSortInput>>>;
+type Query_categoriesJsonArgs = {
+  children: InputMaybe<NodeFilterListInput>;
+  color: InputMaybe<StringQueryOperatorInput>;
+  icon: InputMaybe<StringQueryOperatorInput>;
+  id: InputMaybe<StringQueryOperatorInput>;
+  internal: InputMaybe<InternalFilterInput>;
+  name: InputMaybe<StringQueryOperatorInput>;
+  parent: InputMaybe<NodeFilterInput>;
+  slug: InputMaybe<StringQueryOperatorInput>;
 };
 
 
@@ -1666,15 +1812,15 @@ type Query_fileArgs = {
   blksize: InputMaybe<IntQueryOperatorInput>;
   blocks: InputMaybe<IntQueryOperatorInput>;
   changeTime: InputMaybe<DateQueryOperatorInput>;
+  childCategoriesJson: InputMaybe<CategoriesJsonFilterInput>;
   childImageSharp: InputMaybe<ImageSharpFilterInput>;
   childMdx: InputMaybe<MdxFilterInput>;
   childSourcesJson: InputMaybe<SourcesJsonFilterInput>;
-  childTagsJson: InputMaybe<TagsJsonFilterInput>;
   children: InputMaybe<NodeFilterListInput>;
+  childrenCategoriesJson: InputMaybe<CategoriesJsonFilterListInput>;
   childrenImageSharp: InputMaybe<ImageSharpFilterListInput>;
   childrenMdx: InputMaybe<MdxFilterListInput>;
   childrenSourcesJson: InputMaybe<SourcesJsonFilterListInput>;
-  childrenTagsJson: InputMaybe<TagsJsonFilterListInput>;
   ctime: InputMaybe<DateQueryOperatorInput>;
   ctimeMs: InputMaybe<FloatQueryOperatorInput>;
   dev: InputMaybe<IntQueryOperatorInput>;
@@ -1803,6 +1949,7 @@ type Query_sitePluginArgs = {
 
 
 type Query_sourcesJsonArgs = {
+  category: InputMaybe<StringQueryOperatorInput>;
   children: InputMaybe<NodeFilterListInput>;
   color: InputMaybe<StringQueryOperatorInput>;
   description: InputMaybe<StringQueryOperatorInput>;
@@ -1813,19 +1960,7 @@ type Query_sourcesJsonArgs = {
   parent: InputMaybe<NodeFilterInput>;
   score: InputMaybe<StringQueryOperatorInput>;
   slug: InputMaybe<StringQueryOperatorInput>;
-  tag: InputMaybe<StringQueryOperatorInput>;
   url: InputMaybe<StringQueryOperatorInput>;
-};
-
-
-type Query_tagsJsonArgs = {
-  children: InputMaybe<NodeFilterListInput>;
-  color: InputMaybe<StringQueryOperatorInput>;
-  icon: InputMaybe<StringQueryOperatorInput>;
-  id: InputMaybe<StringQueryOperatorInput>;
-  internal: InputMaybe<InternalFilterInput>;
-  name: InputMaybe<StringQueryOperatorInput>;
-  parent: InputMaybe<NodeFilterInput>;
 };
 
 type Site = Node & {
@@ -2635,6 +2770,7 @@ type SortOrderEnum =
   | 'DESC';
 
 type SourcesJson = Node & {
+  readonly category: Maybe<Scalars['String']>;
   readonly children: ReadonlyArray<Node>;
   readonly color: Maybe<Scalars['String']>;
   readonly description: Maybe<Scalars['String']>;
@@ -2645,7 +2781,6 @@ type SourcesJson = Node & {
   readonly parent: Maybe<Node>;
   readonly score: Maybe<Scalars['String']>;
   readonly slug: Maybe<Scalars['String']>;
-  readonly tag: Maybe<Scalars['String']>;
   readonly url: Maybe<Scalars['String']>;
 };
 
@@ -2695,6 +2830,7 @@ type SourcesJsonEdge = {
 };
 
 type SourcesJsonFieldSelector = {
+  readonly category: InputMaybe<FieldSelectorEnum>;
   readonly children: InputMaybe<NodeFieldSelector>;
   readonly color: InputMaybe<FieldSelectorEnum>;
   readonly description: InputMaybe<FieldSelectorEnum>;
@@ -2705,11 +2841,11 @@ type SourcesJsonFieldSelector = {
   readonly parent: InputMaybe<NodeFieldSelector>;
   readonly score: InputMaybe<FieldSelectorEnum>;
   readonly slug: InputMaybe<FieldSelectorEnum>;
-  readonly tag: InputMaybe<FieldSelectorEnum>;
   readonly url: InputMaybe<FieldSelectorEnum>;
 };
 
 type SourcesJsonFilterInput = {
+  readonly category: InputMaybe<StringQueryOperatorInput>;
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly color: InputMaybe<StringQueryOperatorInput>;
   readonly description: InputMaybe<StringQueryOperatorInput>;
@@ -2720,7 +2856,6 @@ type SourcesJsonFilterInput = {
   readonly parent: InputMaybe<NodeFilterInput>;
   readonly score: InputMaybe<StringQueryOperatorInput>;
   readonly slug: InputMaybe<StringQueryOperatorInput>;
-  readonly tag: InputMaybe<StringQueryOperatorInput>;
   readonly url: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -2770,6 +2905,7 @@ type SourcesJsonGroupConnection_sumArgs = {
 };
 
 type SourcesJsonSortInput = {
+  readonly category: InputMaybe<SortOrderEnum>;
   readonly children: InputMaybe<NodeSortInput>;
   readonly color: InputMaybe<SortOrderEnum>;
   readonly description: InputMaybe<SortOrderEnum>;
@@ -2780,7 +2916,6 @@ type SourcesJsonSortInput = {
   readonly parent: InputMaybe<NodeSortInput>;
   readonly score: InputMaybe<SortOrderEnum>;
   readonly slug: InputMaybe<SortOrderEnum>;
-  readonly tag: InputMaybe<SortOrderEnum>;
   readonly url: InputMaybe<SortOrderEnum>;
 };
 
@@ -2791,136 +2926,6 @@ type StringQueryOperatorInput = {
   readonly ne: InputMaybe<Scalars['String']>;
   readonly nin: InputMaybe<ReadonlyArray<InputMaybe<Scalars['String']>>>;
   readonly regex: InputMaybe<Scalars['String']>;
-};
-
-type TagsJson = Node & {
-  readonly children: ReadonlyArray<Node>;
-  readonly color: Maybe<Scalars['String']>;
-  readonly icon: Maybe<Scalars['String']>;
-  readonly id: Scalars['ID'];
-  readonly internal: Internal;
-  readonly name: Maybe<Scalars['String']>;
-  readonly parent: Maybe<Node>;
-};
-
-type TagsJsonConnection = {
-  readonly distinct: ReadonlyArray<Scalars['String']>;
-  readonly edges: ReadonlyArray<TagsJsonEdge>;
-  readonly group: ReadonlyArray<TagsJsonGroupConnection>;
-  readonly max: Maybe<Scalars['Float']>;
-  readonly min: Maybe<Scalars['Float']>;
-  readonly nodes: ReadonlyArray<TagsJson>;
-  readonly pageInfo: PageInfo;
-  readonly sum: Maybe<Scalars['Float']>;
-  readonly totalCount: Scalars['Int'];
-};
-
-
-type TagsJsonConnection_distinctArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonConnection_groupArgs = {
-  field: TagsJsonFieldSelector;
-  limit: InputMaybe<Scalars['Int']>;
-  skip: InputMaybe<Scalars['Int']>;
-};
-
-
-type TagsJsonConnection_maxArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonConnection_minArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonConnection_sumArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-type TagsJsonEdge = {
-  readonly next: Maybe<TagsJson>;
-  readonly node: TagsJson;
-  readonly previous: Maybe<TagsJson>;
-};
-
-type TagsJsonFieldSelector = {
-  readonly children: InputMaybe<NodeFieldSelector>;
-  readonly color: InputMaybe<FieldSelectorEnum>;
-  readonly icon: InputMaybe<FieldSelectorEnum>;
-  readonly id: InputMaybe<FieldSelectorEnum>;
-  readonly internal: InputMaybe<InternalFieldSelector>;
-  readonly name: InputMaybe<FieldSelectorEnum>;
-  readonly parent: InputMaybe<NodeFieldSelector>;
-};
-
-type TagsJsonFilterInput = {
-  readonly children: InputMaybe<NodeFilterListInput>;
-  readonly color: InputMaybe<StringQueryOperatorInput>;
-  readonly icon: InputMaybe<StringQueryOperatorInput>;
-  readonly id: InputMaybe<StringQueryOperatorInput>;
-  readonly internal: InputMaybe<InternalFilterInput>;
-  readonly name: InputMaybe<StringQueryOperatorInput>;
-  readonly parent: InputMaybe<NodeFilterInput>;
-};
-
-type TagsJsonFilterListInput = {
-  readonly elemMatch: InputMaybe<TagsJsonFilterInput>;
-};
-
-type TagsJsonGroupConnection = {
-  readonly distinct: ReadonlyArray<Scalars['String']>;
-  readonly edges: ReadonlyArray<TagsJsonEdge>;
-  readonly field: Scalars['String'];
-  readonly fieldValue: Maybe<Scalars['String']>;
-  readonly group: ReadonlyArray<TagsJsonGroupConnection>;
-  readonly max: Maybe<Scalars['Float']>;
-  readonly min: Maybe<Scalars['Float']>;
-  readonly nodes: ReadonlyArray<TagsJson>;
-  readonly pageInfo: PageInfo;
-  readonly sum: Maybe<Scalars['Float']>;
-  readonly totalCount: Scalars['Int'];
-};
-
-
-type TagsJsonGroupConnection_distinctArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonGroupConnection_groupArgs = {
-  field: TagsJsonFieldSelector;
-  limit: InputMaybe<Scalars['Int']>;
-  skip: InputMaybe<Scalars['Int']>;
-};
-
-
-type TagsJsonGroupConnection_maxArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonGroupConnection_minArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-
-type TagsJsonGroupConnection_sumArgs = {
-  field: TagsJsonFieldSelector;
-};
-
-type TagsJsonSortInput = {
-  readonly children: InputMaybe<NodeSortInput>;
-  readonly color: InputMaybe<SortOrderEnum>;
-  readonly icon: InputMaybe<SortOrderEnum>;
-  readonly id: InputMaybe<SortOrderEnum>;
-  readonly internal: InputMaybe<InternalSortInput>;
-  readonly name: InputMaybe<SortOrderEnum>;
-  readonly parent: InputMaybe<NodeSortInput>;
 };
 
 type TransformOptions = {
@@ -2967,7 +2972,7 @@ type GetSourceBySlugQueryVariables = Exact<{
 }>;
 
 
-type GetSourceBySlugQuery = { readonly sourcesJson: { readonly name: string | null, readonly url: string | null, readonly tag: string | null, readonly score: string | null, readonly color: string | null, readonly description: string | null, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null };
+type GetSourceBySlugQuery = { readonly sourcesJson: { readonly name: string | null, readonly url: string | null, readonly category: string | null, readonly score: string | null, readonly color: string | null, readonly description: string | null, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } | null } | null };
 
 
 }

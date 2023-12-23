@@ -12,7 +12,7 @@ const SourcesGallery = ({ limit, sort }) => {
             color
             name
             score
-            tag
+            category
             url
             slug
             image {
@@ -67,7 +67,7 @@ const SourcesGallery = ({ limit, sort }) => {
                   <StarRating score={node.score} />
 
                   <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                    {node.tag}
+                    {node.category}
                   </span>
                 </div>{" "}
               </div>

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Entertainment",
+    "slug": "entertainment",
+    "icon": "",
+    "color": "indigo"
+  },
+  { "name": "News", "slug": "news", "icon": "", "color": "blue" },
+  { "name": "Shopping", "slug": "shopping", "icon": "", "color": "emerald" },
+  { "name": "Tech", "slug": "tech", "icon": "", "color": "rose" },
+  { "name": "Aggregator", "slug": "aggregator", "icon": "", "color": "teal" },
+  { "name": "Sponsor", "slug": "sponsor", "icon": "", "color": "red" },
+  { "name": "Socials", "slug": "socials", "icon": "", "color": "yellow" },
+  { "name": "Education", "slug": "education", "icon": "", "color": "orange" },
+  { "name": "Science", "slug": "science", "icon": "", "color": "fuchsia" }
+]

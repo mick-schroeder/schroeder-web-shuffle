@@ -12,9 +12,9 @@ const BUCKET_NAME = "web-shuffle-screenshots";
 const SCREENSHOT_PATH = "./src/images/screenshots";
 
 const SCREENSHOT_QUALITY = 80;
-const VIEWPORT_WIDTH = 800;
-const VIEWPORT_HEIGHT = 1600;
-const PAGE_NAVIGATION_TIMEOUT = 60000;
+const VIEWPORT_WIDTH = 768;
+const VIEWPORT_HEIGHT = 1024;
+const PAGE_NAVIGATION_TIMEOUT = 6000;
 const CACHE_TIMEOUT = 6 * 60 * 60 * 1000;
 const RETRIES = 1;
 
@@ -61,6 +61,13 @@ async function generateScreenshot(
         waitUntil: "networkidle2",
         timeout: PAGE_NAVIGATION_TIMEOUT,
       });
+
+           await page.evaluate(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+          });
+    
+          await page.waitForTimeout(2000);
+
       await page.screenshot({
         path: screenshotFullPath,
         quality: SCREENSHOT_QUALITY,

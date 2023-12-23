@@ -3,7 +3,6 @@ import type { PageProps } from "gatsby";
 import { Link } from "gatsby";
 import CardsSources from "../components/sources-gallery";
 import RedirectButton from "../components/redirect-button";
-import HomePage from "../components/next-site-up";
 import SiteLayout from "../components/site-layout";
 import { SEO } from "../components/seo";
 import FeaturesSection from "../components/features";
@@ -11,7 +10,7 @@ import FeaturesSection from "../components/features";
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <SiteLayout>
-      <div className="grid md:grid-cols-2 gap-2">
+      <div className="">
         <section className="">
           <div className="py-8 px-4 mx-auto sm:py-8 lg:px-6 ">
             <div className="mx-auto max-w-screen-sm text-center">
@@ -20,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <span className="text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
                   Web Shuffle
                 </span>{" "}
-                the AI curated shuffle button for the web.
+                the AI curated shuffle button for the internet.
               </h2>
               <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
                 Simply click the Web Shuffle button and let us take you to the
@@ -30,9 +29,6 @@ const IndexPage: React.FC<PageProps> = () => {
             </div>
           </div>
         </section>
-        <section>
-          <HomePage />
-        </section>{" "}
       </div>
 
       <section>
@@ -86,7 +82,7 @@ const IndexPage: React.FC<PageProps> = () => {
             Top Sources
           </h3>
           <CardsSources sort="rating" />
-   
+
           <div className="text-center mt-8">
             {" "}
             <RedirectButton />
