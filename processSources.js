@@ -62,11 +62,11 @@ async function generateScreenshot(
         timeout: PAGE_NAVIGATION_TIMEOUT,
       });
 
-           await page.evaluate(() => {
-            window.scrollTo(0, document.body.scrollHeight);
-          });
-    
-          await page.waitForTimeout(2000);
+      await page.evaluate(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+      });
+
+      await page.waitForTimeout(2000);
 
       await page.screenshot({
         path: screenshotFullPath,
