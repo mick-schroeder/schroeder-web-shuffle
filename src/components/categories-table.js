@@ -31,7 +31,6 @@ const CategoriesTable = () => {
     event.preventDefault();
     refreshNextSite(websiteName);
     window.open(nextSite, "_blank");
-    
   };
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -39,7 +38,6 @@ const CategoriesTable = () => {
         <a
           //href={website.slug}
           onClick={(event) => handleClick(event, website.name)}
-
           target=""
           className="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline p-3"
         >

@@ -31,7 +31,9 @@ export const NextSiteProvider = ({ children }) => {
   const initialSource = sources[randomIndex];
 
   const [nextSite, setNextSite] = useState(initialSource.url);
-  const [nextSiteCategory, setNextSiteCategory] = useState(initialSource.category);
+  const [nextSiteCategory, setNextSiteCategory] = useState(
+    initialSource.category,
+  );
   const [nextSiteName, setNextSiteName] = useState(initialSource.name);
   const [nextSiteSlug, setNextSiteSlug] = useState(initialSource.slug);
   const [nextSiteDescription, setNextSiteDescription] = useState(
@@ -40,11 +42,12 @@ export const NextSiteProvider = ({ children }) => {
   const [nextSiteImage, setNextSiteImage] = useState(initialSource.image);
 
   const refreshNextSite = (category = null) => {
-
     let filteredSources = sources;
     if (category) {
       // Filter sources by category if a category is specified
-      filteredSources = sources.filter(source => source.category === category);
+      filteredSources = sources.filter(
+        (source) => source.category === category,
+      );
     }
     const randomIndex = Math.floor(Math.random() * sources.length);
     const randomSource = sources[randomIndex];

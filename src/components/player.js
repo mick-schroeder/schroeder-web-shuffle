@@ -9,7 +9,7 @@ const WebShufflePlayer = () => {
   const {
     nextSite,
     nextSiteName,
-    //nextSiteSlug,
+    nextSiteSlug,
     refreshNextSite,
     nextSiteDescription,
     // nextSiteImage,
@@ -23,10 +23,10 @@ const WebShufflePlayer = () => {
 
   return (
     <div className="flex order-1 items-center justify-center grow mx-4 py-2">
-      <div className="flex py-1 px-4 backdrop-blur bg-gray-200/85 dark:bg-gray-/85 border border-gray-300 dark:border-gray-700 rounded-lg shadow-md">
+      <div className="flex py-1 px-4 backdrop-blur bg-gray-200/85 dark:bg-gray-950/85 border border-gray-300/85 dark:border-gray-700/85 rounded-lg shadow-md">
         <div className="flex flex-col items-center md:w-96 ">
           <h2 className="text-sm text-center font-bold text-gray-900 dark:text-white">
-            {nextSiteName}
+            <Link href={`/sources/${nextSiteSlug}`}>{nextSiteName}</Link>
           </h2>
           {/*nextSiteImage && (
             <GatsbyImage
