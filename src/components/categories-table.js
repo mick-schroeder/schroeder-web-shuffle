@@ -1,7 +1,7 @@
 // WebsitesTable.js
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import StarRating from "./star-rating";
+import { useNextSiteContext } from "./next-site-context";
 
 const CategoriesTable = () => {
   const data = useStaticQuery(graphql`
@@ -18,12 +18,28 @@ const CategoriesTable = () => {
   `);
 
   const categories = data.categories.nodes;
+  const {
+    nextSite,
+    nextSiteName,
+    //nextSiteSlug,
+    refreshNextSite,
+    nextSiteDescription,
+    // nextSiteImage,
+  } = useNextSiteContext();
 
+  const handleClick = (event, websiteName) => {
+    event.preventDefault();
+    refreshNextSite(websiteName);
+    window.open(nextSite, "_blank");
+    
+  };
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
       {categories.map((website) => (
         <a
-          href={website.slug}
+          //href={website.slug}
+          onClick={(event) => handleClick(event, website.name)}
+
           target=""
           className="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline p-3"
         >

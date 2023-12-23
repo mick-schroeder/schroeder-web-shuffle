@@ -17,7 +17,7 @@ const WebsitesPage = () => {
             </h3>
 
             <p className="mb-4 font-normal ">
-              Choose a category to shuffle by web by your interests.
+              Choose a category below to shuffle the web by your interests.
             </p>
           </div>
         </div>
