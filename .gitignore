@@ -67,3 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Screenshots
+src/images/screenshots/*.webp
+src/images/screenshots/*.jpg
+src/images/screenshots/*.png
