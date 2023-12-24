@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { title: "Home", slug: "" },
   { title: "About", slug: "about" },
   { title: "Apps", slug: "apps" },
-  { title: "Categories", slug: "categories" },
+  //{ title: "Categories", slug: "categories" },
   { title: "Digital Newsstand", slug: "newsstand" },
   { title: "Sources", slug: "sources" },
 ];
