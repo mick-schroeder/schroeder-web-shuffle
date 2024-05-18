@@ -1,7 +1,6 @@
 // WebsitesTable.js
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import StarRating from "../components/star-rating";
 
 const SourcesTable = () => {
   const data = useStaticQuery(graphql`
@@ -33,9 +32,6 @@ const SourcesTable = () => {
               category
             </th>
             <th scope="col" className="px-6 py-3">
-              AI Rating
-            </th>
-            <th scope="col" className="px-6 py-3">
               URL
             </th>
           </tr>
@@ -57,10 +53,6 @@ const SourcesTable = () => {
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                   {website.category}
                 </span>
-              </td>
-              <td className="px-6 py-4">
-                {" "}
-                <StarRating score={website.score} />
               </td>
               <td className="px-6 py-4">
                 {" "}

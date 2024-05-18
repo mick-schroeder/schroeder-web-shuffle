@@ -18,7 +18,7 @@ const WebsitesPage = () => {
             </h3>
 
             <p className="mb-4 font-normal ">
-              Discover the backbone of Web Shuffle – our AI-curated list of the
+              Discover the backbone of Web Shuffle – our curated list of the
               internet’s top-tier websites, each vetted for credibility and
               impact. From global news giants to internet memes, our Sources
               page offers a transparent view into the diverse landscape our AI
@@ -37,5 +37,5 @@ const WebsitesPage = () => {
 
 export default WebsitesPage;
 export const Head = () => (
-  <SEO title="Web Shuffle - Sources - AI Curated list of the internet’s top-tier websites." />
+  <SEO title="Web Shuffle - Sources - Curated list of the internet’s top-tier websites." />
 );

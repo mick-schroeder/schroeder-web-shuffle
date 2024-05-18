@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import StarRating from "./star-rating";
 
 const SourcesGallery = ({ limit, sort }) => {
   const data = useStaticQuery(graphql`
@@ -64,8 +63,6 @@ const SourcesGallery = ({ limit, sort }) => {
                   </h4>
                 </a>{" "}
                 <div className="flex items-center justify-between">
-                  <StarRating score={node.score} />
-
                   <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                     {node.category}
                   </span>

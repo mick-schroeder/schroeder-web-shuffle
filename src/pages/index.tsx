@@ -18,12 +18,10 @@ const IndexPage: React.FC<PageProps> = () => {
                 Welcome to{" "}
                 <span className="text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
                   Web Shuffle
-                </span>{" "}
-                the AI curated shuffle button for the internet.
+                </span>.{" "}
               </h2>
               <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
-                Simply click the Web Shuffle button and let us take you to the
-                best and most influential websites.
+              Your gateway to discovering the best and most influential websites. Simply click the Web Shuffle button, and let us take you to the best sites on the internet.
               </p>
               <RedirectButton />
             </div>

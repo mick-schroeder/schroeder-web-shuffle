@@ -8,7 +8,6 @@ const menuLinks = [
   { text: "About", link: "/about" },
   { text: "Sources", link: "/sources" },
   { text: "Terms & Privacy Policy", link: "/terms-privacy" },
-  { text: "API", link: "/api" },
   { text: "Code", link: "/source-code" },
   { text: "Contact", link: "/contact" },
 ];

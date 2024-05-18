@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import SiteLayout from "../components/site-layout";
 import { graphql, Link, navigate } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import StarRating from "../components/star-rating";
 import { SEO } from "../components/seo";
 
 export const query = graphql`
@@ -173,14 +172,6 @@ const SourceTemplate = ({ data, pageContext }) => {
                     <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                       {source.category}
                     </span>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                    AI Rating
-                  </dt>
-                  <dd className="mb-4 font-normal md:max-w-screen-md text-gray-500 sm:mb-5 dark:text-gray-400">
-                    <StarRating score={source.score} />
                   </dd>
                 </dl>
                 <dl>

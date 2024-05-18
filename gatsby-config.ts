@@ -7,8 +7,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     name: `Web Shuffle`,
-    title: `Web Shuffle: AI-curated Web Surfing.`,
-    description: `Web Shuffle’s AI algorithm brings you straight to top internet sites without the fuss.`,
+    title: `Web Shuffle: the shuffle button for the internet.`,
+    description: `Web Shuffle.`,
     twitterUsername: `@mick_schroeder`,
     image: `/web-shuffle-large-promo.png`,
     author: `Mick Schroeder, LLC`,

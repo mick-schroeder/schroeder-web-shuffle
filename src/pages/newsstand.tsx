@@ -17,7 +17,7 @@ const NewstandPage = () => {
               Scroll and browse the front pages of the internet’s most
               influential websites, just like scanning through publications at a
               real-life newsstand. Experience the breadth of information,
-              styles, and perspectives, all AI curated for an enriching and
+              styles, and perspectives, all curated for an enriching and
               diverse reading journey.
             </p>
           </div>
@@ -33,5 +33,5 @@ const NewstandPage = () => {
 
 export default NewstandPage;
 export const Head = () => (
-  <SEO title="Web Shuffle - Digital Newsstand - AI Curated front pages of the top websites on the internet." />
+  <SEO title="Web Shuffle - Digital Newsstand - Curated front pages of the top websites on the internet." />
 );

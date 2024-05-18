@@ -242,7 +242,7 @@ const Features = () => (
                 </svg>
               </div>
               <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
-                AI Editor Curated
+                Curated
               </h2>
             </div>
             <div className="flex-grow">
@@ -256,7 +256,7 @@ const Features = () => (
                 >
                   Web Shuffle
                 </a>{" "}
-                algorithm is backed by an AI editor curated list of the most
+                algorithm is backed by a curated list of the most
                 influential news websites on the internet.
               </p>
             </div>
