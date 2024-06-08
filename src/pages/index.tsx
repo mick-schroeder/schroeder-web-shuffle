@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { PageProps } from "gatsby";
 import { Link } from "gatsby";
-import CardsSources from "../components/sources-gallery";
+//import CardsSources from "../components/sources-gallery";
 import RedirectButton from "../components/redirect-button";
 import SiteLayout from "../components/site-layout";
 import { SEO } from "../components/seo";
@@ -58,7 +58,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
-
+  {/* 
       <section>
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
           <h2 className="text-2xl font-extrabold dark:text-white">
@@ -79,7 +79,9 @@ const IndexPage: React.FC<PageProps> = () => {
           <h3 className="text-2xl font-bold dark:text-white py-4">
             Top Sources
           </h3>
-          <CardsSources sort="rating" />
+        
+          <CardsSources sort="rating" /> 
+          
 
           <div className="text-center mt-8">
             {" "}
@@ -111,7 +113,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </p>
         </div>
       </section>
-
+*/}
       <FeaturesSection />
     </SiteLayout>
   );
