@@ -12,13 +12,13 @@ const BUCKET_NAME = "web-shuffle-screenshots";
 const SCREENSHOT_PATH = "./src/images/screenshots";
 
 const SCREENSHOT_QUALITY = 80;
-const VIEWPORT_WIDTH = 768;
-const VIEWPORT_HEIGHT = 1024;
+const VIEWPORT_WIDTH = 1080;
+const VIEWPORT_HEIGHT = 1920;
 const PAGE_NAVIGATION_TIMEOUT = 6000;
 const WAIT_TIME = 3000;
 
 const CACHE_TIMEOUT = 6 * 60 * 60 * 1000;
-const RETRIES = 1;
+const RETRIES = 2;
 
 // AWS S3 setup
 const s3 = new AWS.S3({
