@@ -13,52 +13,16 @@ const IndexPage: React.FC<PageProps> = () => {
     <SiteLayout>
       <div className="">
         <section className="">
-          <div className="py-8 px-4 mx-auto sm:py-8 lg:px-6 ">
-            <div className="mx-auto max-w-screen-sm text-center">
-              <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-700 dark:text-white">
-                Welcome to{" "}
-                <span className="text-transparent tracking-tighter bg-clip-text bg-gradient-to-r from-cyan-500 to-violet-500">
-                  Web Shuffle
-                </span>.{" "}
-              </h2>
+🦀          <div className="py-4 px-4 mx-auto sm:py-8 lg:px-6 ">
+            <div className="mx-auto max-w-screen-md text-center">
               <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
-              Your gateway to discovering the best and most influential websites. Simply click the Web Shuffle button, and let us take you to the best sites on the internet.
+              Web Shuffle is your gateway to discovering the best and most influential websites. Simply click the Web Shuffle button, and let us take you to the best sites on the internet.
               </p>
               <RedirectButton />
             </div>
           </div>
         </section>
       </div>
-
-      <section>
-        <div className="mx-auto max-w-screen-xl text-center mt-2">
-          <div
-            className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
-            role="alert"
-          >
-            <span className="text-sm font-medium ml-4">
-              Drag to your Bookmarks Bar
-            </span>
-            <svg
-              className=" animate-pulse ml-2 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            <span className="text-xs bg-blue-600 rounded-full font-bold text-white px-4 py-1.5 ml-3">
-              <a href="/redirect" target="_blank" rel="noopener">
-                Web Shuffle
-              </a>
-            </span>
-          </div>
-        </div>
-      </section>
       {
    <section className="">
    <div className="py-8 px-4 mx-auto lg:py-8 lg:px-6">

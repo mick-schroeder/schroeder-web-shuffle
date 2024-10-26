@@ -40,6 +40,8 @@ export default function DefaultNavbar() {
           </div>
         </div>
       </nav>
+
+      {/* 
       <nav className="border-b border-gray-300 dark:border-gray-700 mt-0 md:mt-20">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex items-center justify-center">
@@ -62,6 +64,7 @@ export default function DefaultNavbar() {
           </div>
         </div>
       </nav>
+      */}
     </div>
   );
 }

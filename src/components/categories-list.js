@@ -51,7 +51,7 @@ const CategoriesList = () => {
       <div key={category.slug} className="">
         {/* Category Header */}
         <h2
-        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mb-2"
+        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2"
         >
           {category.name.toUpperCase()}
         </h2>
@@ -82,7 +82,7 @@ const CategoriesList = () => {
       <div key={category.slug} className="">
         {/* Category Header */}
         <h2
-        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mb-2"
+        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2"
         >
           {category.name.toUpperCase()}
         </h2>
@@ -115,7 +115,7 @@ const CategoriesList = () => {
       <div key={category.slug} className="">
         {/* Category Header */}
         <h2
-        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mb-2"
+        className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2"
         >
           {category.name.toUpperCase()}
         </h2>
@@ -142,7 +142,40 @@ const CategoriesList = () => {
             </div>
     ))}
    
+    <div>
+    <h2 className="text-sm font-black tracking-wide mt-2 mb-2 text-black dark:text-white">
+      BOOKMARK
+      </h2>
+      <div
+      className="inline-flex justify-between items-center py-1 px-1 pr-4 m-2 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+      role="alert"
+    >
+      <span className="text-sm font-medium ml-4">
+        Drag to your Bookmarks Bar
+      </span>
+      <svg
+        className=" animate-pulse ml-2 w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clipRule="evenodd"
+        ></path>
+      </svg>
+      <span className="text-xs bg-blue-600 rounded-full font-bold text-white px-4 py-1.5 ml-3">
+        <a href="/redirect" target="_blank" rel="noopener">
+          Web Shuffle
+        </a>
+      </span>
+    </div>
+      
+      </div>
+    
     <div className="">
+    
       <h2 className="text-sm font-black tracking-wide mt-2 mb-2 text-black dark:text-white">
       OPEN SOURCE
       </h2>
