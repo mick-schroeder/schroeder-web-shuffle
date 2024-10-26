@@ -6,6 +6,7 @@ import RedirectButton from "../components/redirect-button";
 import SiteLayout from "../components/site-layout";
 import { SEO } from "../components/seo";
 import FeaturesSection from "../components/features";
+import CategoriesList from "../components/categories-list";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -58,7 +59,15 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
         </div>
       </section>
+      {
+   <section className="">
+   <div className="py-8 px-4 mx-auto lg:py-8 lg:px-6">
+             <CategoriesList />
+             </div>
+   </section>
+}
   {
+      
       <section>
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
           <h2 className="text-2xl font-extrabold dark:text-white">
@@ -76,12 +85,8 @@ const IndexPage: React.FC<PageProps> = () => {
             internet's virtual newsstand where you can instantly browse the
             daily front pages of leading websites.{" "}
           </p>
-          <h3 className="text-2xl font-bold dark:text-white py-4">
-            Top Sources
-          </h3>
-        
-          <CardsSources limit="6" sort="rating" /> 
-          
+             
+          <CardsSources limit="3" sort="rating" />           
 
           <div className="text-center mt-8">
             {" "}
@@ -114,7 +119,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
       </section>
 }
-      <FeaturesSection />
+
     </SiteLayout>
   );
 };
