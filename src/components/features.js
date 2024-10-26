@@ -256,8 +256,8 @@ const Features = () => (
                 >
                   Web Shuffle
                 </a>{" "}
-                algorithm is backed by a curated list of the most
-                influential news websites on the internet.
+                algorithm is backed by a curated list of the most influential
+                news websites on the internet.
               </p>
             </div>
           </div>

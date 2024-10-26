@@ -24,9 +24,9 @@ const WebsitesPage = () => {
       </section>
       <div className="m-4"></div>
       <section className="">
-      <div className="py-8 px-4 mx-auto lg:py-8 lg:px-6">
-                <CategoriesList />
-                </div>
+        <div className="py-8 px-4 mx-auto lg:py-8 lg:px-6">
+          <CategoriesList />
+        </div>
       </section>
     </SiteLayout>
   );

@@ -35,7 +35,7 @@ export default function DefaultNavbar() {
 
           <WebShufflePlayer />
 
-          <div className="flex m-4 md:m-0 order-2">
+          <div className="hidden lg:block flex m-4 md:m-0 order-2">
             <RedirectButton />
           </div>
         </div>

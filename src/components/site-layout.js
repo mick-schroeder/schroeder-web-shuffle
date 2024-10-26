@@ -8,7 +8,7 @@ const SiteLayout = ({ children }) => (
     <div className="flex flex-col antialiased bg-white dark:bg-gray-900 min-h-screen">
       {/* Header */}
       <header className="">
-      <Navbar />
+        <Navbar />
       </header>
       {/* Content */}
       <div className="flex-grow flex flex-col md:flex-row justify-center mb-2 mt-20">

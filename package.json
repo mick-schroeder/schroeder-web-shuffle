@@ -1,6 +1,6 @@
 {
   "name": "schroeder-web-shuffle",
-  "version": "5.4",
+  "version": "5.5",
   "private": true,
   "license": "AGPL-3.0",
   "description": "Simply click the Web Shuffle button and let us take you to the best and most influential websites.",
@@ -20,8 +20,8 @@
     "upgrade-minor": "npm-check-updates --target minor -u && npm install"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.654.0",
-    "@aws-sdk/lib-storage": "^3.654.0",
+    "@aws-sdk/client-s3": "^3.679.0",
+    "@aws-sdk/lib-storage": "^3.679.0",
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@tailwindcss/typography": "^0.5.15",
@@ -43,18 +43,18 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
-    "@types/node": "^20.16.5",
-    "@types/react": "^18.3.8",
-    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.17.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "cssnano": "^6.1.2",
-    "npm-check-updates": "^17.1.2",
+    "npm-check-updates": "^17.1.6",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
-    "puppeteer": "^23.4.0",
+    "puppeteer": "^23.6.0",
     "sharp": "^0.33.5",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   }
 }
