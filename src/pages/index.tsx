@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <SiteLayout>
       <div className="">
         <section className="">
-🦀          <div className="py-4 px-4 mx-auto sm:py-8 lg:px-6 ">
+          <div className="py-4 px-4 mx-auto sm:py-8 lg:px-6 ">
             <div className="mx-auto max-w-screen-md text-center">
               <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
               Web Shuffle is your gateway to discovering the best and most influential websites. Simply click the Web Shuffle button, and let us take you to the best sites on the internet.
