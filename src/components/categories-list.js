@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { useNextSiteContext } from "./next-site-context";
 import WebShuffleIcon from "../images/web-shuffle.svg";
+import Ad from "../components/ad";
 
 const CategoriesList = () => {
   // Combine both queries into one `useStaticQuery` call
@@ -50,7 +51,7 @@ const CategoriesList = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm md:text-xs">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm md:text-xs">
       <div className="grid content-start  ">
         {categories
           .filter((category) => category.name === "News")
@@ -135,6 +136,7 @@ const CategoriesList = () => {
       </div>
 
       <div className="">
+      <Ad adClient="ca-pub-6344797609391119" adFormat="auto" adSlot="1966196909"></Ad>
         {categories
           .filter((category) => category.name === "Sponsors")
           .map((category) => (
