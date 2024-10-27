@@ -910,16 +910,6 @@
     "color": "bg-gray-900"
   },
   {
-    "name": "Spectrum News NY1",
-    "url": "https://ny1.com/",
-    "category": "News",
-    "score": "3.035",
-    "slug": "spectrumnewsny1",
-    "image": "../images/screenshots/spectrumnewsny1.webp",
-    "description": "24/7 news coverage for New Yorkers.",
-    "color": "bg-blue-500"
-  },
-  {
     "name": "Steam",
     "url": "https://store.steampowered.com/",
     "category": "Entertainment",
@@ -1268,16 +1258,6 @@
     "image": "../images/screenshots/wired.webp",
     "description": "Tech news and culture.",
     "color": "bg-red-500"
-  },
-  {
-    "name": "X",
-    "url": "https://twitter.com/home/",
-    "category": "Socials",
-    "score": "3.45",
-    "slug": "x",
-    "image": "../images/screenshots/x.webp",
-    "description": "The never-ending stream of thoughts and opinions.",
-    "color": "bg-sky-500"
   },
   {
     "name": "Yahoo",
