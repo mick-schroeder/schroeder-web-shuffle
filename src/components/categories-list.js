@@ -33,7 +33,14 @@ const CategoriesList = () => {
 
   const categories = data.categories.nodes;
   const sources = data.sources.nodes;
-  const { nextSite, refreshNextSite } = useNextSiteContext();
+  const {
+    nextSite,
+    nextSiteName,
+    //nextSiteSlug,
+    refreshNextSite,
+    nextSiteDescription,
+    // nextSiteImage,
+  } = useNextSiteContext();
 
   const handleClick = (event, websiteName, url) => {
     event.preventDefault();
@@ -49,9 +56,13 @@ const CategoriesList = () => {
           .map((category) => (
             <div key={category.slug} className="">
               {/* Category Header */}
-              <h2 className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2">
+              <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+              <a
+              onClick={(event) => handleClick(event, category.name)}
+              target=""
+              >
                 {category.name.toUpperCase()}
-              </h2>
+                </a></h2>
               {/* Filter sources by the current category and list them */}
               {sources
                 .filter((source) => source.category === category.name)
@@ -80,7 +91,7 @@ const CategoriesList = () => {
           .map((category) => (
             <div key={category.slug} className="">
               {/* Category Header */}
-              <h2 className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2">
+              <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
                 {category.name.toUpperCase()}
               </h2>
               {/* Filter sources by the current category and list them */}
@@ -112,7 +123,7 @@ const CategoriesList = () => {
           .map((category) => (
             <div key={category.slug} className="">
               {/* Category Header */}
-              <h2 className="text-sm text-gray-900 dark:text-white font-black tracking-wide mt-2 mb-2">
+              <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
                 {category.name.toUpperCase()}
               </h2>
               {/* Filter sources by the current category and list them */}
@@ -138,8 +149,8 @@ const CategoriesList = () => {
           ))}
 
         <div>
-          <h2 className="text-sm font-black tracking-wide mt-2 mb-2 text-black dark:text-white">
-            BOOKMARK
+        <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+        BOOKMARK
           </h2>
           <div
             className="inline-flex justify-between items-center py-1 px-1 pr-4 m-2 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -169,8 +180,8 @@ const CategoriesList = () => {
         </div>
 
         <div className="">
-          <h2 className="text-sm font-black tracking-wide mt-2 mb-2 text-black dark:text-white">
-            OPEN SOURCE
+        <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+        OPEN SOURCE
           </h2>
           <p className="mb-2 leading-relaxed text-gray-700 dark:text-gray-400">
             This program is free software: you can redistribute it and/or modify
