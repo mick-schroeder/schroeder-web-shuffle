@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Ad = ({ adClient, adSlot, adFormat }) => {
   useEffect(() => {
@@ -6,11 +6,13 @@ const Ad = ({ adClient, adSlot, adFormat }) => {
   }, []);
 
   return (
-    <ins className="adsbygoogle"
-         style={{ display: 'block' }}
-         data-ad-client={adClient}
-         data-ad-slot={adSlot}
-         data-ad-format={adFormat}></ins>
+    <ins
+      className="adsbygoogle"
+      style={{ display: "block" }}
+      data-ad-client={adClient}
+      data-ad-slot={adSlot}
+      data-ad-format={adFormat}
+    ></ins>
   );
 };
 

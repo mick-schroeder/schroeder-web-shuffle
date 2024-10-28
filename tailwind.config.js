@@ -7,12 +7,7 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx,mdx}`,
   ],
   theme: {
-    extend: {
-      webShuffleButton:
-        "bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600",
-      webShuffleLink:
-        "inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline",
-    },
+    extend: {},
   },
   plugins: [require("@tailwindcss/typography")],
 };

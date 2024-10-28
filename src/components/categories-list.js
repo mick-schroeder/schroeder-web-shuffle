@@ -66,7 +66,7 @@ const CategoriesList = () => {
                   {category.name.toUpperCase()}
                   <img
                     src={WebShuffleIcon}
-                    className="w-4 h-4 ml-2 opacity-50 hover:opacity-70"
+                    className="w-4 h-4 ml-2 dark:opacity-50 hover:opacity-70"
                     alt="Web Shuffle Icon"
                   />
                 </h2>
@@ -76,10 +76,9 @@ const CategoriesList = () => {
                 .filter((source) => source.category === category.name)
                 .map((source) => (
                   <a
-                    onClick={(event) =>
-                      handleClick(event, source.name, source.url)
-                    }
-                    className="block text-blue-600 dark:text-blue-400 underline "
+                    href={source.url}
+                    target="_blank"
+                    className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
                     role="button"
                     aria-label={`Open ${source.name}`}
                   >
@@ -118,16 +117,15 @@ const CategoriesList = () => {
                 .map((source) => (
                   <p key={source.slug} className="">
                     <a
-                      onClick={(event) =>
-                        handleClick(event, source.name, source.url)
-                      }
-                      className="block text-blue-600 dark:text-blue-400 underline"
+                      href={source.url}
+                      target="_blank"
+                      className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
                       role="button"
                       aria-label={`Open ${source.name}`}
                     >
                       {source.name.toUpperCase()}
                     </a>
-                    {/*                   <p className="text-sm text-gray-600 dark:text-gray-50">{source.description}</p>
+                    {/* <p className="text-sm text-gray-600 dark:text-gray-50">{source.description}</p>
                      */}{" "}
                   </p>
                 ))}
@@ -136,25 +134,29 @@ const CategoriesList = () => {
       </div>
 
       <div className="">
-      <Ad adClient="ca-pub-6344797609391119" adFormat="auto" adSlot="1966196909"></Ad>
+        <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+          SPONSORS
+        </h2>
+        <Ad
+          adClient="ca-pub-6344797609391119"
+          adFormat="auto"
+          adSlot="1966196909"
+        ></Ad>
         {categories
           .filter((category) => category.name === "Sponsors")
           .map((category) => (
             <div key={category.slug} className="">
               {/* Category Header */}
-              <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
-                {category.name.toUpperCase()}
-              </h2>
+
               {/* Filter sources by the current category and list them */}
               {sources
                 .filter((source) => source.category === category.name)
                 .map((source) => (
                   <p key={source.slug} className="">
                     <a
-                      onClick={(event) =>
-                        handleClick(event, source.name, source.url)
-                      }
-                      className="block text-blue-600 dark:text-blue-400 underline"
+                      href={source.url}
+                      target="_blank"
+                      className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
                       role="button"
                       aria-label={`Open ${source.name}`}
                     >
@@ -168,8 +170,8 @@ const CategoriesList = () => {
           ))}
 
         <div>
-          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
-            BOOKMARK
+          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 uppercase">
+            Bookmark
           </h2>
           <p className="mb-2 leading-relaxed text-gray-700 dark:text-gray-400">
             Drag to your Bookmarks Bar
@@ -179,6 +181,18 @@ const CategoriesList = () => {
               </a>
             </span>
           </p>
+          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 uppercase">
+            Browser Extension
+          </h2>
+
+          <p>
+            <a
+              href="https://chromewebstore.google.com/detail/web-shuffle/lgokgkophalfnnapghjjckmeoboepfdj"
+              className="block text-blue-600 dark:text-blue-400 underline uppercase"
+            >
+              Google Chrome Web Store
+            </a>
+          </p>
         </div>
 
         <div className="">
@@ -187,18 +201,21 @@ const CategoriesList = () => {
           </h2>
           <p className="mb-2 leading-relaxed text-gray-700 dark:text-gray-400">
             This program is free software: you can redistribute it and/or modify
-            it under the terms of the
+            it under the terms of the&nbsp;
             <a
               href="https://www.gnu.org/licenses/agpl.html"
               rel="external"
               className="underline"
             >
-              &nbsp;GNU Affero General Public License
+              GNU Affero General Public License
             </a>
             .
           </p>
           <p>
-            <a className="block text-blue-600 dark:text-blue-400 underline">
+            <a
+              href="https://github.com/mick-schroeder/schroeder-web-shuffle"
+              className="block text-blue-600 dark:text-blue-400 underline"
+            >
               SOURCE CODE ON GITHUB
             </a>
           </p>
