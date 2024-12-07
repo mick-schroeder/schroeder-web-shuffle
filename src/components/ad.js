@@ -7,7 +7,7 @@ const Ad = ({ adClient, adSlot, adFormat }) => {
 
   return (
     <ins
-      className="adsbygoogle"
+      className="adsbygoogle mb-2"
       style={{ display: "block" }}
       data-ad-client={adClient}
       data-ad-slot={adSlot}

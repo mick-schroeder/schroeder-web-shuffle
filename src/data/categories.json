@@ -1,16 +1,9 @@
 [
-  {
-    "name": "Entertainment",
-    "slug": "entertainment",
-    "icon": "",
-    "color": "red"
-  },
-  { "name": "News", "slug": "news", "icon": "", "color": "blue" },
-  { "name": "Shopping", "slug": "shopping", "icon": "", "color": "green" },
-  { "name": "Tech", "slug": "tech", "icon": "", "color": "blue" },
-  { "name": "Aggregators", "slug": "aggregator", "icon": "", "color": "teal" },
-  { "name": "Sponsors", "slug": "sponsor", "icon": "", "color": "red" },
-  { "name": "Socials", "slug": "socials", "icon": "", "color": "yellow" },
-  { "name": "Education", "slug": "education", "icon": "", "color": "orange" },
-  { "name": "Science", "slug": "science", "icon": "", "color": "fuchsia" }
-]
+{"name":"Entertainment","slug":"entertainment","icon":"video-camera.svg","column":1,"show":true},
+{"name":"News",         "slug":"news","icon":"newspaper.svg","column":1,"show":true},
+{"name":"Tech",         "slug":"tech","icon":"computer-screen.svg","column":2,"show":true},
+{"name":"Aggregators",  "slug":"aggregator","icon":"list.svg","column":2,"show":true},
+{"name":"Sponsors",     "slug":"sponsor","icon":"cash.svg","column":3,"show":false},
+{"name":"Socials",      "slug":"socials","icon":"users.svg","column":2,"show":true},
+{"name":"Education",    "slug":"education","icon":"book.svg","column":2,"show":true},
+{"name":"Science",      "slug":"science","icon":"lightbulb.svg","column":2,"show":true}]

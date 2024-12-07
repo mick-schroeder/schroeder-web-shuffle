@@ -12,7 +12,7 @@ const StarRating = ({ score }) => {
           className={`w-4 h-4 ${
             index < filledStars
               ? "text-yellow-300"
-              : "text-gray-300 dark:text-gray-500"
+              : "text-zinc-300 dark:text-zinc-500"
           }`}
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"

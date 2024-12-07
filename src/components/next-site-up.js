@@ -21,18 +21,18 @@ const HomePage = () => {
 
   return (
     <div className="min-h-full p-4 sm:p-12 flex flex-col justify-center items-center ">
-      <div className="w-full sm:max-w-sm p-6 bg-gray-100 border border-gray-300  dark:border-gray-700 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full sm:max-w-sm p-6 bg-zinc-100 border border-zinc-300  dark:border-zinc-700 rounded-lg shadow-md dark:bg-zinc-800">
         <div className="flex justify-between items-start mb-6">
-          <p className="text-lg font-semibold text-gray-700 dark:text-gray-400">
+          <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-400">
             Next Site Up:
           </p>
           <button
             onClick={refreshNextSite}
-            className="text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+            className="text-zinc-200 px-3 py-2 rounded-lg hover:bg-zinc-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
             aria-label="Refresh next site"
           >
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-gray-500"
+              className="w-6 h-6 text-zinc-800 dark:text-zinc-500"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -49,7 +49,7 @@ const HomePage = () => {
           </button>
         </div>
         <div className="flex flex-col items-start">
-          <h2 className="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="mb-3 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
             {nextSiteName}
           </h2>
           {/*nextSiteImage && (
@@ -59,10 +59,10 @@ const HomePage = () => {
               className="mb-3 w-32"
             />
           )*/}
-          <blockquote className="h-16 mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">
+          <blockquote className="h-16 mb-2 text-sm font-normal text-zinc-700 dark:text-zinc-400">
             {nextSiteDescription}
           </blockquote>
-          <p className="mb-2 font-semibold text-gray-700 dark:text-gray-400">
+          <p className="mb-2 font-semibold text-zinc-700 dark:text-zinc-400">
             <a
               onClick={handleClick}
               href={nextSite}

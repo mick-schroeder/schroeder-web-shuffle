@@ -7,8 +7,9 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     name: `Web Shuffle`,
-    title: `Web Shuffle: the shuffle button for the internet.`,
-    description: `Web Shuffle.`,
+    title: `Web Shuffle`,
+    tagLine: `The shuffle button for the internet.`,
+    description: `Web Shuffle revolutionizes how you consume the internet. With a single click, our Web Shuffle button takes you to the most prominant websites online. Explore diverse perspectives, stay informed, and break free from your regular web surfing routine.`,
     twitterUsername: `@mick_schroeder`,
     image: `/web-shuffle-large-promo.png`,
     author: `Mick Schroeder, LLC`,
@@ -23,7 +24,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Web Shuffle`,
-        short_name: `WebShuffle`,
+        short_name: `Web Shuffle`,
         start_url: `/`,
         background_color: `#1f2937`,
         lang: `en`,
@@ -51,26 +52,12 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-RMM4MSRDQM", // Google Analytics / GA
-          //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
-          //"DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
-        // gtagConfig: {
-        //  optimize_id: "OPT_CONTAINER_ID",
-        //  anonymize_ip: true,
-        //  cookie_expires: 0,
-        // },
-        // This object is used for configuration specific to this plugin
+          "G-RMM4MSRDQM", // Google Analytics        
+          ],
         pluginConfig: {
-          // Puts tracking script in the head instead of the body
           head: true,
           respectDNT: true,
-          // Avoids sending pageview hits from custom paths
-          //exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
     },

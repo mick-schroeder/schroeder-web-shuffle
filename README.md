@@ -16,7 +16,7 @@ Hit the "Web Shuffle" button and you will be sent to a random website from the m
 
     ```shell
     git clone https://github.com/mick-schroeder/schroeder-web-shuffle.git
-    cd schroeder-web-shuffle
+    cd schroeder-Web Shuffle
     npm install
     npm run develop
     ```

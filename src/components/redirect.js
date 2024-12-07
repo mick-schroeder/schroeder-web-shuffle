@@ -22,14 +22,14 @@ const Redirecter = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center">
-        <div className="bg-gray-200 dark:bg-gray-700 rounded-lg p-8 shadow-md my-16 flex flex-col items-center justify-center ">
-          <p className="text-xl font-bold mb-4 text-black dark:text-gray-300">
+        <div className="bg-zinc-200 dark:bg-zinc-700 rounded-lg p-8 shadow-md my-16 flex flex-col items-center justify-center ">
+          <p className="text-xl font-bold mb-4 text-black dark:text-zinc-300">
             Redirecting...
           </p>
           <div role="status">
             <svg
               aria-hidden="true"
-              class="w-16 h-16 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+              class="w-16 h-16 text-zinc-200 animate-spin dark:text-zinc-600 fill-blue-600"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +52,11 @@ const Redirecter = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="bg-gray-200 dark:bg-gray-700 rounded-lg p-8 shadow-md">
-        <p className="text-xl font-bold mb-4 text-black dark:text-gray-300">
+      <div className="bg-zinc-200 dark:bg-zinc-700 rounded-lg p-8 shadow-md">
+        <p className="text-xl font-bold mb-4 text-black dark:text-zinc-300">
           Redirecting...
         </p>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-zinc-600 dark:text-zinc-400">
           You will be redirected shortly to:
         </p>
         <p className="text-blue-500 dark:text-blue-300 font-medium">

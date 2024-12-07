@@ -22,11 +22,11 @@
   {
     "name": "Amazon",
     "url": "https://www.amazon.com/b?_encoding=UTF8&tag=schroeder0d-20&linkCode=ur2&linkId=b51b307243535050e877f33322c66b92&camp=1789&creative=9325&node=1036592",
-    "category": "Shopping",
+    "category": "Sponsors",
     "score": "2.64",
     "slug": "amazon",
     "image": "../images/screenshots/amazon.webp",
-    "description": "The online retail giant that sells everything from A to Z, and probably knows more about your shopping habits than you do.",
+    "description": "The online retail giant that sells everything, and probably knows more about your shopping habits than you do.",
     "color": "bg-yellow-500"
   },
   {
@@ -37,7 +37,7 @@
     "slug": "apple",
     "image": "../images/screenshots/apple.webp",
     "description": "Tech giant known for premium design and premium pricing.",
-    "color": "bg-gray-800"
+    "color": "bg-zinc-800"
   },
   {
     "name": "Ars Technica",
@@ -80,6 +80,16 @@
     "color": "bg-blue-700"
   },
   {
+    "name": "Barron's",
+    "url": "https://barrons.com/",
+    "category": "Finance",
+    "score": "4.500",
+    "slug": "barrons",
+    "image": "../images/screenshots/barrons.webp",
+    "description": "Investing insights, analysis, and news.",
+    "color": "bg-blue-700"
+  },
+  {
     "name": "BBC",
     "url": "https://bbc.com/news",
     "category": "News",
@@ -88,6 +98,16 @@
     "image": "../images/screenshots/bbc.webp",
     "description": "News and informative content from the British Broadcasting Corporation.",
     "color": "bg-red-500"
+  },
+  {
+    "name": "Billboard",
+    "url": "https://billboard.com/",
+    "category": "Entertainment",
+    "score": "4.900",
+    "slug": "billboard",
+    "image": "../images/screenshots/billboard.webp",
+    "description": "Music charts, news, and reviews.",
+    "color": "bg-pink-600"
   },
   {
     "name": "Bleacher Report",
@@ -120,6 +140,26 @@
     "color": "bg-blue-500"
   },
   {
+    "name": "BoxOffice Mojo",
+    "url": "https://boxofficemojo.com/",
+    "category": "Entertainment",
+    "score": "4.200",
+    "slug": "boxofficemojo",
+    "image": "../images/screenshots/boxofficemojo.webp",
+    "description": "Box office revenue data and analysis.",
+    "color": "bg-blue-700"
+  },
+  {
+    "name": "Breitbart",
+    "url": "https://breitbart.com/",
+    "category": "News",
+    "score": "2.800",
+    "slug": "breitbart",
+    "image": "../images/screenshots/breitbart.webp",
+    "description": "Conservative news and opinion website.",
+    "color": "bg-red-600"
+  },
+  {
     "name": "Business Insider",
     "url": "https://businessinsider.com/",
     "category": "News",
@@ -138,6 +178,16 @@
     "image": "../images/screenshots/buzzfeed.webp",
     "description": "Clickbait-filled content factory.",
     "color": "bg-red-600"
+  },
+  {
+    "name": "CBS Local News",
+    "url": "https://cbsnews.com/cbslocal/",
+    "category": "News",
+    "score": "3.200",
+    "slug": "cbslocal",
+    "image": "../images/screenshots/cbslocal.webp",
+    "description": "Local news from CBS stations across the U.S.",
+    "color": "bg-blue-800"
   },
   {
     "name": "CBS News",
@@ -160,6 +210,16 @@
     "color": "bg-blue-500"
   },
   {
+    "name": "CNBC",
+    "url": "https://cnbc.com/",
+    "category": "News",
+    "score": "4.000",
+    "slug": "cnbc",
+    "image": "../images/screenshots/cnbc.webp",
+    "description": "Business news and financial market coverage.",
+    "color": "bg-green-600"
+  },
+  {
     "name": "CNN",
     "url": "https://cnn.com/",
     "category": "News",
@@ -170,6 +230,16 @@
     "color": "bg-red-700"
   },
   {
+    "name": "C-SPAN",
+    "url": "https://c-span.org/",
+    "category": "News",
+    "score": "4.100",
+    "slug": "cspan",
+    "image": "../images/screenshots/cspan.webp",
+    "description": "Unfiltered coverage of government and public affairs.",
+    "color": "bg-blue-700"
+  },
+  {
     "name": "Daily Beast",
     "url": "https://thedailybeast.com/",
     "category": "News",
@@ -178,6 +248,16 @@
     "image": "../images/screenshots/dailybeast.webp",
     "description": "Provocative news and opinion platform.",
     "color": "bg-red-600"
+  },
+  {
+    "name": "Daily Caller",
+    "url": "https://dailycaller.com/",
+    "category": "News",
+    "score": "2.900",
+    "slug": "dailycaller",
+    "image": "../images/screenshots/dailycaller.webp",
+    "description": "Conservative news and commentary platform.",
+    "color": "bg-red-700"
   },
   {
     "name": "Daily Kos",
@@ -200,6 +280,16 @@
     "color": "bg-red-600"
   },
   {
+    "name": "Deadline",
+    "url": "https://deadline.com/",
+    "category": "Entertainment",
+    "score": "4.300",
+    "slug": "deadline",
+    "image": "../images/screenshots/deadline.webp",
+    "description": "Breaking news and analysis in the entertainment industry.",
+    "color": "bg-red-500"
+  },
+  {
     "name": "Digg",
     "url": "https://digg.com/",
     "category": "Aggregators",
@@ -220,6 +310,16 @@
     "color": "bg-sky-500"
   },
   {
+    "name": "DNYUZ",
+    "url": "https://dnyuz.com/",
+    "category": "News",
+    "score": "3.100",
+    "slug": "dnyuz",
+    "image": "../images/screenshots/dnyuz.webp",
+    "description": "Aggregated world news and trending stories.",
+    "color": "bg-gray-600"
+  },
+  {
     "name": "Drudge Report",
     "url": "https://drudgereport.com/",
     "category": "News",
@@ -238,16 +338,6 @@
     "image": "../images/screenshots/dw.webp",
     "description": "German state-owned public news broadcaster.",
     "color": "bg-sky-500"
-  },
-  {
-    "name": "eBay",
-    "url": "https://ebay.com/",
-    "category": "Shopping",
-    "score": "3.405",
-    "slug": "ebay",
-    "image": "../images/screenshots/ebay.webp",
-    "description": "The online marketplace where you can find anything and everything.",
-    "color": "bg-blue-600"
   },
   {
     "name": "Engadget",
@@ -280,16 +370,6 @@
     "color": "bg-red-500"
   },
   {
-    "name": "Etsy",
-    "url": "https://etsy.com/",
-    "category": "Shopping",
-    "score": "2.545",
-    "slug": "etsy",
-    "image": "../images/screenshots/etsy.webp",
-    "description": "The quirky online marketplace for handmade and vintage items.",
-    "color": "bg-orange-500"
-  },
-  {
     "name": "Facebook",
     "url": "https://facebook.com/",
     "category": "Socials",
@@ -318,6 +398,16 @@
     "image": "../images/screenshots/fastcompany.webp",
     "description": "Innovative business news and insights for the fast-paced, trend-chasing professional.",
     "color": "bg-blue-600"
+  },
+  {
+    "name": "Financial Post",
+    "url": "https://financialpost.com/",
+    "category": "Finance",
+    "score": "4.100",
+    "slug": "financialpost",
+    "image": "../images/screenshots/financialpost.webp",
+    "description": "Canada's premier source for business and financial news.",
+    "color": "bg-red-600"
   },
   {
     "name": "Financial Times",
@@ -400,6 +490,16 @@
     "color": "bg-red-500"
   },
   {
+    "name": "Google Trends",
+    "url": "https://trends.google.com/trends/",
+    "category": "Aggregator",
+    "score": "4.800",
+    "slug": "googletrends",
+    "image": "../images/screenshots/googletrends.webp",
+    "description": "Explore the latest trending topics and data visualizations.",
+    "color": "bg-red-600"
+  },
+  {
     "name": "Gothamist",
     "url": "https://gothamist.com/",
     "category": "News",
@@ -407,7 +507,7 @@
     "slug": "gothamist",
     "image": "../images/screenshots/gothamist.webp",
     "description": "News and culture for New Yorkers.",
-    "color": "bg-gray-900"
+    "color": "bg-zinc-900"
   },
   {
     "name": "Hacker News",
@@ -460,6 +560,16 @@
     "color": "bg-purple-600"
   },
   {
+    "name": "Jerusalem Post",
+    "url": "https://jpost.com/",
+    "category": "News",
+    "score": "3.900",
+    "slug": "jpost",
+    "image": "../images/screenshots/jpost.webp",
+    "description": "Israeli and Middle East news with global perspectives.",
+    "color": "bg-blue-600"
+  },
+  {
     "name": "LA Times",
     "url": "https://latimes.com/",
     "category": "News",
@@ -480,6 +590,16 @@
     "color": "bg-indigo-600"
   },
   {
+    "name": "MarketWatch",
+    "url": "https://marketwatch.com/",
+    "category": "Finance",
+    "score": "4.200",
+    "slug": "marketwatch",
+    "image": "../images/screenshots/marketwatch.webp",
+    "description": "Financial news, analysis, and stock market data.",
+    "color": "bg-green-600"
+  },
+  {
     "name": "Mashable",
     "url": "https://mashable.com/",
     "category": "Aggregators",
@@ -488,6 +608,16 @@
     "image": "../images/screenshots/mashable.webp",
     "description": "Tech and digital culture news.",
     "color": "bg-blue-600"
+  },
+  {
+    "name": "Mediaite",
+    "url": "https://mediaite.com/",
+    "category": "News",
+    "score": "3.000",
+    "slug": "mediaite",
+    "image": "../images/screenshots/mediaite.webp",
+    "description": "Commentary on media and political news.",
+    "color": "bg-gray-500"
   },
   {
     "name": "Metacritic",
@@ -506,7 +636,7 @@
     "score": "0",
     "slug": "mickschroeder",
     "image": "../images/screenshots/mickschroeder.webp",
-    "description": "Pharmacist and indie software developer, creator of Web Shuffle.",
+    "description": "Pharmacist and indie software developer.",
     "color": "bg-blue-500"
   },
   {
@@ -518,6 +648,16 @@
     "image": "../images/screenshots/mirror.webp",
     "description": "Tabloid news and entertainment website.",
     "color": "bg-blue-900"
+  },
+  {
+    "name": "Mother Jones",
+    "url": "https://motherjones.com/",
+    "category": "News",
+    "score": "3.900",
+    "slug": "motherjones",
+    "image": "../images/screenshots/motherjones.webp",
+    "description": "Progressive journalism and investigative reporting.",
+    "color": "bg-orange-700"
   },
   {
     "name": "MSN",
@@ -590,6 +730,26 @@
     "color": "bg-blue-950"
   },
   {
+    "name": "New Republic",
+    "url": "https://newrepublic.com/",
+    "category": "News",
+    "score": "3.600",
+    "slug": "newrepublic",
+    "image": "../images/screenshots/newrepublic.webp",
+    "description": "Liberal opinion and in-depth political analysis.",
+    "color": "bg-blue-600"
+  },
+  {
+    "name": "Newsmax",
+    "url": "https://newsmax.com/",
+    "category": "News",
+    "score": "2.700",
+    "slug": "newsmax",
+    "image": "../images/screenshots/newsmax.webp",
+    "description": "Conservative news coverage and opinions.",
+    "color": "bg-red-600"
+  },
+  {
     "name": "Newsweek",
     "url": "https://newsweek.com/",
     "category": "News",
@@ -627,7 +787,7 @@
     "slug": "newyorktimes",
     "image": "../images/screenshots/newyorktimes.webp",
     "description": "Prestigious American daily newspaper known for comprehensive coverage. The self-proclaimed \"paper of record\".",
-    "color": "bg-gray-900"
+    "color": "bg-zinc-900"
   },
   {
     "name": "NPR",
@@ -760,6 +920,16 @@
     "color": "bg-pink-500"
   },
   {
+    "name": "Web Shuffle",
+    "url": "https://webshuffle.mickschroeder.com/",
+    "category": "Aggregators",
+    "score": "2.82",
+    "slug": "webshuffle",
+    "image": "../images/screenshots/webshuffle.webp",
+    "description": "Shuffle the web.",
+    "color": "bg-sky-500"
+  },
+  {
     "name": "ProPublica",
     "url": "https://propublica.org/",
     "category": "News",
@@ -790,6 +960,16 @@
     "color": "bg-red-600"
   },
   {
+    "name": "Reason",
+    "url": "https://reason.org/",
+    "category": "News",
+    "score": "3.500",
+    "slug": "reason",
+    "image": "../images/screenshots/reason.webp",
+    "description": "Libertarian policy analysis and commentary.",
+    "color": "bg-yellow-600"
+  },
+  {
     "name": "Reddit",
     "url": "https://reddit.com/",
     "category": "Socials",
@@ -818,6 +998,26 @@
     "image": "../images/screenshots/reuters.webp",
     "description": "Unbiased news coverage from Reuters, where facts matter more than opinions.",
     "color": "bg-orange-500"
+  },
+  {
+    "name": "Roll Call",
+    "url": "https://rollcall.com/",
+    "category": "News",
+    "score": "3.800",
+    "slug": "rollcall",
+    "image": "../images/screenshots/rollcall.webp",
+    "description": "Comprehensive coverage of U.S. Congress and politics.",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Rolling Stone",
+    "url": "https://rollingstone.com/",
+    "category": "Entertainment",
+    "score": "4.800",
+    "slug": "rollingstone",
+    "image": "../images/screenshots/rollingstone.webp",
+    "description": "Music, pop culture, and political commentary.",
+    "color": "bg-purple-600"
   },
   {
     "name": "Rotten Tomatoes",
@@ -870,6 +1070,26 @@
     "color": "bg-sky-500"
   },
   {
+    "name": "Semafor",
+    "url": "https://semafor.com/",
+    "category": "News",
+    "score": "3.700",
+    "slug": "semafor",
+    "image": "../images/screenshots/semafor.webp",
+    "description": "Global news with a unique storytelling approach.",
+    "color": "bg-orange-600"
+  },
+  {
+    "name": "Showbiz 411",
+    "url": "https://showbiz411.com/",
+    "category": "Entertainment",
+    "score": "4.300",
+    "slug": "showbiz411",
+    "image": "../images/screenshots/showbiz411.webp",
+    "description": "News on Hollywood and entertainment industry insiders.",
+    "color": "bg-blue-500"
+  },
+  {
     "name": "Skimfeed",
     "url": "https://skimfeed.com/",
     "category": "Aggregators",
@@ -907,7 +1127,7 @@
     "slug": "slate",
     "image": "../images/screenshots/slate.webp",
     "description": "Thought-provoking online magazine.",
-    "color": "bg-gray-900"
+    "color": "bg-zinc-900"
   },
   {
     "name": "Steam",
@@ -990,6 +1210,16 @@
     "color": "bg-red-600"
   },
   {
+    "name": "The Free Press",
+    "url": "https://thefp.com/",
+    "category": "News",
+    "score": "3.500",
+    "slug": "thefp",
+    "image": "../images/screenshots/thefp.webp",
+    "description": "Independent journalism and diverse opinions.",
+    "color": "bg-gray-600"
+  },
+  {
     "name": "The Guardian",
     "url": "https://theguardian.com/us",
     "category": "News",
@@ -1030,6 +1260,26 @@
     "color": "bg-blue-700"
   },
   {
+    "name": "The Intercept",
+    "url": "https://theintercept.com/",
+    "category": "News",
+    "score": "3.800",
+    "slug": "theintercept",
+    "image": "../images/screenshots/theintercept.webp",
+    "description": "Investigative journalism with a progressive lens.",
+    "color": "bg-purple-600"
+  },
+  {
+    "name": "The Nation",
+    "url": "https://thenation.com/",
+    "category": "News",
+    "score": "3.700",
+    "slug": "thenation",
+    "image": "../images/screenshots/thenation.webp",
+    "description": "Progressive politics and cultural commentary.",
+    "color": "bg-blue-800"
+  },
+  {
     "name": "The Register",
     "url": "https://theregister.com/",
     "category": "Tech",
@@ -1038,6 +1288,16 @@
     "image": "../images/screenshots/theregister.webp",
     "description": "Tech news.",
     "color": "bg-red-600"
+  },
+  {
+    "name": "The Smoking Gun",
+    "url": "https://thesmokinggun.com/",
+    "category": "Entertainment",
+    "score": "4.500",
+    "slug": "thesmokinggun",
+    "image": "../images/screenshots/thesmokinggun.webp",
+    "description": "Celebrity crime and legal documents.",
+    "color": "bg-green-600"
   },
   {
     "name": "The Sun",
@@ -1136,7 +1396,7 @@
     "score": "2.645",
     "slug": "urbandictionary",
     "image": "../images/screenshots/urbandictionary.webp",
-    "description": "The discreet to decipher modern slang and pop culture references.",
+    "description": "The way discreet to decipher modern slang and pop culture references.",
     "color": "bg-purple-600"
   },
   {
@@ -1148,6 +1408,16 @@
     "image": "../images/screenshots/usatoday.webp",
     "description": "Mainstream news outlet with nice infographics.",
     "color": "bg-sky-500"
+  },
+  {
+    "name": "US TV Database",
+    "url": "https://ustvdb.com/",
+    "category": "Entertainment",
+    "score": "4.000",
+    "slug": "ustvdb",
+    "image": "../images/screenshots/ustvdb.webp",
+    "description": "Comprehensive database of TV shows in the U.S.",
+    "color": "bg-gray-600"
   },
   {
     "name": "Vanity Fair",
@@ -1217,7 +1487,17 @@
     "slug": "wallstreetjournal",
     "image": "../images/screenshots/wallstreetjournal.webp",
     "description": "Where the elite go to read about money.",
-    "color": "bg-gray-900"
+    "color": "bg-zinc-900"
+  },
+  {
+    "name": "Washington Examiner",
+    "url": "https://washingtonexaminer.com/",
+    "category": "News",
+    "score": "3.200",
+    "slug": "washingtonexaminer",
+    "image": "../images/screenshots/washingtonexaminer.webp",
+    "description": "Conservative commentary and breaking news.",
+    "color": "bg-red-700"
   },
   {
     "name": "Washington Post",
@@ -1230,18 +1510,8 @@
     "color": "bg-blue-900"
   },
   {
-    "name": "Web Shuffle",
-    "url": "https://webshuffle.mickschroeder.com/",
-    "category": "Aggregators",
-    "score": "2.82",
-    "slug": "webshuffle",
-    "image": "../images/screenshots/webshuffle.webp",
-    "description": "Shuffle the web.",
-    "color": "bg-sky-500"
-  },
-  {
-    "name": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Main_Page",
+    "name": "Wikipedia Current Events",
+    "url": "https://en.wikipedia.org/wiki/Portal:Current_events",
     "category": "News",
     "score": "2.51",
     "slug": "wikipedia",

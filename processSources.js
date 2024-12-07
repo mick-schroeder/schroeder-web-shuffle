@@ -14,7 +14,7 @@ const SCREENSHOT_PATH = "./src/images/screenshots";
 const SCREENSHOT_QUALITY = 80;
 const VIEWPORT_WIDTH = 1080;
 const VIEWPORT_HEIGHT = 1920;
-const PAGE_NAVIGATION_TIMEOUT = 6000;
+const PAGE_NAVIGATION_TIMEOUT = 15000;
 const WAIT_TIME = 3000;
 
 const CACHE_TIMEOUT = 6 * 60 * 60 * 1000;
@@ -41,7 +41,7 @@ async function generatePlaceholderImage(slug) {
         background: { r: 200, g: 200, b: 200 },
       },
     })
-      .jpeg()
+      .webp({ quality: SCREENSHOT_QUALITY })
       .toFile(screenshotFullPath);
   } catch (error) {
     throw new Error(`Failed to generate placeholder image: ${error.message}`);
@@ -250,6 +250,8 @@ const preProcessSources = async (JSON_PATH, CONCURRENT_PAGES, reporter) => {
 
     const browser = await puppeteer.launch({
       args: ["--no-sandbox"],
+      headless: "new",
+      protocolTimeout: 30000,
       headless: "new",
       protocolTimeout: 300000,
     });

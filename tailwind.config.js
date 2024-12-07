@@ -7,6 +7,10 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx,mdx}`,
   ],
   theme: {
+    fontFamily: {
+      sans: ["HelveticaNeue", "Helvetica Neue", "Helvetica", "sans-serif"],
+      serif: ["serif"],
+    },
     extend: {},
   },
   plugins: [require("@tailwindcss/typography")],

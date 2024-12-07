@@ -54,11 +54,11 @@ const SourcesGallery = ({ limit, sort }) => {
           return (
             <div
               key={node.name}
-              className="bg-gray-100 hover:bg-gray-200 border border-gray-300 rounded-lg shadow hover:shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:dark:bg-gray-700 hover:dark:border-gray-600"
+              className="bg-zinc-100 hover:bg-zinc-200 border border-zinc-300 rounded-lg shadow hover:shadow-md dark:bg-zinc-800 dark:border-zinc-700 overflow-hidden hover:dark:bg-zinc-700 hover:dark:border-zinc-600"
             >
               <div className="p-4">
                 <a href={node.url} className="block mb-1">
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white hover:text-blue-600">
+                  <h4 className="text-lg font-semibold text-zinc-900 dark:text-white hover:text-blue-600">
                     {node.name}
                   </h4>
                 </a>{" "}

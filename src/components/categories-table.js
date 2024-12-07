@@ -11,7 +11,7 @@ const CategoriesTable = () => {
           name
           slug
           icon
-          color
+          show
         }
       }
     }
@@ -33,16 +33,16 @@ const CategoriesTable = () => {
     window.open(nextSite, "_blank");
   };
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {categories.map((website) => (
         <a
-          //href={website.slug}
+          href={website.slug}
           onClick={(event) => handleClick(event, website.name)}
           target=""
-          className="inline-flex items-center font-medium text-blue-600 dark:text-blue-400 hover:underline p-3"
+          className="flex items-center rounded-lg border border-zinc-200 bg-white px-4 py-2 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:bg-zinc-700"
         >
-          <span className="bg-blue-100 text-blue-800 font-bold mr-2 px-5 py-5 rounded-full dark:bg-blue-900 dark:text-blue-300">
-            {website.name}
+        <span className="font-medium text-zinc-900 dark:text-white">            
+        {website.name}
           </span>
         </a>
       ))}

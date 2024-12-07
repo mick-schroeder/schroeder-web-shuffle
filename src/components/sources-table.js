@@ -21,15 +21,15 @@ const SourcesTable = () => {
   const websites = data.allSourcesJson.nodes;
 
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-      <table className="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 bg-gray-300 dark:bg-gray-700 dark:text-gray-400">
+    <div className="relative overflow-x-auto">
+      <table className="table-auto w-full text-sm text-left text-zinc-500 dark:text-zinc-400">
+        <thead className="text-xs text-zinc-700 bg-zinc-200 dark:bg-zinc-700 dark:text-zinc-400">
           <tr>
             <th scope="col" className="px-6 py-3">
               Name
             </th>
             <th scope="col" className="px-6 py-3">
-              category
+              Category
             </th>
             <th scope="col" className="px-6 py-3">
               URL
@@ -40,11 +40,11 @@ const SourcesTable = () => {
           {websites.map((website) => (
             <tr
               key={website.name}
-              className="bg-white hover:bg-gray-100 hover:dark:bg-gray-700 border-b dark:bg-gray-800 dark:border-gray-700"
+              className="bg-white hover:bg-zinc-100 hover:dark:bg-zinc-700 border-b dark:bg-zinc-800 dark:border-zinc-700"
             >
-              <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              <td className="px-6 py-4 font-medium text-zinc-900 whitespace-nowrap dark:text-white">
                 <Link to={`/sources/${website.slug}`}>
-                  <span className="flex items-center text-sm font-medium text-gray-900 dark:text-white">
+                  <span className="flex items-center text-sm font-medium text-zinc-900 dark:text-white">
                     {website.name}
                   </span>
                 </Link>

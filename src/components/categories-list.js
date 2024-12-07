@@ -8,12 +8,22 @@ const CategoriesList = () => {
   // Combine both queries into one `useStaticQuery` call
   const data = useStaticQuery(graphql`
     query {
+      site {
+        siteMetadata {
+          name
+          author
+          authorUrl
+          foundingYear
+          description
+          tagLine
+        }
+      }
       categories: allCategoriesJson {
         nodes {
           name
           slug
           icon
-          color
+          show
         }
       }
       sources: allSourcesJson {
@@ -62,14 +72,14 @@ const CategoriesList = () => {
                 onClick={(event) => handleClick(event, category.name)}
                 target=""
               >
-                <h2 className="inline-flex text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 hover:underline cursor-grab">
-                  {category.name.toUpperCase()}
+                <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
+                  {category.name}
                   <img
                     src={WebShuffleIcon}
                     className="w-4 h-4 ml-2 dark:opacity-50 hover:opacity-70"
-                    alt="Web Shuffle Icon"
+                    alt="Website Icon"
                   />
-                </h2>
+                </h6>
               </a>
               {/* Filter sources by the current category and list them */}
               {sources
@@ -78,7 +88,7 @@ const CategoriesList = () => {
                   <a
                     href={source.url}
                     target="_blank"
-                    className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
+                    className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
                     role="button"
                     aria-label={`Open ${source.name}`}
                   >
@@ -102,14 +112,14 @@ const CategoriesList = () => {
                 onClick={(event) => handleClick(event, category.name)}
                 target=""
               >
-                <h2 className="inline-flex text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 hover:underline cursor-grab">
-                  {category.name.toUpperCase()}
+                <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
+                  {category.name}
                   <img
                     src={WebShuffleIcon}
                     className="w-4 h-4 ml-2 opacity-50 hover:opacity-70"
-                    alt="Web Shuffle Icon"
+                    alt="Website Icon"
                   />
-                </h2>
+                </h6>
               </a>
               {/* Filter sources by the current category and list them */}
               {sources
@@ -119,13 +129,13 @@ const CategoriesList = () => {
                     <a
                       href={source.url}
                       target="_blank"
-                      className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
+                      className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
                       role="button"
                       aria-label={`Open ${source.name}`}
                     >
-                      {source.name.toUpperCase()}
+                      {source.name}
                     </a>
-                    {/* <p className="text-sm text-gray-600 dark:text-gray-50">{source.description}</p>
+                    {/* <p className="text-sm text-zinc-600 dark:text-zinc-50">{source.description}</p>
                      */}{" "}
                   </p>
                 ))}
@@ -134,9 +144,9 @@ const CategoriesList = () => {
       </div>
 
       <div className="">
-        <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+        <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
           SPONSORS
-        </h2>
+        </h6>
         <Ad
           adClient="ca-pub-6344797609391119"
           adFormat="auto"
@@ -156,13 +166,13 @@ const CategoriesList = () => {
                     <a
                       href={source.url}
                       target="_blank"
-                      className="block text-blue-600 dark:text-blue-400 underline hover:text-blue-500 hover:dark:text-blue-300"
+                      className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
                       role="button"
                       aria-label={`Open ${source.name}`}
                     >
                       {source.name.toUpperCase()}
                     </a>
-                    {/*                   <p className="text-sm text-gray-600 dark:text-gray-50">{source.description}</p>
+                    {/*                   <p className="text-sm text-zinc-600 dark:text-zinc-50">{source.description}</p>
                      */}{" "}
                   </p>
                 ))}
@@ -170,25 +180,25 @@ const CategoriesList = () => {
           ))}
 
         <div>
-          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 uppercase">
+          <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
             Bookmark
-          </h2>
-          <p className="mb-2 leading-relaxed text-gray-700 dark:text-gray-400">
+          </h6>
+          <p className="mb-2 leading-relaxed text-zinc-700 dark:text-zinc-400">
             Drag to your Bookmarks Bar
-            <span className="bg-blue-600 rounded-full text-xs font-bold text-white px-4 py-1.5 my-2 ml-2">
+            <span className="bg-blue-600 rounded-full text-xs font-bold text-white px-4 py-1.5 my-4 ml-4">
               <a href="/redirect" target="_blank" rel="noopener">
-                Web Shuffle
+                {data.site.siteMetadata.name}
               </a>
             </span>
           </p>
-          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2 uppercase">
+          <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
             Browser Extension
-          </h2>
+          </h6>
 
           <p>
             <a
               href="https://chromewebstore.google.com/detail/web-shuffle/lgokgkophalfnnapghjjckmeoboepfdj"
-              className="block text-blue-600 dark:text-blue-400 underline uppercase"
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               Google Chrome Web Store
             </a>
@@ -196,16 +206,16 @@ const CategoriesList = () => {
         </div>
 
         <div className="">
-          <h2 className="text-gray-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-2">
+          <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
             OPEN SOURCE
-          </h2>
-          <p className="mb-2 leading-relaxed text-gray-700 dark:text-gray-400">
+          </h6>
+          <p className="mb-2 leading-relaxed text-zinc-700 dark:text-zinc-400">
             This program is free software: you can redistribute it and/or modify
             it under the terms of the&nbsp;
             <a
               href="https://www.gnu.org/licenses/agpl.html"
               rel="external"
-              className="underline"
+              className="min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               GNU Affero General Public License
             </a>
@@ -213,28 +223,28 @@ const CategoriesList = () => {
           </p>
           <p>
             <a
-              href="https://github.com/mick-schroeder/schroeder-web-shuffle"
-              className="block text-blue-600 dark:text-blue-400 underline"
+              href="https://github.com/mick-schroeder/schroeder-Web Shuffle"
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               SOURCE CODE ON GITHUB
             </a>
           </p>
-          <h2 className="text-sm font-black tracking-wide mt-2 mb-2 text-black dark:text-white">
+          <h6 className="inline-flex text-zinc-900 dark:text-white text-sm font-black tracking-wide mt-2 mb-4 hover:underline cursor-grab uppercase">
             ABOUT
-          </h2>
+          </h6>
 
           <p>
             <a
               href="/about"
-              className="block text-blue-600 dark:text-blue-400 underline "
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
-              ABOUT WEB SHUFFLE
+              ABOUT
             </a>
           </p>
           <p>
             <a
               href="/sources"
-              className="block text-blue-600 dark:text-blue-400 underline "
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               SOURCES
             </a>
@@ -242,23 +252,23 @@ const CategoriesList = () => {
           <p>
             <a
               href="/newsstand"
-              className="block text-blue-600 dark:text-blue-400 underline "
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               DIGITAL NEWSSTAND
             </a>
           </p>
           <p>
             <a
-              href="mailto:WEBSHUFFLE@MICKSCHROEDER.COM"
-              className="block text-blue-600 dark:text-blue-400 underline "
+              href="mailto:email@mickschroeder.com"
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
-              WEBSHUFFLE@MICKSCHROEDER.COM
+              EMAIL@MICKSCHROEDER.COM
             </a>
           </p>
           <p>
             <a
               href="/terms-privacy"
-              className="block text-blue-600 dark:text-blue-400 underline "
+              className="block min-h-6 lg:min-h-6 text-blue-600 font-semibold dark:text-blue-400 hover:text-blue-500 hover:dark:text-blue-300 uppercase"
             >
               TERMS & PRIVACY POLICY
             </a>

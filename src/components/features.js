@@ -3,17 +3,17 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Features = () => (
-  <section className=" text-gray-500 sm:text-lg dark:text-gray-400 body-font p-4">
+  <section className=" text-zinc-500 sm:text-lg dark:text-zinc-400 body-font p-4">
     <h2 className="text-2xl font-extrabold dark:text-white text-black">
       Features:
-      <small className="ml-2 font-semibold text-gray-500 dark:text-gray-400">
+      <small className="ml-2 font-semibold text-zinc-500 dark:text-zinc-400">
         Learn everything there is to know about Web Shuffle.
       </small>
     </h2>
     <div className="container max-w-5xl	px-5 py-8 mx-auto flex flex-wrap">
       <div className="flex flex-wrap -m-4">
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex h-full bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex h-full bg-white border border-zinc-200 rounded-lg shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -28,12 +28,12 @@ const Features = () => (
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Browser Extension
               </h2>
             </div>
             <div className="flex-grow">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
                 Enhance your web browser with our browser extension. It adds the{" "}
                 <a
                   href="/redirect"
@@ -48,7 +48,7 @@ const Features = () => (
               <div className="py-7">
                 <a
                   href="https://chrome.google.com/webstore/detail/mick-schroeders-web-shuff/lgokgkophalfnnapghjjckmeoboepfdj"
-                  className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-gray-900 bg-gray-300 hover:bg-gray-400"
+                  className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-xl text-zinc-900 bg-zinc-300 hover:bg-zinc-400"
                 >
                   Chrome Extension
                 </a>{" "}
@@ -58,7 +58,7 @@ const Features = () => (
         </div>
 
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex h-full bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex h-full bg-white border border-zinc-200 rounded-lg shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -74,16 +74,16 @@ const Features = () => (
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Bookmark{" "}
               </h2>
             </div>
-            <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+            <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
               Bookmark the special "redirect" URL to shuffle from your browser's
               bookmarks bar.
             </p>
             <div className="flex-grow flex items-center justify-center">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
                 <span className="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 ml-3">
                   <a href="/redirect" target="_blank" rel="noopener">
                     Web Shuffle
@@ -96,7 +96,7 @@ const Features = () => (
         </div>
 
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex rounded-lg h-full bg-white border border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex rounded-lg h-full bg-white border border-zinc-200 shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -113,12 +113,12 @@ const Features = () => (
                   <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Open Source
               </h2>
             </div>
             <div className="flex-grow">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
                 This program is free software: you can redistribute it and/or
                 modify it under the terms of the
                 <a
@@ -152,7 +152,7 @@ const Features = () => (
         </div>
 
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex h-full bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex h-full bg-white border border-zinc-200 rounded-lg shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -167,30 +167,20 @@ const Features = () => (
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Channel Surf the Web
               </h2>
             </div>
             <div className="flex-grow">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
-                Experience the thrill of web surfing by channel surfing the web
-                with just one click on the{" "}
-                <a
-                  href="/redirect"
-                  className="text-blue-600 dark:text-blue-400"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Web Shuffle
-                </a>{" "}
-                button.
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
+                Experience the thrill of web surfing by channel surfing the web.
               </p>
             </div>
           </div>
         </div>
 
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex h-full bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex h-full bg-white border border-zinc-200 rounded-lg shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -210,12 +200,12 @@ const Features = () => (
                   />
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Alternative to StumbleUpon
               </h2>
             </div>
             <div className="flex-grow">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
                 StumbleUpon and The Useless Web are fun for wasting time. Our
                 algorighm is designed to focus on a curated list of the top new
                 sites on the web.
@@ -225,7 +215,7 @@ const Features = () => (
         </div>
 
         <div className="p-2 md:w-1/3 grow md:grow-0">
-          <div className="flex h-full bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-8 flex-col">
+          <div className="flex h-full bg-white border border-zinc-200 rounded-lg shadow hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-blue-600 text-white flex-shrink-0">
                 <svg
@@ -241,12 +231,12 @@ const Features = () => (
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
               </div>
-              <h2 className="tracking-tight text-gray-900 dark:text-white text-lg title-font font-medium">
+              <h2 className="tracking-tight text-zinc-900 dark:text-white text-lg title-font font-medium">
                 Curated
               </h2>
             </div>
             <div className="flex-grow">
-              <p className="leading-relaxed font-normal text-gray-700 dark:text-gray-400 pt-3">
+              <p className="leading-relaxed font-normal text-zinc-700 dark:text-zinc-400 pt-3">
                 The{" "}
                 <a
                   href="/redirect"
@@ -265,7 +255,7 @@ const Features = () => (
       </div>
     </div>
 
-    <p className="text-gray-500 dark:text-gray-400 py-6  text-center">
+    <p className="text-zinc-500 dark:text-zinc-400 py-6  text-center">
       <Link
         to="/about"
         className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"

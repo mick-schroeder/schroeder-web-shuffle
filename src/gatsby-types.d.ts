@@ -52,12 +52,13 @@ type BooleanQueryOperatorInput = {
 
 type CategoriesJson = Node & {
   readonly children: ReadonlyArray<Node>;
-  readonly color: Maybe<Scalars['String']>;
+  readonly column: Maybe<Scalars['Int']>;
   readonly icon: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
   readonly name: Maybe<Scalars['String']>;
   readonly parent: Maybe<Node>;
+  readonly show: Maybe<Scalars['Boolean']>;
   readonly slug: Maybe<Scalars['String']>;
 };
 
@@ -108,23 +109,25 @@ type CategoriesJsonEdge = {
 
 type CategoriesJsonFieldSelector = {
   readonly children: InputMaybe<NodeFieldSelector>;
-  readonly color: InputMaybe<FieldSelectorEnum>;
+  readonly column: InputMaybe<FieldSelectorEnum>;
   readonly icon: InputMaybe<FieldSelectorEnum>;
   readonly id: InputMaybe<FieldSelectorEnum>;
   readonly internal: InputMaybe<InternalFieldSelector>;
   readonly name: InputMaybe<FieldSelectorEnum>;
   readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly show: InputMaybe<FieldSelectorEnum>;
   readonly slug: InputMaybe<FieldSelectorEnum>;
 };
 
 type CategoriesJsonFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
-  readonly color: InputMaybe<StringQueryOperatorInput>;
+  readonly column: InputMaybe<IntQueryOperatorInput>;
   readonly icon: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
   readonly name: InputMaybe<StringQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
+  readonly show: InputMaybe<BooleanQueryOperatorInput>;
   readonly slug: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -175,12 +178,13 @@ type CategoriesJsonGroupConnection_sumArgs = {
 
 type CategoriesJsonSortInput = {
   readonly children: InputMaybe<NodeSortInput>;
-  readonly color: InputMaybe<SortOrderEnum>;
+  readonly column: InputMaybe<SortOrderEnum>;
   readonly icon: InputMaybe<SortOrderEnum>;
   readonly id: InputMaybe<SortOrderEnum>;
   readonly internal: InputMaybe<InternalSortInput>;
   readonly name: InputMaybe<SortOrderEnum>;
   readonly parent: InputMaybe<NodeSortInput>;
+  readonly show: InputMaybe<SortOrderEnum>;
   readonly slug: InputMaybe<SortOrderEnum>;
 };
 
@@ -1753,12 +1757,13 @@ type Query_allSourcesJsonArgs = {
 
 type Query_categoriesJsonArgs = {
   children: InputMaybe<NodeFilterListInput>;
-  color: InputMaybe<StringQueryOperatorInput>;
+  column: InputMaybe<IntQueryOperatorInput>;
   icon: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
   name: InputMaybe<StringQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
+  show: InputMaybe<BooleanQueryOperatorInput>;
   slug: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -2700,6 +2705,7 @@ type SiteSiteMetadata = {
   readonly image: Maybe<Scalars['String']>;
   readonly name: Maybe<Scalars['String']>;
   readonly siteUrl: Maybe<Scalars['String']>;
+  readonly tagLine: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
   readonly twitterUsername: Maybe<Scalars['String']>;
 };
@@ -2721,6 +2727,7 @@ type SiteSiteMetadataFieldSelector = {
   readonly image: InputMaybe<FieldSelectorEnum>;
   readonly name: InputMaybe<FieldSelectorEnum>;
   readonly siteUrl: InputMaybe<FieldSelectorEnum>;
+  readonly tagLine: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
   readonly twitterUsername: InputMaybe<FieldSelectorEnum>;
 };
@@ -2734,6 +2741,7 @@ type SiteSiteMetadataFilterInput = {
   readonly image: InputMaybe<StringQueryOperatorInput>;
   readonly name: InputMaybe<StringQueryOperatorInput>;
   readonly siteUrl: InputMaybe<StringQueryOperatorInput>;
+  readonly tagLine: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly twitterUsername: InputMaybe<StringQueryOperatorInput>;
 };
@@ -2747,6 +2755,7 @@ type SiteSiteMetadataSortInput = {
   readonly image: InputMaybe<SortOrderEnum>;
   readonly name: InputMaybe<SortOrderEnum>;
   readonly siteUrl: InputMaybe<SortOrderEnum>;
+  readonly tagLine: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
   readonly twitterUsername: InputMaybe<SortOrderEnum>;
 };

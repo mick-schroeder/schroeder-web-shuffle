@@ -52,14 +52,14 @@ const SourceTemplate = ({ data, pageContext }) => {
         title={`Web Shuffle - ${source.name}`}
         description={source.description}
       />
-      <section>
+      <section className="ml-6">
         <div className="p-4 mx-auto max-w-screen-xl">
           <nav className="flex pt-2 pb-8" aria-label="Breadcrumb">
             <ol className="inline-flex items-center space-x-1 :space-x-3">
               <li className="inline-flex items-center">
                 <Link
                   to="/"
-                  className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+                  className="inline-flex items-center text-sm font-medium text-zinc-700 hover:text-blue-600 dark:text-zinc-400 dark:hover:text-white"
                 >
                   <svg
                     className="w-3 h-3 mr-2.5"
@@ -76,7 +76,7 @@ const SourceTemplate = ({ data, pageContext }) => {
               <li>
                 <div className="flex items-center">
                   <svg
-                    className="w-3 h-3 text-gray-400 mx-1"
+                    className="w-3 h-3 text-zinc-400 mx-1"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -92,7 +92,7 @@ const SourceTemplate = ({ data, pageContext }) => {
                   </svg>
                   <Link
                     to="/sources"
-                    className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+                    className="ml-1 text-sm font-medium text-zinc-700 hover:text-blue-600 md:ml-2 dark:text-zinc-400 dark:hover:text-white"
                   >
                     Sources
                   </Link>
@@ -101,7 +101,7 @@ const SourceTemplate = ({ data, pageContext }) => {
               <li aria-current="page">
                 <div className="flex items-center">
                   <svg
-                    className="w-3 h-3 text-gray-400 mx-1"
+                    className="w-3 h-3 text-zinc-400 mx-1"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -115,7 +115,7 @@ const SourceTemplate = ({ data, pageContext }) => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                  <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
+                  <span className="ml-1 text-sm font-medium text-zinc-500 md:ml-2 dark:text-zinc-400">
                     {source.name}
                   </span>
                 </div>
@@ -130,8 +130,8 @@ const SourceTemplate = ({ data, pageContext }) => {
               }}
               className={`flex items-center justify-center px-4 mb-4 lg:mb-0 h-10 mr-3 text-base font-medium ${
                 prevSlug
-                  ? "text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                  : "text-gray-300 bg-gray-200 border border-gray-300 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:text-gray-500"
+                  ? "text-zinc-500 bg-white border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-white"
+                  : "text-zinc-300 bg-zinc-200 border border-zinc-300 cursor-not-allowed dark:bg-zinc-700 dark:border-zinc-600 dark:text-zinc-500"
               }`}
             >
               <svg
@@ -151,7 +151,7 @@ const SourceTemplate = ({ data, pageContext }) => {
               </svg>
               Previous
             </Link>
-            <div className="sm:flex mb-4 lg:mb-0 items-justified bg-white rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 border">
+            <div className="sm:flex mb-4 lg:mb-0 items-justified bg-white rounded-lg shadow  dark:bg-zinc-800 dark:border-zinc-700 border">
               <a href={source.url}>
                 <GatsbyImage
                   className="h-full max-w-sm sm:rounded-none sm:rounded-l-lg"
@@ -161,14 +161,14 @@ const SourceTemplate = ({ data, pageContext }) => {
                 />
               </a>
               <div className="p-4">
-                <h1 className="text-2xl md:text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+                <h1 className="text-2xl md:text-3xl font-bold mb-8 text-zinc-900 dark:text-white">
                   {source.name}
                 </h1>
                 <dl>
-                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+                  <dt className="mb-2 font-semibold leading-none text-zinc-900 dark:text-white">
                     Tag
                   </dt>
-                  <dd className="mb-4 font-normal md:max-w-screen-md text-gray-500 sm:mb-5 dark:text-gray-400">
+                  <dd className="mb-4 font-normal md:max-w-screen-md text-zinc-500 sm:mb-5 dark:text-zinc-400">
                     <span className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
                       {source.category}
                     </span>
@@ -176,19 +176,19 @@ const SourceTemplate = ({ data, pageContext }) => {
                 </dl>
 
                 <dl>
-                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+                  <dt className="mb-2 font-semibold leading-none text-zinc-900 dark:text-white">
                     Description
                   </dt>
-                  <dd className="mb-4 font-normal text-gray-500 sm:mb-5 dark:text-gray-400">
-                    <blockquote className="p-4 my-4 border-l-4 border-gray-300 dark:border-gray-700">
-                      <p className="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white max-w-sm">
+                  <dd className="mb-4 font-normal text-zinc-500 sm:mb-5 dark:text-zinc-400">
+                    <blockquote className="p-4 my-4 border-l-4 border-zinc-300 dark:border-zinc-700">
+                      <p className="text-md italic font-medium leading-relaxed text-zinc-900 dark:text-white max-w-sm">
                         "{source.description}"
                       </p>
                     </blockquote>
                   </dd>
                 </dl>
                 <dl>
-                  <dt className="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
+                  <dt className="mb-2 font-semibold leading-none text-zinc-900 dark:text-white">
                     URL
                   </dt>
                   <dd className="mb-4">
@@ -230,8 +230,8 @@ const SourceTemplate = ({ data, pageContext }) => {
               }}
               className={`flex items-center justify-center px-4 h-10 text-base font-medium ${
                 nextSlug
-                  ? "text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                  : "text-gray-300 bg-gray-200 border border-gray-300 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:text-gray-500"
+                  ? "text-zinc-500 bg-white border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-white"
+                  : "text-zinc-300 bg-zinc-200 border border-zinc-300 cursor-not-allowed dark:bg-zinc-700 dark:border-zinc-600 dark:text-zinc-500"
               }`}
             >
               Next

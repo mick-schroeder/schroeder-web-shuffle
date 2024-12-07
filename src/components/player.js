@@ -22,11 +22,16 @@ const WebShufflePlayer = () => {
   };
 
   return (
-    <div className="flex order-1 items-center justify-center grow mx-4 py-2">
-      <div className="flex py-1 px-4 backdrop-blur bg-gray-200/85 dark:bg-gray-950/85 border border-gray-300/85 dark:border-gray-700/85 rounded-lg shadow-md">
-        <div className="flex flex-col items-center md:w-96 ">
-          <h2 className="text-sm text-center font-bold text-gray-900 dark:text-white">
-            <Link href={`/sources/${nextSiteSlug}`}>{nextSiteName}</Link>
+    <div className="flex-grow flex items-center justify-center px-2">
+      <div className="flex py-1 px-4 backdrop-blur bg-zinc-100/85 dark:bg-zinc-900/85 border border-zinc-300/85 dark:border-zinc-600/85 rounded-lg shadow  w-full md:w-9/12">
+        <div className="flex flex-col items-center w-full">
+          <h2 className="truncate text-sm text-center font-bold text-zinc-900 dark:text-white">
+            <Link
+              href={`/sources/${nextSiteSlug}`}
+              className="truncate line-clamp-1"
+            >
+              {nextSiteName}
+            </Link>
           </h2>
           {/*nextSiteImage && (
             <GatsbyImage
@@ -37,18 +42,19 @@ const WebShufflePlayer = () => {
           )*/}
           <blockquote
             title={nextSiteDescription}
-            className="line-clamp-1	text-xs text-ellipsis font-normal text-gray-700 dark:text-gray-400"
+            className="line-clamp-1 text-xs text-ellipsis font-normal text-zinc-700 dark:text-zinc-400 w-60 lg:w-96 text-center"
           >
-            {nextSiteDescription}
+            {nextSiteDescription || "No description available."}
           </blockquote>
 
-          <p className="text-xs mt-1 font-semibold text-gray-700 dark:text-gray-400">
+          <p className="text-xs mt-1 font-semibold text-zinc-700 dark:text-zinc-400">
             <a
               onClick={handleClick}
               href={nextSite}
               className="cursor-pointer inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-600"
               target="_blank"
               rel="noopener"
+              aria-label={`Open site: ${nextSiteName}`}
             >
               {nextSite.length > 32 ? nextSite.slice(0, 32) + "..." : nextSite}
               <svg
@@ -73,11 +79,11 @@ const WebShufflePlayer = () => {
       <div className="flex justify-between items-start mx-3">
         <button
           onClick={refreshNextSite}
-          className="text-gray-200 px-3 py-2 rounded-lg hover:bg-gray-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          className="text-zinc-200 px-3 py-2 rounded-lg hover:bg-zinc-400 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
           aria-label="Refresh next site"
         >
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-gray-500"
+            className="w-6 h-6 text-zinc-800 dark:text-zinc-500"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
