@@ -880,16 +880,6 @@
     "color": "bg-red-600"
   },
   {
-    "name": "Pocket",
-    "url": "https://getpocket.com/explore",
-    "category": "News",
-    "score": "3.385",
-    "slug": "pocket",
-    "image": "../images/screenshots/pocket.webp",
-    "description": "A digital hoarder's dream.",
-    "color": "bg-rose-600"
-  },
-  {
     "name": "Politico",
     "url": "https://politico.com/",
     "category": "News",
