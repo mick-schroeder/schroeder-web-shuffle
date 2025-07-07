@@ -1,7 +1,11 @@
 const AWS = require("aws-sdk");
 const path = require("path");
 const fs = require("fs");
-const puppeteer = require("puppeteer");
+//const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-extra");
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+const AdblockerPlugin = require("puppeteer-extra-plugin-adblocker");
+
 const sharp = require("sharp");
 require("aws-sdk/lib/maintenance_mode_message").suppress = true;
 
@@ -14,7 +18,7 @@ const SCREENSHOT_PATH = "./src/images/screenshots";
 const SCREENSHOT_QUALITY = 80;
 const VIEWPORT_WIDTH = 1080;
 const VIEWPORT_HEIGHT = 1920;
-const PAGE_NAVIGATION_TIMEOUT = 15000;
+const PAGE_NAVIGATION_TIMEOUT = 30000;
 const WAIT_TIME = 3000;
 
 const CACHE_TIMEOUT = 6 * 60 * 60 * 1000;
@@ -60,7 +64,7 @@ async function generateScreenshot(
   for (let attempt = 1; attempt <= RETRIES; attempt++) {
     try {
       await page.goto(url, {
-        waitUntil: "networkidle2",
+        waitUntil: "domcontentloaded",
         timeout: PAGE_NAVIGATION_TIMEOUT,
       });
 
@@ -79,7 +83,7 @@ async function generateScreenshot(
         );
       } else if (attempt === RETRIES) {
         try {
-          reporter.warn(`Generated screenshot for ${slug} anways.`);
+          reporter.warn(`Generated screenshot for ${slug} anyways.`);
           await page.screenshot({
             path: screenshotFullPath,
             quality: 80,
@@ -112,7 +116,7 @@ async function uploadToS3(filePath, slug, reporter) {
       Bucket: BUCKET_NAME,
       Key: `${slug}.webp`,
       Body: data,
-      ContentType: "image/jpeg",
+      ContentType: "image/webp",
     };
     await s3.upload(params).promise();
   } catch (error) {
@@ -247,13 +251,14 @@ const preProcessSources = async (JSON_PATH, CONCURRENT_PAGES, reporter) => {
         sourcesData.length +
         " Sources",
     );
+    
+    puppeteer.use(StealthPlugin());
+    puppeteer.use(AdblockerPlugin({ blockTrackers: true }));
 
     const browser = await puppeteer.launch({
-      args: ["--no-sandbox"],
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
       headless: "new",
-      protocolTimeout: 30000,
-      headless: "new",
-      protocolTimeout: 300000,
+      protocolTimeout: 30000
     });
 
     await processSources(sourcesData, CONCURRENT_PAGES, browser, reporter);
