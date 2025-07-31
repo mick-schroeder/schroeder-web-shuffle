@@ -1310,16 +1310,6 @@
     "color": "bg-blue-700"
   },
   {
-    "name": "The Times",
-    "url": "https://thetimes.co.uk/",
-    "category": "News",
-    "score": "4.1",
-    "slug": "thetimes",
-    "image": "../images/screenshots/thetimes.webp",
-    "description": "Old-school British news.",
-    "color": "bg-blue-900"
-  },
-  {
     "name": "The Wrap",
     "url": "https://thewrap.com/",
     "category": "News",
