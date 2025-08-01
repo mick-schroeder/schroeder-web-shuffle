@@ -43,14 +43,16 @@ export const NextSiteProvider = ({ children }) => {
 
   const refreshNextSite = (category = null) => {
     let filteredSources = sources;
-    if (category) {
-      // Filter sources by category if a category is specified
-      filteredSources = sources.filter(
-        (source) => source.category === category,
-      );
-    }
-    const randomIndex = Math.floor(Math.random() * sources.length);
-    const randomSource = sources[randomIndex];
+   if (category) {
+    filteredSources = sources.filter(
+      (source) => source.category === category,
+    );
+  }
+    if (filteredSources.length === 0) {
+    filteredSources = sources;
+  }
+  const randomIndex = Math.floor(Math.random() * filteredSources.length);
+  const randomSource = filteredSources[randomIndex];
 
     setNextSite(randomSource.url);
     setNextSiteCategory(randomSource.category);

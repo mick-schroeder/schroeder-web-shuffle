@@ -1,6 +1,7 @@
 [
 {"name":"Entertainment","slug":"entertainment","icon":"video-camera.svg","column":1,"show":true},
 {"name":"News",         "slug":"news","icon":"newspaper.svg","column":1,"show":true},
+{"name":"Irish News",   "slug":"ireland","icon":"newspaper.svg","column":1,"show":true},
 {"name":"Tech",         "slug":"tech","icon":"computer-screen.svg","column":2,"show":true},
 {"name":"Aggregators",  "slug":"aggregator","icon":"list.svg","column":2,"show":true},
 {"name":"Sponsors",     "slug":"sponsor","icon":"cash.svg","column":3,"show":false},

@@ -19,14 +19,6 @@ export default function DefaultNavbar() {
         <WebShufflePlayer />
         <div className="flex flex-inline gap-x-4">
           <RedirectButton className="m-4" />
-          <button
-            type="button"
-            data-dropdown-toggle="language-dropdown-menu"
-            className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-zinc-900 dark:text-white rounded-lg cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-700"
-          >
-            <img className="h-6 mr-2" src={USFlag} alt="Flag" />
-            English (US)
-          </button>
         </div>
       </div>
     </nav>
