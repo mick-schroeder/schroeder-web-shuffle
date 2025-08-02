@@ -310,16 +310,6 @@
 		"color": "bg-orange-500"
 	},
 	{
-		"name": "Daily Mail",
-		"url": "https://dailymail.co.uk/ushome/index.html",
-		"category": "News",
-		"score": "2.2",
-		"slug": "dailymail",
-		"image": "../images/screenshots/dailymail.webp",
-		"description": "Sensationalist news and gossip hub.",
-		"color": "bg-red-600"
-	},
-	{
 		"name": "Deadline",
 		"url": "https://deadline.com/",
 		"category": "Entertainment",
@@ -328,16 +318,6 @@
 		"image": "../images/screenshots/deadline.webp",
 		"description": "Breaking news and analysis in the entertainment industry.",
 		"color": "bg-red-500"
-	},
-	{
-		"name": "Digg",
-		"url": "https://digg.com/",
-		"category": "Aggregators",
-		"score": "3.56",
-		"slug": "digg",
-		"image": "../images/screenshots/digg.webp",
-		"description": "The once-popular news aggregator that lost its way amidst the rise of social media.",
-		"color": "bg-black"
 	},
 	{
 		"name": "Digitaltrends",
@@ -708,16 +688,6 @@
 		"image": "../images/screenshots/mickschroeder.webp",
 		"description": "Pharmacist and indie software developer.",
 		"color": "bg-blue-500"
-	},
-	{
-		"name": "Mirror",
-		"url": "https://mirror.co.uk/",
-		"category": "News",
-		"score": "3.445",
-		"slug": "mirror",
-		"image": "../images/screenshots/mirror.webp",
-		"description": "Tabloid news and entertainment website.",
-		"color": "bg-blue-900"
 	},
 	{
 		"name": "Mother Jones",
@@ -1250,16 +1220,6 @@
 		"color": "bg-blue-900"
 	},
 	{
-		"name": "The Ditch",
-		"url": "https://www.theditch.org/",
-		"category": "Irish News",
-		"score": "3.4",
-		"slug": "theditch",
-		"image": "../images/screenshots/theditch.webp",
-		"description": "Investigative journalism website focused on Irish politics.",
-		"color": "bg-gray-700"
-	},
-	{
 		"name": "The Economist",
 		"url": "https://economist.com/",
 		"category": "News",
@@ -1308,16 +1268,6 @@
 		"image": "../images/screenshots/thehollywoodreporter.webp",
 		"description": "Gossip, glitz, and glamour from the heart of the entertainment industry.",
 		"color": "bg-red-700"
-	},
-	{
-		"name": "The Independent",
-		"url": "https://independent.co.uk/us",
-		"category": "News",
-		"score": "3.315",
-		"slug": "theindependent",
-		"image": "../images/screenshots/theindependent.webp",
-		"description": "Unbiased news and opinion from The Independent.",
-		"color": "bg-blue-700"
 	},
 	{
 		"name": "The Intercept",
@@ -1388,36 +1338,6 @@
 		"image": "../images/screenshots/thesmokinggun.webp",
 		"description": "Celebrity crime and legal documents.",
 		"color": "bg-green-600"
-	},
-	{
-		"name": "The Sun",
-		"url": "https://thesun.co.uk/",
-		"category": "News",
-		"score": "3.4",
-		"slug": "thesun",
-		"image": "../images/screenshots/thesun.webp",
-		"description": "Tabloid news outlet with a penchant for sensationalism and controversial headlines.",
-		"color": "bg-yellow-500"
-	},
-	{
-		"name": "The Telegraph",
-		"url": "https://telegraph.co.uk/",
-		"category": "News",
-		"score": "3.135",
-		"slug": "thetelegraph",
-		"image": "../images/screenshots/thetelegraph.webp",
-		"description": "Traditional British newspaper with a digital twist.",
-		"color": "bg-blue-700"
-	},
-	{
-		"name": "The Times",
-		"url": "https://thetimes.co.uk/",
-		"category": "News",
-		"score": "4.1",
-		"slug": "thetimes",
-		"image": "../images/screenshots/thetimes.webp",
-		"description": "Old-school British news.",
-		"color": "bg-blue-900"
 	},
 	{
 		"name": "The Wrap",
