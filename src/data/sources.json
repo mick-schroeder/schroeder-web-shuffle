@@ -400,16 +400,6 @@
 		"color": "bg-blue-600"
 	},
 	{
-		"name": "Financial Post",
-		"url": "https://financialpost.com/",
-		"category": "Finance",
-		"score": "4.100",
-		"slug": "financialpost",
-		"image": "../images/screenshots/financialpost.webp",
-		"description": "Canada's premier source for business and financial news.",
-		"color": "bg-red-600"
-	},
-	{
 		"name": "Financial Times",
 		"url": "https://ft.com/",
 		"category": "News",
@@ -918,16 +908,6 @@
 		"image": "../images/screenshots/polygon.webp",
 		"description": "A gaming news and entertainment website.",
 		"color": "bg-blue-500"
-	},
-	{
-		"name": "Pop Sugar",
-		"url": "https://popsugar.com/",
-		"category": "News",
-		"score": "3.4",
-		"slug": "popsugar",
-		"image": "../images/screenshots/popsugar.webp",
-		"description": "Celebrity gossip and lifestyle website.",
-		"color": "bg-pink-500"
 	},
 	{
 		"name": "ProPublica",
